@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nýjar tilkynningar</item>
+        <item quantity="one">%d ný tilkynning</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">%1$d mín. eftir</item>
+        <item quantity="one">1 mín. eftir</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d mínútur</item>
+        <item quantity="one">1 mínúta</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">%1$d sek. eftir</item>
+        <item quantity="one">1 sek. eftir</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d sekúndur</item>
+        <item quantity="one">1 sekúnda</item>
+    </plurals>
+</resources>

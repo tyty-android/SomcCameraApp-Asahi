@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_pro_mode_fn_submenu_wb_0" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:binding="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/wb_state_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/camera_submenu_wb_state_bar_height" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_pro_mode_fn_submenu_wb_state_bar" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" binding:layout_constraintTop_toBottomOf="@id/wb_state_bar">
+        <include android:id="@id/wb_selected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_pro_mode_options_dial" />
+        <jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/wb_palette" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/camera_pro_mode_white_balance_view_height" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_pro_mode_fn_submenu_wb_palette" />
+        </jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout>
+        <jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/wb_fetch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/camera_pro_mode_white_balance_view_height" layout="@layout/fragment_pro_mode_fn_submenu_wb_fetch" />
+        </jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout>
+        <jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/wb_confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/camera_pro_mode_white_balance_view_height" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_pro_mode_fn_submenu_wb_confirm" />
+        </jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout>
+        <jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/wb_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/camera_pro_mode_white_balance_view_height" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_pro_mode_fn_submenu_wb_fail" />
+        </jp.co.sony.mc.camera.view.widget.FitDisplayOrientationFrameLayout>
+        <include android:id="@id/wb_temp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/auto_mode_dial_value_area_height" binding:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_pro_mode_fn_submenu_wb_temp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

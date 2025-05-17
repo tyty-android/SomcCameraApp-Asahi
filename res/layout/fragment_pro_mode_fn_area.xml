@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fn_root" android:tag="layout/fragment_pro_mode_fn_area_0" android:background="@drawable/camera_pro_mode_fn_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/fn_row_1" android:layout_width="fill_parent" android:layout_height="@dimen/camera_fn_button_height" android:splitMotionEvents="false" android:showDividers="middle" android:dividerPadding="@dimen/photopro_fn_button_divider_padding" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/fn_row_2" android:layout_width="fill_parent" android:layout_height="@dimen/camera_fn_button_height" android:layout_marginTop="@dimen/camera_fn_button_margin_top" android:splitMotionEvents="false" android:showDividers="middle" android:dividerPadding="@dimen/photopro_fn_button_divider_padding" />
+</LinearLayout>

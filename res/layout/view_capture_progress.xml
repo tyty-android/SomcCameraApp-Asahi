@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.sony.mc.camera.view.feedback.CaptureProgressView android:tag="layout/view_capture_progress_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/capture_progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/capturing_count_down_base" android:background="@drawable/long_exposure_bg" android:layout_width="@dimen/viewfinder_countdown_outside_diameter" android:layout_height="@dimen/viewfinder_countdown_outside_diameter" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <jp.co.sony.mc.camera.view.feedback.CaptureProgressCircleView android:layout_gravity="center" android:id="@id/capture_progress_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <jp.co.sony.mc.camera.view.widget.OutlineTextView android:textSize="16.0dip" android:textColor="?android:textColorPrimary" android:gravity="center" android:id="@id/capture_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/viewfinder_countdown_text_margin_bottom" android:text="@string/camera_strings_processing_capturing_photo_txt" android:layout_above="@id/capturing_count_down_base" android:layout_centerHorizontal="true" android:contentDescription="@string/camera_strings_processing_capturing_photo_txt" android:paddingHorizontal="@dimen/camera_horizontal_margin_for_wrap_content" app:layout_constraintBottom_toTopOf="@id/capturing_count_down_base" app:layout_constraintEnd_toEndOf="@id/capturing_count_down_base" app:layout_constraintStart_toStartOf="@id/capturing_count_down_base" style="@style/Widget.Camera.Common.Text.Outline" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</jp.co.sony.mc.camera.view.feedback.CaptureProgressView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">沒有WLAN信號</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN信號為1格</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN信號為2格</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN信號為3格</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN信號滿格</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"網絡
+輕按以連接WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN已關閉而飛航模式已開啟。
+請輕按[設定]更改上述設定。"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN已關閉。
+請從[設定]開啟WLAN。"</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">無法連接WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">僅限WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">無法連接到此WLAN網絡</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">輕按以連接WLAN網絡「%1$s」</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"此應用程式使用WLAN和流動數據來發送用戶數據 (例如已拍攝的圖片/影片、語音資料、使用中的服務的帳戶資料等) 至互聯網。
+注意您可能會被收取數據費用 (視乎您的網絡服務商或互聯網服務供應商合約而定)。"</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">無WLAN連接</string>
+    <string name="mv_wireless_network_txt">使用WLAN及流動數據</string>
+</resources>

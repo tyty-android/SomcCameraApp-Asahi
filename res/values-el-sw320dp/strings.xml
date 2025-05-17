@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mv_settings_sbt_edge_color_txt">Χρ.π/τος</string>
+    <string name="mv_settings_sbt_edge_type_txt">Τύπ.περιγρ.</string>
+    <string name="mv_settings_sbt_font_color_txt">Χρ.γ/ράς</string>
+    <string name="mv_settings_sbt_font_size_txt">Μέγ.γρ/ράς</string>
+    <string name="mv_settings_sbt_sample_message_txt">Εικ.προεπισκ.υποτίτ.</string>
+    <string name="mvp_accessibility_frw_0.5_icn">Αναπαρ.πίσω με τη μισή κανον.ταχύτ.</string>
+    <string name="mvp_accessibility_frw_10_icn">Αναπαρ.πίσω με δεκαπλάσ.κανον.ταχύτ.</string>
+</resources>

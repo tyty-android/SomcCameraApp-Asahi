@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Brak sygnału WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Sygnał WLAN o mocy 1 paska</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Sygnał WLAN o mocy 2 pasków</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Sygnał WLAN o mocy 3 pasków</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Pełna moc sygnału WLAN</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Sieć
+W celu połączenia się z siecią WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"Funkcja WLAN jest wyłączona, a tryb samolotowy jest włączony.
+Zmień te ustawienia, stukając USTAWIENIA."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"Funkcja WLAN jest wyłączona.
+Włącz WLAN w USTAWIENIACH."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nie można się połączyć z siecią WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Tylko WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Nie można połączyć z tą siecią WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Stuknij, aby połączyć z siecią WLAN „%1$s”</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ta aplikacja korzysta z sieci WLAN i z sieci komórkowej w celu przesyłania do internetu danych użytkownika (zarejestrowanych zdjęć i filmów, danych głosowych, informacji o koncie w ramach używanych usług).
+Mogą być naliczane opłaty za transmisję danych zależnie od umowy z operatorem sieci lub z dostawcą usług internetowych."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Brak połączenia WLAN</string>
+    <string name="mv_wireless_network_txt">Uż. dan. w sieci WLAN i kom.</string>
+</resources>

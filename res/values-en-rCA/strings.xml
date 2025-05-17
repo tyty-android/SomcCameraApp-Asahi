@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="ble_remote_control_dialog_error_bluetooth_off_txt">Pairing canceled because Bluetooth was turned off</string>
+    <string name="ble_remote_control_endurance_mode_dialog_main_message_txt">The device temperature may increase above typical operating temperature. When the temperature increases a notification and icon will alert you. In this case, don’t hold the device in your hand. Please make sure the remote control is connected via Bluetooth before continuing.</string>
+    <string name="ble_remote_control_pair_new_controller_description_txt">"To start pairing, interact with the remote controller.
+You will receive notifications and dialogs. Select Pair on all of them, then press any key on the paired device to finish pairing."</string>
+    <string name="call_notification_answer_action">Answer</string>
+    <string name="call_notification_answer_video_action">Video</string>
+    <string name="call_notification_decline_action">Decline</string>
+    <string name="call_notification_hang_up_action">Hang Up</string>
+    <string name="call_notification_incoming_text">Incoming call</string>
+    <string name="call_notification_ongoing_text">Ongoing call</string>
+    <string name="call_notification_screening_text">Screening an incoming call</string>
+    <string name="camera_strings_accessibility_adjust_color_txt">Adjust color</string>
+    <string name="camera_strings_accessibility_lens_85_to_125mm_txt">85 millimeters to 125 millimeters</string>
+    <string name="camera_strings_accessibility_lens_x1_to_x2_mm_txt">%1$s millimeters to %2$s millimeters</string>
+    <string name="camera_strings_accessibility_program_auto_txt">Program auto</string>
+    <string name="camera_strings_auto_frame_rate_description_note_txt">Note: Auto optimization will not work when the frame rate is set to 120 fps or 24 fps, or when the shutter speed is manually set.</string>
+    <string name="camera_strings_auto_frame_rate_description_txt">Automatically optimize the frame rate to improve video quality while recording in low-light conditions</string>
+    <string name="camera_strings_auto_night_description_txt">"You can take clear photos even at night or in dark conditions.
+It may take time to fully process the image after taking a photo, so hold the camera still until it is complete."</string>
+    <string name="camera_strings_common_error_internal_memory_full_txt">Internal storage full. Save data in SD card instead?</string>
+    <string name="camera_strings_common_error_internal_memory_unavailable_txt">Internal storage is corrupt or write protected. Save data in SD card instead?</string>
+    <string name="camera_strings_cooling_mode_message2_txt">Please wait for your device to cool down and then restart the camera.</string>
+    <string name="camera_strings_custom_disp_title_txt">DISP button customization</string>
+    <string name="camera_strings_custom_fn_title_txt">Function menu customization</string>
+    <string name="camera_strings_dialog_battery_level_low_recording_txt">Recording stopped due to low battery. Charge your device and try again.</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_airplane_on_txt">"Airplane mode is on.
+Please turn off Airplane mode from SETTINGS."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_details_name_txt">"Network name: 
+"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"Wi-Fi is turned off and Airplane mode is turned on.
+Please change these settings by tapping on SETTINGS."</string>
+    <string name="camera_strings_dialog_terms_of_service_title_txt">Terms of service</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_connecting_txt">Connecting…</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_details_password_txt">"
+Password protection: 
+"</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_details_security_txt">"
+Security: 
+"</string>
+    <string name="camera_strings_dialog_user_data_collection_txt">If you agree below, Sony will collect your &lt;b>&lt;a href=#personal-data>personal data&lt;/a>&lt;/b> to provide customized support and improve devices and services. Sony will handle your data per our &lt;b>&lt;a href=https://www.sonymobile.com/privacy/>Privacy Policy&lt;/a>&lt;/b>.</string>
+    <string name="camera_strings_dialog_video_hdr_hlg_supported_short_description_txt">Some devices/services may not be able to reproduce the original color and brightness of HDR content. Please use devices/services that support HDR when enjoying HDR content.</string>
+    <string name="camera_strings_dro_hdr_description_txt">This setting will optimize the range of values. DRO processing uses a single image, whereas Auto HDR combines multiple exposures to achieve the result.</string>
+    <string name="camera_strings_dro_hdr_dro_txt">D-Range Optimizer</string>
+    <string name="camera_strings_error_internal_sd_full_txt">Memory full. Delete some files from SD card or Internal storage.</string>
+    <string name="camera_strings_feature_creative_look_description_txt">"You can choose the finish of images (photos or movies) by selecting a \"look\".
+
+Creative look offers 6 preset looks. Each one is optimized with a different combination of color tone, saturation, contrast, sharpness, brightness, and other image elements, so you can set up image processing with your ideal balance of these elements."</string>
+    <string name="camera_strings_feature_creative_look_fl_description_txt">This look tones down some colors while enhancing the sky, greenery, and contrast. A good choice for natural landscapes showing the sea, sky, or mountains, or for other subjects against a blue sky.</string>
+    <string name="camera_strings_feature_creative_look_st_description_txt">This is the standard look for images. The settings, such as color tones, color depth (saturation) and contrast are adjusted to suit a wide range of subjects and scenes. This is useful when shooting snapshots of various subjects quickly and casually.</string>
+    <string name="camera_strings_feature_creative_look_vv_description_txt">The saturation and contrast are increased for shooting striking images of colorful scenes and subjects such as flowers, greenery, blue skies, or ocean views.</string>
+    <string name="camera_strings_feature_lens_correction_description_txt">"When using the ultra-wide lens (0.7x), you can select a priority. By selecting Prioritize image quality, you can capture dynamic high-quality images. If you select Prioritize correction for distortion, you can reduce visual distortion.
+This function is active when taking photos using the ultra-wide lens. After switching to the ultra-wide lens, you can configure the priority from MENU > Ultra-wide lens correction."</string>
+    <string name="camera_strings_feature_look_casual_aqua_description_txt">By creating a bright and cool color finish, you can achieve a transparent expression. Recommended when you want to capture a clear skin tone or when you want to express the transparency of the sky or sea.</string>
+    <string name="camera_strings_feature_look_casual_cherry_description_txt">Reduces the contrast slightly and casts a slightly pink tone over the entire image. Recommended for evoking a dreamy atmosphere or emphasizing the pink tones of sunsets.</string>
+    <string name="camera_strings_feature_s_cinetone_description_txt">This setting achieves cinematic gradations and color expressions, allowing you to shoot with softer color reproduction ideal for shooting portraits.</string>
+    <string name="camera_strings_focus_area_center_txt">Center</string>
+    <string name="camera_strings_focus_area_description_txt">"Set the type of focusing frame when shooting with autofocus.
+
+Wide: Focuses on subjects across the entire viewfinder.
+Center: Focuses on subjects in the center of the viewfinder.
+Focus and tracking: This setting is available only when the Focus mode is set to Continuous AF. When the device's shutter button is pressed and held halfway down, the camera tracks the subject within the selected autofocus area."</string>
+    <string name="camera_strings_focus_frame_color_txt">Focus area color</string>
+    <string name="camera_strings_focus_mode_mf_txt">Manual Focus</string>
+    <string name="camera_strings_hand_shutter_txt">Hand Shutter</string>
+    <string name="camera_strings_hdr_sdr_format_description_s_cinetone_txt">"If SDR (BT.709) is selected while Look is set to S-Cinetone for mobile:
+- Gamma curve: S-Cinetone for mobile
+- Color space: BT.709"</string>
+    <string name="camera_strings_hdr_sdr_format_description_txt">"Select HDR or SDR format.
+Video will be recorded with the following settings.
+If HDR (HLG/BT.2020) is selected:
+- Gamma curve: HLG
+- Color space: BT.2020
+If SDR (BT.709) is selected:
+- Gamma curve: Standard
+- Color space: BT.709"</string>
+    <string name="camera_strings_lens_correction_description_txt">When using the ultra-wide lens, you can select a priority. By selecting Prioritize image quality, you can capture dynamic high-quality images. If you select Prioritize correction for distortion, you can reduce visual distortion.</string>
+    <string name="camera_strings_lens_correction_off_txt">Prioritize image quality</string>
+    <string name="camera_strings_lens_correction_on_txt">Prioritize correction for distortion</string>
+    <string name="camera_strings_max_file_size_save_failed_txt">Recording stopped due to maximum file size limitation or insufficient storage space</string>
+    <string name="camera_strings_max_recording_time_save_failed_txt">Recording stopped due to maximum recording time limitation</string>
+    <string name="camera_strings_menu_sub_photo_front_txt">Photo (Front)</string>
+    <string name="camera_strings_menu_sub_video_front_txt">Video (Front)</string>
+    <string name="camera_strings_menu_tab_exposure_color_txt">Exposure/Color</string>
+    <string name="camera_strings_metering_center_txt">Center</string>
+    <string name="camera_strings_mode_p_fullname_txt">Program auto</string>
+    <string name="camera_strings_multi_window_txt">Drag the middle of the split bar to switch to full screen %1$s to use</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Wi-Fi only</string>
+    <string name="camera_strings_peaking_color_txt">Peaking color</string>
+    <string name="camera_strings_pro_tips_overview_description_txt">"Pro photo mode allows you to use the same operability and functions as Sony α interchangeable lens cameras. We support your creative shooting.
+Touch the P/S/M icon on the top left (in portrait orientation) to use your preferred shooting mode.
+P (Program auto)
+S (Shutter speed priority)
+M (Manual exposure)"</string>
+    <string name="camera_strings_pro_video_tips_overview_description_txt">"Pro video mode allows you to record videos with the same operability and functions as Sony α interchangeable lens cameras. Like Pro photo mode, you can choose your preferred shooting mode by touching the P/S/M icon on the top left (in portrait orientation).
+P (Program auto)
+S (Shutter speed priority)
+M (Manual exposure)"</string>
+    <string name="camera_strings_product_showcase_description_txt">Optimally configures camera settings for item showcase videos such as product reviews, making it easier to focus on objects displayed in the center of the viewfinder.</string>
+    <string name="camera_strings_qrcode_detect_text_notsupported_txt">This QR code is not supported</string>
+    <string name="camera_strings_rec_time_extension_guide_description_sub_txt">You can optimize all settings at once. Check the boxes of settings you want to change, then tap the %1$s button.</string>
+    <string name="camera_strings_rec_time_extension_guide_dialog_change_to_recommended_txt">Optimize settings?</string>
+    <string name="camera_strings_rec_time_extension_guide_error_already_set_to_recommended_txt">Settings already optimized</string>
+    <string name="camera_strings_rec_time_extension_guide_item_recommended_setting_txt">Optimized:</string>
+    <string name="camera_strings_rec_time_extension_guide_item_stabilization_txt">Stabilization: Standard</string>
+    <string name="camera_strings_rec_time_extension_guide_sub_title_recommended_settings_txt">Optimized settings</string>
+    <string name="camera_strings_restricted_setting_value_not_selected_due_to_streaming_mode_txt">Cannot select this setting value while in Streaming mode</string>
+    <string name="camera_strings_restricted_setting_value_not_selected_for_bokeh_effect_txt">Cannot select this setting value while Bokeh effect is on</string>
+    <string name="camera_strings_restricted_setting_value_not_selected_with_front_camera_txt">Cannot select this setting value when using the front camera</string>
+    <string name="camera_strings_runtime_permission_rationale_location_txt">To retrieve location</string>
+    <string name="camera_strings_soft_skin_effect_txt">Soft skin effect</string>
+    <string name="camera_strings_stabilization_title_txt">Stabilization</string>
+    <string name="camera_strings_sw_license_txt">Software license</string>
+    <string name="camera_strings_video_explanatory_4k2k_setting_txt">For stable 4K video recording, you must not change this setting unless you use a high-speed SD card (UHS Speed Class 1 or higher, or Speed Class 10 recommended).</string>
+    <string name="camera_strings_video_explanatory_slowmotion_setting_txt">"For stable slow motion video recording, don't change this setting unless you use a high-speed SD card (UHS Speed Class 1 or higher, or Speed Class 10 recommended)."</string>
+    <string name="camera_strings_video_explanatory_txt">"For stable video recording, we recommend you change data storage to Internal storage. Would you like to change now?
+
+If you continue to use SD card as data storage, be sure to use a high-speed SD card (UHS Speed Class 1 or higher, or Speed Class 10 recommended)."</string>
+    <string name="camera_strings_video_stabilization_description_main_txt">The Xperia has a unique hybrid stabilization system called Optical SteadyShot - combining optical image stabilization and electronic image stabilization simultaneously. It gives you shake free and smooth videos even when recording on the move.</string>
+    <string name="camera_strings_video_stabilization_description_txt">The Xperia has a unique hybrid stabilization system called Optical SteadyShot - combining optical image stabilization and electronic image stabilization simultaneously. It gives you shake free and smooth videos even when recording on the move.</string>
+    <string name="camera_strings_whitebalance_button_set_txt">Set</string>
+    <string name="camera_strings_whitebalance_cwb_description_txt">Set white balance based on the center of the preview</string>
+    <string name="camera_strings_whitebalance_cwb_title_txt">Set - %1$s</string>
+    <string name="camera_strings_youtube_live_event_privacy_private_txt">Private</string>
+    <string name="close_drawer">Close navigation menu</string>
+    <string name="close_sheet">Close sheet</string>
+    <string name="copy">Copy</string>
+    <string name="copy_toast_msg">Link copied to clipboard</string>
+    <string name="default_error_message">Invalid input</string>
+    <string name="default_popup_window_title">Pop-Up Window</string>
+    <string name="dropdown_menu">Dropdown menu</string>
+    <string name="expand_button_title">Advanced</string>
+    <string name="fallback_menu_item_copy_link">Copy link</string>
+    <string name="fallback_menu_item_open_in_browser">Open in browser</string>
+    <string name="fallback_menu_item_share_link">Share link</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Partially checked</string>
+    <string name="navigation_menu">Navigation menu</string>
+    <string name="not_selected">Not selected</string>
+    <string name="not_set">Not set</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="preference_copied">"'%1$s' copied to clipboard."</string>
+    <string name="range_end">Range end</string>
+    <string name="range_start">Range start</string>
+    <string name="search_menu_title">Search</string>
+    <string name="selected">Selected</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="switch_role">Switch</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent">%1$d percent.</string>
+    <string name="v7_preference_off">OFF</string>
+    <string name="v7_preference_on">ON</string>
+</resources>

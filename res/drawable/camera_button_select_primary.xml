@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:inset="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+        <item>
+            <ripple android:color="?android:colorControlHighlight">
+                <item>
+                    <selector>
+                        <item android:state_enabled="true">
+                            <shape android:shape="rectangle">
+                                <corners android:radius="3.0dip" />
+                                <solid android:color="@color/photopro_control_activated" />
+                            </shape>
+                        </item>
+                        <item>
+                            <shape android:shape="rectangle">
+                                <corners android:radius="3.0dip" />
+                                <solid android:color="@color/photopro_control" />
+                            </shape>
+                        </item>
+                    </selector>
+                </item>
+            </ripple>
+        </item>
+    </layer-list>
+</inset>

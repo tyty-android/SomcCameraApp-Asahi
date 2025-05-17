@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="camera_strings_youtube_live_event_button_inset">0.0dip</dimen>
+    <dimen name="camera_youtube_live_event_left_pane_margin_end">8.0dip</dimen>
+    <dimen name="camera_youtube_live_event_right_pane_scroll_margin_bottom">56.0dip</dimen>
+    <dimen name="camera_youtube_live_event_right_pane_scroll_margin_end">16.0dip</dimen>
+    <dimen name="camera_youtube_live_event_save_height">36.0dip</dimen>
+    <dimen name="memory_recall_icon_fnButton_margin">0.0dip</dimen>
+    <dimen name="memory_recall_icon_margin">14.0dip</dimen>
+    <dimen name="memory_recall_icon_width">30.0dip</dimen>
+    <dimen name="memory_recall_iso_width">45.0dip</dimen>
+    <dimen name="memory_recall_mode_margin">20.0dip</dimen>
+    <dimen name="memory_recall_mode_width">60.0dip</dimen>
+    <dimen name="memory_recall_picker_margin_top">32.0dip</dimen>
+</resources>

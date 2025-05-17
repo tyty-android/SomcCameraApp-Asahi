@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/player_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sonyericsson.album.video.widget.CustomizedViewPager android:id="@id/player_video_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/scale_indicator_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+        <com.sonyericsson.album.video.widget.ScaleIndicatorView android:id="@id/player_scale_indicator" android:layout_width="@dimen/scale_indicator_width" android:layout_height="@dimen/scale_indicator_height" android:layout_marginTop="@dimen/scale_indicator_margin_top" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/scale_indicator_margin_left" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <include layout="@layout/player_controller" />
+</RelativeLayout>

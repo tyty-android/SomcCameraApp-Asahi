@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Không có tín hiệu WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Tín hiệu WLAN ở mức 1 vạch</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Tín hiệu WLAN ở mức 2 vạch</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Tín hiệu WLAN ở mức 3 vạch</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Tín hiệu WLAN ở mức cao nhất</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Mạng
+Để kết nối với WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN đã tắt và Chế độ máy bay đang bật.
+Vui lòng thay đổi các cài đặt này bằng cách nhấn vào CÀI ĐẶT."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"Đã tắt WLAN.
+Vui lòng bật WLAN từ phần CÀI ĐẶT."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Không thể kết nối với WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Chỉ WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Không thể kết nối với mạng WLAN này</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Nhấn để kết nối với mạng WLAN \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ứng dụng này sử dụng mạng WLAN và dữ liệu di động để gửi dữ liệu người dùng (tức là ảnh/video đã ghi, dữ liệu giọng nói, thông tin tài khoản của các dịch vụ đang sử dụng, v.v.) lên Internet.
+Lưu ý rằng bạn có thể bị tính phí dữ liệu tùy thuộc vào hợp đồng với nhà khai thác mạng hoặc nhà cung cấp dịch vụ Internet của bạn."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Không có kết nối WLAN</string>
+    <string name="mv_wireless_network_txt">Sd dữ liệu WLAN &amp; di động</string>
+</resources>

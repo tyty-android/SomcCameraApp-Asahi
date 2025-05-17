@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/zoom_lens_area_background_color" />
+            <corners android:radius="@dimen/auto_mode_zoom_lens_area_background_radius" />
+        </shape>
+    </item>
+</selector>

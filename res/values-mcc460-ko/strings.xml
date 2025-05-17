@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">WLAN 신호 없음</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN 신호 막대 1개</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN 신호 막대 2개</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN 신호 막대 3개</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN 신호가 가득 참</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"네트워크
+WLAN에 연결하기 위해"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN가 꺼져 있고 비행 모드가 켜져 있습니다.
+설정을 눌러 이러한 설정을 변경하세요."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN가 꺼져 있습니다.
+설정에서 WLAN를 켜세요."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">WLAN에 연결할 수 없음</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLAN 전용</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">WLAN 네트워크에 연결할 수 없음</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">WLAN 네트워크에 연결하려면 누름: \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"이 앱은 WLAN 및 모바일 데이터를 사용하여 사용자 데이터(예: 녹화된 사진/비디오, 음성 데이터, 사용 중인 서비스의 계정 정보 등)를 인터넷으로 전송합니다.
+네트워크 사업자 또는 인터넷 서비스 공급자 계약에 따라 데이터 요금이 부과될 수 있습니다."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">WLAN 연결 없음</string>
+    <string name="mv_wireless_network_txt">WLAN 및 모바일 데이터 사용</string>
+</resources>

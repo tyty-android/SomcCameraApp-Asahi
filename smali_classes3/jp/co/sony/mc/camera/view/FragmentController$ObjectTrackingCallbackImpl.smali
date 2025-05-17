@@ -1,0 +1,153 @@
+.class Ljp/co/sony/mc/camera/view/FragmentController$ObjectTrackingCallbackImpl;
+.super Ljava/lang/Object;
+.source "FragmentController.java"
+
+# interfaces
+.implements Ljp/co/sony/mc/camera/CameraAccessor$ObjectTrackingCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/view/FragmentController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "ObjectTrackingCallbackImpl"
+.end annotation
+
+
+# instance fields
+.field private final mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+.field private final mFragmentManager:Landroidx/fragment/app/FragmentManager;
+
+
+# direct methods
+.method constructor <init>(Ljp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)V
+    .locals 0
+
+    .line 7734
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7735
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/FragmentController$ObjectTrackingCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    .line 7736
+    iput-object p2, p0, Ljp/co/sony/mc/camera/view/FragmentController$ObjectTrackingCallbackImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onObjectTracked(Landroid/graphics/Rect;ZZ)V
+    .locals 2
+
+    .line 7741
+    iget-object v0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ObjectTrackingCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$fgetmYuvFrameDrawModeController(Ljp/co/sony/mc/camera/view/FragmentController;)Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;->-$$Nest$monObjectTracked(Ljp/co/sony/mc/camera/view/FragmentController$YuvFrameDrawModeController;)V
+
+    .line 7743
+    invoke-static {}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getInstance()Ljp/co/sony/mc/camera/setting/CameraProSetting;
+
+    move-result-object v0
+
+    if-eqz p3, :cond_1
+
+    if-nez p2, :cond_1
+
+    .line 7744
+    sget-object p3, Ljp/co/sony/mc/camera/setting/CameraSettings;->FOCUS_MODE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    .line 7745
+    invoke-virtual {v0, p3}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->get(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object p3
+
+    sget-object v1, Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;->AF_S:Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+
+    if-ne p3, v1, :cond_1
+
+    .line 7746
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/setting/CameraProSetting;->getCurrentCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p3
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/util/capability/PlatformCapability;->isYuvFrameDrawModeSupported(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_1
+
+    .line 7748
+    sget-boolean p0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p0, :cond_0
+
+    const-string p0, "Object tracked after AF Locked"
+
+    filled-new-array {p0}, [Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/util/CamLog;->e([Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+
+    .line 7752
+    :cond_1
+    sget-boolean p3, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz p3, :cond_2
+
+    new-instance p3, Ljava/lang/StringBuilder;
+
+    const-string v0, "Rect = "
+
+    invoke-direct {p3, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object p3
+
+    const-string v0, " isLost = "
+
+    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object p3
+
+    invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object p3
+
+    invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p3
+
+    filled-new-array {p3}, [Ljava/lang/String;
+
+    move-result-object p3
+
+    invoke-static {p3}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 7753
+    :cond_2
+    iget-object p3, p0, Ljp/co/sony/mc/camera/view/FragmentController$ObjectTrackingCallbackImpl;->mController:Ljp/co/sony/mc/camera/view/FragmentController;
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/view/FragmentController$ObjectTrackingCallbackImpl;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
+
+    invoke-static {p3, p0}, Ljp/co/sony/mc/camera/view/FragmentController;->-$$Nest$mgetViewFinderFragment(Ljp/co/sony/mc/camera/view/FragmentController;Landroidx/fragment/app/FragmentManager;)Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;
+
+    move-result-object p0
+
+    invoke-virtual {p0, p1, p2}, Ljp/co/sony/mc/camera/view/fragment/ViewFinderFragment;->onObjectTracked(Landroid/graphics/Rect;Z)V
+
+    return-void
+.end method

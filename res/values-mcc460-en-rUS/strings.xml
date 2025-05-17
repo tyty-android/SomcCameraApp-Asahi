@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN is turned off and Airplane mode is turned on.
+Please change these settings by tapping on SETTINGS."</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLAN only</string>
+</resources>

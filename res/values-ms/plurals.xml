@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d pemberitahuan baharu</item>
+        <item quantity="one">%d pemberitahuan baharu</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">Berbaki %1$d minit</item>
+        <item quantity="one">Berbaki 1 minit</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d minit</item>
+        <item quantity="one">1 minit</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">Berbaki %1$d saat</item>
+        <item quantity="one">Berbaki 1 saat</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d saat</item>
+        <item quantity="one">1 saat</item>
+    </plurals>
+</resources>

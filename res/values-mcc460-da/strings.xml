@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Intet WLAN-signal</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN-signalet viser 1 søjle</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN-signalet viser 2 søjler</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN-signalet viser 3 søjler</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN-signalet viser alle søjler</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Netværk
+Sådan opretter du forbindelse til WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN er slået fra, og flytilstand er slået til.
+Skift disse indstillinger ved at tappe på INDSTILLINGER."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN er slået fra.
+Slå WLAN til under INDSTILLINGER."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Der kan ikke oprettes forbindelse til WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Kun WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Forbindelse til WLAN-netværket kan ikke oprettes</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Tap og forbind til WLAN-netværket \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Appen bruger WLAN og mobildata til at sende brugerdata (dvs. optagne billeder/videoer, stemmedata, kontooplysninger om de anvendte tjenester osv.) til internettet.
+Bemærk, at du kan blive opkrævet for data afhængigt af kontrakten med din netværksoperatør eller internetudbyder."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Ingen WLAN-forbindelse</string>
+    <string name="mv_wireless_network_txt">Brug WLAN og mobildata</string>
+</resources>

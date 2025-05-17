@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/dial_picker_thumbnail_icon_background_height" android:width="@dimen/dial_picker_thumbnail_icon_background_width" android:viewportWidth="408.0" android:viewportHeight="144.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M8 0H400C404.418 0 408 3.58172 408 8V136C408 140.418 404.418 144 400 144H8C3.58172 144 0 140.418 0 136V8C0 3.58172 3.58172 0 8 0Z" />
+        <path android:fillColor="#cc000000" android:pathData="M0 0V144H408V0" />
+        <path android:pathData="M8 0H400C404.418 0 408 3.58172 408 8V136C408 140.418 404.418 144 400 144H8C3.58172 144 0 140.418 0 136V8C0 3.58172 3.58172 0 8 0Z" android:strokeColor="#4dffffff" android:strokeWidth="2.0" />
+    </group>
+</vector>

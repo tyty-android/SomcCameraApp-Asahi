@@ -1,0 +1,94 @@
+.class public final Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+.super Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue;
+.source "IddSettingValue.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue<",
+        "Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000e\n\u0000\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u00a2\u0006\u0002\u0010\u0004J\u0008\u0010\u0005\u001a\u00020\u0006H\u0016\u00a8\u0006\u0007"
+    }
+    d2 = {
+        "Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;",
+        "Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue;",
+        "Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;",
+        "value",
+        "(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)V",
+        "toString",
+        "",
+        "SomcCamera_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)V
+    .locals 1
+
+    const-string/jumbo v0, "value"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 437
+    check-cast p1, Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Ljp/co/sony/mc/camera/idd/value/IddUserSettingBooleanValue;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public toString()Ljava/lang/String;
+    .locals 0
+
+    .line 438
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;->getValue()Ljp/co/sony/mc/camera/configuration/parameters/UserSettingBooleanValue;
+
+    move-result-object p0
+
+    check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;->getBooleanValue()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    const-string p0, "HDR_ON"
+
+    goto :goto_0
+
+    :cond_0
+    const-string p0, "HDR_OFF"
+
+    :goto_0
+    return-object p0
+.end method

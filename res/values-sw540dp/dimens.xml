@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dashboard_poster_height">121.0dip</dimen>
+    <dimen name="dashboard_poster_width">121.0dip</dimen>
+    <dimen name="player_video_title_textSize">24.0dip</dimen>
+    <dimen name="scale_indicator_height">176.0dip</dimen>
+    <dimen name="scale_indicator_margin_left">10.0dip</dimen>
+    <dimen name="scale_indicator_margin_top">75.0dip</dimen>
+    <dimen name="scale_indicator_width">176.0dip</dimen>
+</resources>

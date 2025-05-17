@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d új értesítés</item>
+        <item quantity="one">%d új értesítés</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">%1$d perc van hátra</item>
+        <item quantity="one">1 perc van hátra</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d perc</item>
+        <item quantity="one">1 perc</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">%1$d másodperc van hátra</item>
+        <item quantity="one">1 másodperc van hátra</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d másodperc</item>
+        <item quantity="one">1 másodperc</item>
+    </plurals>
+</resources>

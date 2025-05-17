@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/controller_view_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sonyericsson.album.video.player.PlayPauseButton android:gravity="center_vertical" android:id="@id/video_play_button" android:background="@drawable/player_play_selector" android:padding="@dimen/player_controller_play_pause_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:gravity="center_vertical" android:id="@id/video_play_stop_button" android:background="@drawable/player_play_selector" android:padding="@dimen/player_controller_play_pause_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/feedback_with_icon_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/feedback_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/player_controller_feedback_text_color" android:layout_gravity="center_horizontal" android:id="@id/feed_back_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/shadow" android:shadowDx="@integer/shadow_length" android:shadowDy="@integer/shadow_length" android:shadowRadius="@integer/shadow_radius" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/player_progress_text_size" android:textColor="@color/player_controller_feedback_text_color" android:id="@id/progress_text" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/shadow" android:shadowDx="@integer/shadow_length" android:shadowDy="@integer/shadow_length" android:shadowRadius="@integer/shadow_radius" android:layout_centerInParent="true" android:textAlignment="center" />
+    <RelativeLayout android:id="@id/video_controller_panel" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@id/video_overlay_background" android:background="@drawable/shadow_gradient" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/player_controller_upper" android:layout_alignParentBottom="true" android:importantForAccessibility="no" />
+        <LinearLayout android:orientation="vertical" android:id="@id/player_controller_upper" android:paddingBottom="@dimen/player_overlay_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <SeekBar android:id="@id/video_seekbar" android:paddingBottom="@dimen/player_seekbar_padding_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/player_seekbar_style" android:thumb="@drawable/player_progress_dot_selector" android:thumbOffset="@dimen/player_seekbar_thumbOffset" style="?android:progressBarStyleHorizontal" />
+            <com.sonyericsson.album.video.player.PlayerControllerExpandView android:gravity="center" android:orientation="horizontal" android:id="@id/player_controller_expand_view" android:paddingBottom="@dimen/player_expand_button_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/controller_expand_grid_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.sonyericsson.album.video.player.PlayerControllerExpandView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

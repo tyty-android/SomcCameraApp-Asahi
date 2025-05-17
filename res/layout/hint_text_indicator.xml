@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.sony.mc.camera.view.hint.HintTextView android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/hint_text_message_background" android:layout_width="0.0dip" android:layout_height="@dimen/hint_text_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageButton android:id="@id/hint_text_left_button" android:visibility="gone" android:layout_width="@dimen/hint_text_button_height" android:layout_height="@dimen/hint_text_button_height" android:contentDescription="@string/camera_strings_accessibility_close_txt" android:layout_marginEnd="@dimen/hint_text_button_margin" />
+            <TextView android:textSize="@dimen/hint_text_message_text_size" android:textColor="@color/hint_text_message_text_color" android:ellipsize="end" android:id="@id/hint_text_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/OnScreenTextDropShadow" />
+            <ImageButton android:id="@id/hint_text_right_button" android:visibility="gone" android:layout_width="@dimen/hint_text_button_height" android:layout_height="@dimen/hint_text_button_height" android:contentDescription="@string/camera_strings_accessibility_learn_more_txt" android:layout_marginStart="@dimen/hint_text_button_margin" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</jp.co.sony.mc.camera.view.hint.HintTextView>

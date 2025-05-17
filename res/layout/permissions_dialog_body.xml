@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="locale" android:paddingStart="@dimen/alert_dialog_padding_start" android:paddingEnd="@dimen/alert_dialog_padding_end">
+        <TextView android:id="@id/body1" android:paddingBottom="@dimen/alert_dialog_drawable_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mv_permission_dialog_essential_body_1_txt" />
+        <TextView android:id="@id/item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/body2" android:paddingBottom="@dimen/alert_dialog_drawable_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/body3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

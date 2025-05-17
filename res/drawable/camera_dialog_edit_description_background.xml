@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/camera_strings_youtube_live_event_edit_background_radius" />
+                    <solid android:color="@color/camera_menu_gray02_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/camera_strings_youtube_live_event_edit_background_position" android:top="@dimen/camera_strings_youtube_live_event_edit_background_position" android:right="@dimen/camera_strings_youtube_live_event_edit_background_position">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/camera_strings_youtube_live_event_edit_background_width" android:color="@color/camera_highlight00_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/camera_strings_youtube_live_event_edit_background_radius" />
+                    <solid android:color="@color/camera_menu_gray02_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/camera_strings_youtube_live_event_edit_background_position" android:top="@dimen/camera_strings_youtube_live_event_edit_background_position" android:right="@dimen/camera_strings_youtube_live_event_edit_background_position">
+                <shape android:shape="rectangle">
+                    <stroke android:width="@dimen/camera_strings_youtube_live_event_edit_background_width" android:color="@color/camera_white_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

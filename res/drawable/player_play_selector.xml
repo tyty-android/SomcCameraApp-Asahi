@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/player_controller_ripple_color"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <inset android:drawable="@drawable/movie_playview_frame_icn" android:insetLeft="@dimen/player_controller_play_pause_padding" android:insetRight="@dimen/player_controller_play_pause_padding" android:insetTop="@dimen/player_controller_play_pause_padding" android:insetBottom="@dimen/player_controller_play_pause_padding" />
+    </item>
+</ripple>

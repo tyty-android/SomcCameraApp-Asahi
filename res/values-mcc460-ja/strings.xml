@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">WLANの電波状態は圏外です</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLANの電波状態はレベル1です</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLANの電波状態はレベル2です</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLANの電波状態はレベル3です</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLANの電波状態はフルです</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"ネットワーク
+WLANに接続するため"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLANの設定がOFFで、機内モードがONです。
+[設定]ボタンから設定を変更してください。"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLANの設定がOFFです。
+[設定]ボタンからONにしてください。"</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">WLANに接続できません</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLANのみ</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">このWLANには接続できません</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">タップしてWLAN\"%1$s\"に接続</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"アプリはWLANやモバイルデータ通信を使用して、ユーザーデータ、すなわち撮影した映像・音声データやご利用中のサービスのアカウント情報などをインターネットに送信します。
+また、通信事業者またはプロバイダーとの契約内容により、データ通信料が発生する場合があります。"</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">WLANに接続されていません</string>
+    <string name="mv_dialog_body_network_req_txt">ネットワーク接続が必要です。モバイルネットワークか、WLANに接続してください。</string>
+    <string name="mv_wireless_network_txt">WLANとﾓﾊﾞｲﾙﾃﾞｰﾀ通信を使用</string>
+</resources>

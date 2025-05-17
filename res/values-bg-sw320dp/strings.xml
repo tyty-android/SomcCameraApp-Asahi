@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mv_settings_sbt_font_size_txt">Разм. на шрифт</string>
+    <string name="mv_settings_sbt_sample_message_txt">Изобр с визуал на субти</string>
+    <string name="mvp_accessibility_ffw_0.5_icn">Изпълн. с двойно по-ниска от нормал. скорост</string>
+</resources>

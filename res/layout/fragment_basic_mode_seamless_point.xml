@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/fragment_basic_mode_seamless_point_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:binding="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="start" android:id="@id/circle" android:tag="binding_1" android:background="@drawable/camera_circle_lens_button" android:layout_width="@dimen/auto_mode_zoom_circle_size" android:layout_height="@dimen/auto_mode_zoom_circle_size" android:soundEffectsEnabled="false" android:hapticFeedbackEnabled="false" />
+    <TextView android:textSize="@dimen/auto_mode_zoom_label_text_size" android:textColor="@color/photopro_auto_mode_zoom_ui_label" android:gravity="center" android:layout_gravity="start" android:id="@id/label" android:layout_width="@dimen/auto_mode_zoom_circle_size" android:layout_height="@dimen/auto_mode_zoom_circle_size" android:importantForAccessibility="no" />
+</FrameLayout>

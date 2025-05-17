@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Nav WLAN signāla</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN signāls ir 1 joslā</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN signāls ir 2 joslās</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN signāls ir 3 joslās</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN signālam ir maksimāls stiprums</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Tīkls
+Lai izveidotu savienojumu ar WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN ir izslēgts, un ir ieslēgts lidmašīnas režīms.
+Lūdzu, mainiet šos iestatījumus, piesitot pie IESTATĪJUMI."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN ir izslēgts.
+Lūdzu, ieslēdziet WLAN izvēlnē IESTATĪJUMI."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nevar izveidot savienojumu ar WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Tikai WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Nevar izveidot savienojumu ar šo WLAN tīklu</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Piesitiet, lai izv. sav. ar WLAN tīklu \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Šajā lietotnē tiek izmantots WLAN tīkls un mobilie dati, lai internetā nosūtītu lietotāja datus (t.i., ierakstītos attēlus/video, balss datus, konta informāciju par izmantotajiem pakalpojumiem utt.).
+Ievērojiet, ka par datu pārraidi no jums var tikt iekasēta maksa atkarībā no jūsu tīkla operatora vai interneta pakalpojuma sniedzēja līgumiem."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nav WLAN savienojuma</string>
+    <string name="mv_wireless_network_txt">Lietot WLAN un mob. datus</string>
+</resources>

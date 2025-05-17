@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/memory_recall_label_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.co.sony.mc.camera.view.memoryrecall.widget.MemoryRecallTextView android:gravity="center" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:linePaddingBottom="@dimen/memory_recall_line_padding_bottom" app:linePaddingHorizontal="@dimen/memory_recall_line_padding_horizontal" app:lineWidth="@dimen/memory_recall_line_width" />
+</androidx.constraintlayout.widget.ConstraintLayout>

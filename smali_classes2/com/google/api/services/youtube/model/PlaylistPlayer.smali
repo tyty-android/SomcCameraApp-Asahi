@@ -1,0 +1,127 @@
+.class public final Lcom/google/api/services/youtube/model/PlaylistPlayer;
+.super Lcom/google/api/client/json/GenericJson;
+.source "PlaylistPlayer.java"
+
+
+# instance fields
+.field private embedHtml:Ljava/lang/String;
+    .annotation runtime Lcom/google/api/client/util/Key;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 30
+    invoke-direct {p0}, Lcom/google/api/client/json/GenericJson;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic clone()Lcom/google/api/client/json/GenericJson;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0}, Lcom/google/api/services/youtube/model/PlaylistPlayer;->clone()Lcom/google/api/services/youtube/model/PlaylistPlayer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic clone()Lcom/google/api/client/util/GenericData;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0}, Lcom/google/api/services/youtube/model/PlaylistPlayer;->clone()Lcom/google/api/services/youtube/model/PlaylistPlayer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public clone()Lcom/google/api/services/youtube/model/PlaylistPlayer;
+    .locals 0
+
+    .line 63
+    invoke-super {p0}, Lcom/google/api/client/json/GenericJson;->clone()Lcom/google/api/client/json/GenericJson;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/api/services/youtube/model/PlaylistPlayer;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/CloneNotSupportedException;
+        }
+    .end annotation
+
+    .line 29
+    invoke-virtual {p0}, Lcom/google/api/services/youtube/model/PlaylistPlayer;->clone()Lcom/google/api/services/youtube/model/PlaylistPlayer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getEmbedHtml()Ljava/lang/String;
+    .locals 0
+
+    .line 44
+    iget-object p0, p0, Lcom/google/api/services/youtube/model/PlaylistPlayer;->embedHtml:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/json/GenericJson;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0, p1, p2}, Lcom/google/api/services/youtube/model/PlaylistPlayer;->set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/services/youtube/model/PlaylistPlayer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/util/GenericData;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0, p1, p2}, Lcom/google/api/services/youtube/model/PlaylistPlayer;->set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/services/youtube/model/PlaylistPlayer;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/services/youtube/model/PlaylistPlayer;
+    .locals 0
+
+    .line 58
+    invoke-super {p0, p1, p2}, Lcom/google/api/client/json/GenericJson;->set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/json/GenericJson;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/api/services/youtube/model/PlaylistPlayer;
+
+    return-object p0
+.end method
+
+.method public setEmbedHtml(Ljava/lang/String;)Lcom/google/api/services/youtube/model/PlaylistPlayer;
+    .locals 0
+
+    .line 52
+    iput-object p1, p0, Lcom/google/api/services/youtube/model/PlaylistPlayer;->embedHtml:Ljava/lang/String;
+
+    return-object p0
+.end method

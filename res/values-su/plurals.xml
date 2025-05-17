@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">%1$d mnt sesa</item>
+        <item quantity="one">1 mnt sesa</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d menit</item>
+        <item quantity="one">1 menit</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">%1$d dtk sesa</item>
+        <item quantity="one">1 dtk sesa</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d detik</item>
+        <item quantity="one">1 detik</item>
+    </plurals>
+</resources>

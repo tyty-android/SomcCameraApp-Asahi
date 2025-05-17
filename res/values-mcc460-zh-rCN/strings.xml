@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">无WLAN信号</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN信号为1格</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN信号为2格</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN信号为3格</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN信号满格</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"网络
+连接到WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN已关闭，飞行模式已开启。
+请通过点按“设定”来更改这些设定。"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN已关闭。
+请从“设定”中开启WLAN。"</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">无法连接到WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">仅限WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">无法连接到此WLAN网络</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">点按以连接到WLAN网络“%1$s”</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"此应用程序使用无线局域网和移动数据将用户数据（即，录制的图片/视频、语音数据、所用服务的帐户信息等）发送至互联网。
+请注意，可能会产生数据使用费用，具体取决于您的网络运营商或互联网服务提供商合同。"</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">无 WLAN 连接</string>
+    <string name="mv_wireless_network_txt">使用WLAN和移动数据</string>
+</resources>

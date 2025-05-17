@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нови известия</item>
+        <item quantity="one">%d ново известие</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">Остават %1$d минути</item>
+        <item quantity="one">Остава 1 минута</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d минути</item>
+        <item quantity="one">1 минута</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">Остават %1$d секунди</item>
+        <item quantity="one">Остава 1 секунда</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d секунди</item>
+        <item quantity="one">1 секунда</item>
+    </plurals>
+</resources>

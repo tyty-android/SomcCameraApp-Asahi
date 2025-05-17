@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.sony.mc.camera.view.widget.CustomConstraintLayout android:tag="layout/fragment_view_finder_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/fragment_view_finder_preview" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="9:16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_view_finder_preview" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/camera_status_bar_container" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <include android:id="@id/camera_status_bar" android:layout_width="0.0dip" android:layout_height="@dimen/camera_status_bar_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" layout="@layout/fragment_pro_mode_camera_status_bar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <jp.co.sony.mc.camera.view.compose.PreviewCoverView android:id="@id/blur_view" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</jp.co.sony.mc.camera.view.widget.CustomConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_activated="false">
+        <shape>
+            <solid android:color="@color/camera_fn_text_default" />
+            <corners android:radius="@dimen/camera_status_bar_underline_height" />
+            <stroke android:width="@dimen/camera_status_bar_underline_stroke" android:color="@color/camera_fn_text_activated" />
+        </shape>
+    </item>
+</selector>

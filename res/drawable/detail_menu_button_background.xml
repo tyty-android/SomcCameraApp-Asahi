@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/quick_setting_detail_menu_button_background_color" />
+    <corners android:radius="@dimen/camera_quick_setting_detail_menu_button_radius" />
+    <stroke android:width="@dimen/camera_quick_setting_detail_menu_button_border_width" android:color="@color/quick_setting_detail_menu_button_border_color" />
+</shape>

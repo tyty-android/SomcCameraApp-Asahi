@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dashboard_poster_height">188.66dip</dimen>
+    <dimen name="dashboard_poster_width">188.66dip</dimen>
+    <dimen name="scale_indicator_margin_top">54.0dip</dimen>
+    <dimen name="separator_title_width">1160.0dip</dimen>
+    <dimen name="subtitle_settings_fragment_padding_horizontal">94.0dip</dimen>
+    <dimen name="subtitle_settings_item_text_margin_left">6.0dip</dimen>
+    <dimen name="subtitle_settings_separator_item_margin_bottom">28.0dip</dimen>
+    <dimen name="subtitle_settings_separetor_padding_top">42.0dip</dimen>
+</resources>

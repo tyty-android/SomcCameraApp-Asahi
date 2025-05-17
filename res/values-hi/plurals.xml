@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d नई सूचनाएं</item>
+        <item quantity="one">%d नई सूचनाएं</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">%1$d मिनट शेष</item>
+        <item quantity="one">1 मिनट शेष</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d मिनट</item>
+        <item quantity="one">1 मिनट</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">%1$d सेकंड शेष</item>
+        <item quantity="one">1 सेकंड शेष</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d सेकंड</item>
+        <item quantity="one">1 सेकंड</item>
+    </plurals>
+</resources>

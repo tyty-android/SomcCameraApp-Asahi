@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Žiadny WLAN signál</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN signál je na 1 dieliku</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN signál je na 2 dielikoch</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN signál je na 3 dielikoch</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN signál je na maxime</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Sieť
+Pripojenie k sieti WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN je vypnuté a Režim v lietadle je zapnutý.
+Tieto nastavenia môžete zmeniť ťuknutím na NASTAVENIA."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN je vypnuté.
+Môžete ho zapnúť v NASTAVENIACH."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nedá sa pripojiť k WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Len WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Nedá sa pripojiť k tejto sieti WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Ťuknutím na kód sa pripojte k WLAN: %1$s</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Táto aplikácia využíva sieť WLAN a mobilné dáta na odosielanie údajov používateľa (t. j. nahraných fotografií/videí, hlasových dát, informácií o účte používaných služieb atď.) na internet.
+Upozorňujeme, že v závislosti od zmluvy s mobilným operátorom alebo poskytovateľom internetových služieb vám môžu byť účtované poplatky za dáta."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Chýba pripojenie WLAN</string>
+    <string name="mv_wireless_network_txt">Použiť WLAN a mobilné dáta</string>
+</resources>

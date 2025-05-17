@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/streaming_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/external_display_system_status_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/network_icon" android:layout_width="@dimen/external_display_ui_parts_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/external_display_ui_parts_margin" />
+    <TextView android:textSize="@dimen/external_display_bitrate_text_size" android:textColor="@color/external_display_white_text_color" android:id="@id/network_offline" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_strings_header_network_status_offline_txt" />
+    <TextView android:textSize="@dimen/external_display_bitrate_text_size" android:textColor="@color/external_display_white_text_color" android:id="@id/bitrate_value" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

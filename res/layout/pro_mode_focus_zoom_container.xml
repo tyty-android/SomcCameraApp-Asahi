@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pro_mode_focus_zoom_container" android:tag="layout/pro_mode_focus_zoom_container_0" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:binding="http://schemas.android.com/apk/res-auto">
+    <ImageButton android:id="@id/focus_mag_btn" android:tag="binding_1" android:padding="@dimen/pro_mode_focus_mag_btn_padding" android:layout_width="@dimen/pro_mode_focus_zoom_container_size" android:layout_height="@dimen/pro_mode_focus_zoom_container_size" android:src="@drawable/camera_focus_magnifier_button" android:contentDescription="@string/camera_strings_focus_magnifier_txt" />
+    <jp.co.sony.mc.camera.view.widget.OutlineTextView android:textAppearance="@style/TextAppearance.PhotoPro.MagnificationStatus" android:layout_gravity="center_horizontal" android:id="@id/focus_zoom_info_text" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_strings_magnifier_ratio_4_0_txt" style="@style/Widget.Camera.MagnificationText" />
+</LinearLayout>

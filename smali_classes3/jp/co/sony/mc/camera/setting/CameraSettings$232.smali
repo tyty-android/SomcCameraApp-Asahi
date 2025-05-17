@@ -1,0 +1,87 @@
+.class Ljp/co/sony/mc/camera/setting/CameraSettings$232;
+.super Ljava/lang/Object;
+.source "CameraSettings.java"
+
+# interfaces
+.implements Ljp/co/sony/mc/camera/setting/SettingsBase$GetDefaultCommand;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/setting/CameraSettings;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 2484
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingsBase;Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljp/co/sony/mc/camera/setting/SettingsBase;",
+            "Ljp/co/sony/mc/camera/setting/SettingKey$Key<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 2488
+    check-cast p1, Ljp/co/sony/mc/camera/setting/CameraSettings;
+
+    .line 2489
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmVideoSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    .line 2490
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmVideoSize(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    .line 2491
+    :cond_0
+    sget-object p0, Ljp/co/sony/mc/camera/setting/CameraSettings;->VIDEO_SIZE:Ljp/co/sony/mc/camera/setting/CameraSettings$Key;
+
+    invoke-virtual {p1, p0}, Ljp/co/sony/mc/camera/setting/CameraSettings;->getDefaultValue(Ljp/co/sony/mc/camera/setting/SettingKey$Key;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    .line 2492
+    :goto_0
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCapturingMode(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object p2
+
+    invoke-static {p1}, Ljp/co/sony/mc/camera/setting/CameraSettings;->-$$Nest$fgetmCameraId(Ljp/co/sony/mc/camera/setting/CameraSettings;)Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object p1
+
+    invoke-static {p2, p1, p0}, Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;->getDefaultValue(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+
+    move-result-object p0
+
+    return-object p0
+.end method

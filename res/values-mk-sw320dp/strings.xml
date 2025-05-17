@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mv_settings_sbt_enable_custom_txt">Кор. вооб. пост.</string>
+    <string name="mv_settings_sbt_font_size_txt">Гол. на фонт</string>
+    <string name="mv_settings_sbt_sample_message_txt">Сл. на прик. на поднас.</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:inset="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item>
+            <shape android:shape="rectangle"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <solid android:color="@color/zoom_lens_circle_inactive_background_color" />
+                <corners android:radius="@dimen/auto_mode_zoom_lens_button_optical_range_background_radius" />
+            </shape>
+        </item>
+    </selector>
+</inset>

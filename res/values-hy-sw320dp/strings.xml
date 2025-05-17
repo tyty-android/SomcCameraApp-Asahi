@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mv_settings_sbt_back_color_txt">Պստռի գյնը</string>
+    <string name="mv_settings_sbt_font_color_txt">Տռտսկի գյնը</string>
+    <string name="mv_settings_sbt_font_size_txt">Տռտսկի չփը</string>
+    <string name="mv_settings_sbt_sample_message_txt">Ենթվրնգ նխդտ պտկր</string>
+</resources>

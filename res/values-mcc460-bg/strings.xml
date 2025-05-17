@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Няма WLAN сигнал</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN сигналът е 1 черта</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN сигналът е 2 черти</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN сигналът е 3 черти</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN сигналът е пълен</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Мрежа
+За свързване с WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN е изключен и самолетният режим е включен.
+Променете тези настройки, като натиснете \"НАСТРОЙКИ\"."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN е изключен.
+Включете WLAN от \"НАСТРОЙКИ\"."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Не може да се свърже с WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Само по WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Не може да се свърже с тази WLAN мрежа</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Нат. за свързване с WLAN мрежа \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Това приложение използва безжична локална мрежа и мобилни данни за изпращане на потребителски данни (т.е. записани снимки/видеоклипове, гласови данни, информация за акаунта за използваните услуги и др.) към интернет.
+Имайте предвид, че може да бъдете таксувани за данни в зависимост от договорите с вашия мрежов оператор или доставчик на интернет услуги."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Няма WLAN връзка</string>
+    <string name="mv_wireless_network_txt">Изп. WLAN и мобил. данни</string>
+</resources>

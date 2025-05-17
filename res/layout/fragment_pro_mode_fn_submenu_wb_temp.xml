@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_pro_mode_fn_submenu_wb_temp_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/camera_submenu_wb_state_bar_margin_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background" android:background="@drawable/camera_pro_mode_fn_background" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/value_area" />
+    <include android:id="@id/value_area" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fragment_basic_mode_view_dial_value" />
+</androidx.constraintlayout.widget.ConstraintLayout>

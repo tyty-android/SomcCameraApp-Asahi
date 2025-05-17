@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/thermal_hint_text_message_radius" />
+    <stroke android:width="@dimen/thermal_hint_text_message_stroke_width" android:color="@color/camera_thermal_hint_text_message_color" />
+</shape>

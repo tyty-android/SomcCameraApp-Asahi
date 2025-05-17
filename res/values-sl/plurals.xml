@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d novih obvestil</item>
+        <item quantity="one">%d novo obvestilo</item>
+        <item quantity="two">%d novi obvestili</item>
+        <item quantity="few">%d nova obvestila</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">Še %1$d min</item>
+        <item quantity="one">Še 1 min</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d min</item>
+        <item quantity="one">1 minuta</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">Še %1$d s</item>
+        <item quantity="one">Še 1 s</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d s</item>
+        <item quantity="one">1 sekunda</item>
+    </plurals>
+</resources>

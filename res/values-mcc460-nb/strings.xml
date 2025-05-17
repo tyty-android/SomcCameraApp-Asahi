@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Mangler WLAN-signal</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN-signalet har én strek</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN-signalet har to streker</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN-signalet har tre streker</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN-signalet er sterkt</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Nettverk
+For å koble til WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN er slått av og Flymodus er slått på.
+Endre disse innstillingene ved å trykke på INNSTILLINGER."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN er slått av.
+Slå på WLAN i INNSTILLINGER."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Kan ikke koble til WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Bare WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Kan ikke koble til dette WLAN-nettverket</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Trykk for å koble til WLAN-nettet «%1$s»</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Denne appen bruker WLAN og mobildata til å sende brukerdata (dvs. bilder/video, stemmedata, kontoinformasjon om tjenestene som brukes osv.) til internettet.
+Merk at du kan bli belastet for data avhengig av kontraktene du har med nettoperatøren og internettleverandøren."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Ingen WLAN-tilkobling</string>
+    <string name="mv_wireless_network_txt">bruke WLAN &amp; mobildata</string>
+</resources>

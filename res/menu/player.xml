@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/actionbar_movie_creator_icn" android:id="@id/actionbar_video_editor" android:visible="false" android:title="@string/mv_acbar_edit_video_txt" app:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_movie_creator_icn" android:id="@id/actionbar_edit_movie" android:visible="false" android:title="@string/mv_acbar_edit_video_txt" app:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_delete_icon" android:id="@id/actionbar_delete" android:visible="false" android:title="@string/mv_acbar_delete_video_txt" app:showAsAction="always" />
+    <item android:id="@id/menu_throw_option" android:visible="false" android:title="@string/play_on_device" app:showAsAction="withText" />
+    <item android:id="@id/menu_share_option" android:visible="false" android:title="@string/share" app:showAsAction="withText" />
+    <item android:id="@id/menu_sound_settings_option" android:visible="false" android:title="@string/sound_settings" app:showAsAction="withText" />
+    <item android:id="@id/menu_display_settings_option" android:visible="false" android:title="@string/display_settings" app:showAsAction="withText" />
+    <item android:id="@id/menu_details" android:visible="false" android:title="@string/mv_options_details_txt" app:showAsAction="never" />
+</menu>

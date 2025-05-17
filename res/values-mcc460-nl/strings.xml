@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Geen WLAN-signaal</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN-signaal heeft 1 balkje</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN signaal heeft 2 balkjes</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN-signaal heeft 3 balkjes</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN-signaal is volledig</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Netwerk
+Om verbinding met WLAN te maken"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN is is uitgeschakeld en Vliegmodus is ingeschakeld.
+Verander deze instellingen door op INSTELLINGEN te tikken."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN is uitgeschakeld.
+Schakel WLAN in via de INSTELLINGEN."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Kan geen verbinding maken met WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Alleen WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Kan geen verbinding maken met dit WLAN-netwerk</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Tik en verbind met WLAN-netwerk \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Deze app gebruikt WLAN en mobiele data om gebruikersgegevens (bijv. gemaakte foto's/video's, spraakgegevens, accountinformatie van de gebruikte services, enz.) te sturen via het internet.
+Mogelijk worden er kosten in rekening gebracht voor data afhankelijk van uw contract met de netwerkoperator of internetprovider."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Geen WLAN-verbinding</string>
+    <string name="mv_wireless_network_txt">WLAN en mob. data gebr.</string>
+</resources>

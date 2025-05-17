@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Сигнал WLAN відсутній</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Сигнал WLAN 1 смуга</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Сигнал WLAN 2 смуги</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Сигнал WLAN 3 смуги</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Сигнал WLAN повний</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Мережа
+Щоб підключитися до мережі WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN вимкнено, а режим «У літаку» ввімкнено.
+Торкніться УСТАНОВКИ й змініть ці установки."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN вимкнено.
+Увімкніть WLAN в УСТАНОВКАХ."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Не вдалося підключитися до мережі WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Лише WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Не вдалося підключитися до цієї мережі WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Торкніться, щоб підкл. до WLAN «%1$s»</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ця програма використовує WLAN та мобільні дані для надсилання даних користувачів (тобто записаних фотознімків/відеозаписів, голосових даних, даних облікового запису використовуваних служб тощо) до Інтернету.
+Зверніть увагу, що з вас може стягуватися плата за передачу даних відповідно до умов договорів, укладених із вашим оператором мережі або постачальником інтернет-послуг."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Немає з’єднання WLAN</string>
+    <string name="mv_wireless_network_txt">Викор. WLAN і пакетні дані</string>
+</resources>

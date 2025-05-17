@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Ei WLAN-signaalia</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN-signaali on 1 palkki</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN-signaali on 2 palkkia</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN-signaali on 3 palkkia</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN-signaali on täysi</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Verkko
+WLAN-yhteyden muodostaminen"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN ei ole käytössä ja lentokonetila on käytössä.
+Muokkaa näitä asetuksia napauttamalla ASETUKSET."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN ei ole käytössä.
+Ota WLAN käyttöön ASETUKSISSA."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">WLAN-yhteyden muodostaminen ei onnistu</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Vain WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Tähän WLAN-verkkoon yhdistäminen ei onnistu</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Yhdistä napauttamalla verkkoon %1$s</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Sovellus käyttää WLAN-yhteyttä ja mobiilidataa käyttäjätietojen (esim. tallennetut kuvat/videot, äänitiedot, käytettyjen palveluiden tilitiedot jne.) lähettämiseen Internetiin.
+Huomaa, että verkko-operaattorisi tai internet-palveluntarjoajasi voi veloittaa datankäytöstä sopimuksestasi riippuen."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Ei WLAN-yhteyttä</string>
+    <string name="mv_wireless_network_txt">Käytä WLANä ja mobiilidataa</string>
+</resources>

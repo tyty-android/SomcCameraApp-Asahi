@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/toolbar_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/toolbar_background" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/toolbar_background">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="?toolbarPopupTheme" app:theme="?toolbarTheme" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

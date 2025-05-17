@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">WLAN сигналы жоқ</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN сигналы 1 жолақта</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN сигналы 2 жолақта</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN сигналы 3 жолақта</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN сигналы толық</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Желі
+WLAN желісіне қосылу үшін"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN өшірілген және Ұшақ режимі қосылған.
+ПАРАМЕТРЛЕР опциясын түртіп, осы параметрлерді өзгертіңіз."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN өшірілген.
+ПАРАМЕТРЛЕР ішінен WLAN қосыңыз."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">WLAN желісіне қосылу мүмкін емес</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Тек WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Бұл WLAN желісіне қосылу мүмкін емес</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">WLAN желісіне қосылу үшін түрт: «%1$s»</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Бұл қолданба интернетке пайдаланушы деректерін (мысалы, жазылған суреттерді/бейнелерді, дауыстық деректерді, қолданыстағы қызметтердің есептік жазба туралы ақпаратын, т.б.) жіберу үшін WLAN желісі мен мобильді деректерді пайдаланады.
+Желі операторына немесе интернет қызметінің провайдерімен жасалған келісімшартқа қарай сізден деректер үшін ақы алынуы мүмкін екенін ескеріңіз."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">WLAN байланысы жоқ</string>
+    <string name="mv_wireless_network_txt">WLAN және моб. дер. пайд.</string>
+</resources>

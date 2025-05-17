@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_basic_mode_capture_state_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:id="@id/anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/photopro_left_area_width" app:layout_constraintDimensionRatio="3:4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <jp.co.sony.mc.camera.view.BurstCountView android:textAppearance="@style/TextAppearance.PhotoPro.Widget.BurstCount" android:gravity="center" android:id="@id/burst_count" android:background="@drawable/photopro_text_bg_on_preview_icn" android:layout_width="40.0dip" android:layout_height="20.0dip" android:layout_marginBottom="24.0dip" app:layout_constraintBottom_toBottomOf="@id/anchor" app:layout_constraintEnd_toEndOf="@id/anchor" app:layout_constraintStart_toStartOf="@id/anchor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

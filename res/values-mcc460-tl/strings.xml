@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Walang signal ng WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Nasa 1 bar ang signal ng WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Nasa 2 bars ang signal ng WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Nasa 3 bars ang signal ng WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Puno ang signal ng WLAN</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Network
+Para kumonekta sa WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"Naka-off ang WLAN at naka-on ang Airplane mode.
+Pakibago ang mga setting na ito sa pamamagitan ng pagtapik sa MGA SETTING."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"Naka-off ang WLAN.
+Paki-on ang WLAN sa MGA SETTING."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Hindi makakonekta sa WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLAN lang</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Hindi makakonekta sa WLAN network na ito</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">I-tap at kmnekta sa WLAN network \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Gumagamit ang app na ito ng WLAN at mobile data para magpadala ng data ng gumagamit (hal. mga nai-record na larawan/video, data ng boses, info ng account ng mga ginagamit na serbisyo, atbp.) sa internet.
+Tandaan na maaaring singilin ka para sa data depende sa mga kontrata mo sa network operator or internet service provider."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Walang koneksyon sa WLAN</string>
+    <string name="mv_wireless_network_txt">Gamit WLAN at mobile data</string>
+</resources>

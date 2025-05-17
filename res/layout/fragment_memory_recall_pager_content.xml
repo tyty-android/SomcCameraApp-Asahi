@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.sony.mc.camera.view.widget.TextWidthAlignConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+            <include android:id="@id/memory_recall_left_panel" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/guideline_center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/fragment_memory_recall_left_panel" />
+            <View android:background="@color/photopro_memory_recall_divider" android:layout_width="@dimen/memory_recall_list_divider" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/guideline_center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_center" />
+            <jp.co.sony.mc.camera.PermissionListView android:id="@id/memory_recall_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/photopro_memory_recall_divider" android:dividerHeight="@dimen/memory_recall_list_divider" android:paddingStart="@dimen/memory_recall_list_divider_padding" android:paddingEnd="@dimen/memory_recall_list_divider_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/guideline_center" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</jp.co.sony.mc.camera.view.widget.TextWidthAlignConstraintLayout>

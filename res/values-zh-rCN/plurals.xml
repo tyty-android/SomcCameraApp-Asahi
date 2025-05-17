@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d 条新通知</item>
+        <item quantity="one">%d 条新通知</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">剩余%1$d分钟</item>
+        <item quantity="one">剩余1分钟</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d分钟</item>
+        <item quantity="one">1分钟</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">剩余%1$d秒</item>
+        <item quantity="one">剩余1秒</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d秒</item>
+        <item quantity="one">1秒钟</item>
+    </plurals>
+</resources>

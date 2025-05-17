@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Ingen WLAN-signal</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN-signalen är ett streck</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN-signalen är två streck</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN-signalen är tre streck</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN-signalen är max</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Nätverk
+För att ansluta till WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN är avstängt och flygplansläget är aktiverat.
+Ändra dessa inställningar genom att trycka på INSTÄLLNINGAR."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN är avstängt.
+Aktivera WLAN från INSTÄLLNINGAR."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Det går inte att ansluta till WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Endast WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Kan inte ansluta till WLAN-nätverk</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Tryck för att ansluta till WLAN-nätv. %1$s</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Appen använder WLAN och mobildata för att skicka användardata (dvs inspelade bilder/videor, röstdata, kontoinformation för tjänsterna som används, o.s.v.) till internet.
+Observera att du kan debiteras för data beroende på avtal med din nätverksoperatör eller internetleverantör."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Ingen WLAN-anslutning</string>
+    <string name="mv_wireless_network_txt">Använd WLAN och mobildata</string>
+</resources>

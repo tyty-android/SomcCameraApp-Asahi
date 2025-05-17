@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">ไม่มีสัญญาณ WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">สัญญาณ WLAN มี 1 ขีด</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">สัญญาณ WLAN มี 2 ขีด</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">สัญญาณ WLAN มี 3 ขีด</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">สัญญาณ WLAN เต็ม</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"เครือข่าย
+เพื่อเชื่อมต่อกับ WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN ปิดอยู่และโหมดใช้งานบนเครื่องบินเปิดอยู่
+โปรดเปลี่ยนแปลงการตั้งค่าเหล่านี้โดยแตะที่การตั้งค่า"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN ปิดอยู่
+โปรดเปิด WLAN จากการตั้งค่า"</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">เชื่อมต่อ WLAN ไม่ได้</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLAN เท่านั้น</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">เชื่อมต่อเครือข่าย WLAN นี้ไม่ได้</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">แตะเพื่อเชื่อมต่อกับเครือข่าย WLAN \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"แอปนี้ใช้ LAN ไร้สาย และข้อมูลอุปกรณ์เคลื่อนที่เพื่อส่งข้อมูลผู้ใช้ (กล่าวคือ รูปภาพ/วิดีโอที่บันทึกไว้ ข้อมูลเสียง ข้อมูลบัญชีของบริการที่ใช้งานอยู่ ฯลฯ) ไปยังอินเทอร์เน็ต
+โปรดทราบว่าคุณอาจต้องเสียค่าบริการข้อมูลซึ่งขึ้นอยู่กับสัญญาของผู้ให้บริการเครือข่ายหรือผู้ให้บริการอินเทอร์เน็ต"</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">ไม่มีการเชื่อมต่อ WLAN</string>
+    <string name="mv_wireless_network_txt">ใช้ WLAN และข้อมูลมือถือ</string>
+</resources>

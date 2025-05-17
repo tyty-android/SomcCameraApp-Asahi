@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">No WLAN signal</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN signal is at 1 bar</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN signal is at 2 bars</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN signal is at 3 bars</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN signal is full</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Network
+To connect to WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN is turned off and Airplane mode is turned on.
+Please change these settings by tapping on SETTINGS."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN is turned off.
+Please turn on WLAN from SETTINGS."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Cannot connect to WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLAN only</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Cannot connect to this WLAN network</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Tap to connect to WLAN network \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"This app uses WLAN and mobile data to send user data (i.e. recorded pictures/videos, voice data, account info of the services in use, etc.) to the internet.
+Note that you may be charged for data depending on your network operator or internet service provider contracts."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">No WLAN connection</string>
+    <string name="mv_wireless_network_txt">Use WLAN &amp; mobile data</string>
+</resources>

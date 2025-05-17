@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d na bagong notification</item>
+        <item quantity="one">%d bagong notification</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">%1$d minuto ang natitira</item>
+        <item quantity="one">1 minuto ang natitira</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d (na) minuto</item>
+        <item quantity="one">1 minuto</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">%1$d segundo ang natitira</item>
+        <item quantity="one">1 segundo ang natitira</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d segundo</item>
+        <item quantity="one">1 segundo</item>
+    </plurals>
+</resources>

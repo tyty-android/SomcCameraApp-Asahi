@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">لا توجد إشارة WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">تحتوي إشارة WLAN على شريط واحد</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">تحتوي إشارة WLAN على شريطين</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">تحتوي إشارة WLAN على 3 أشرطة</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">إشارة WLAN كاملة</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"الشبكة
+للاتصال بشبكة WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"تم إيقاف شبكة WLAN وتشغيل وضع الطائرة.
+يرجى تغيير هذه الإعدادات عن طريق النقر على الإعدادات."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"تم إيقاف شبكة WLAN.
+يرجى تشغيل شبكة WLAN من الإعدادات."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">لا يمكن الاتصال بشبكة WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">‏WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">شبكة WLAN فقط</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">لا يمكن الاتصال بشبكة WLAN هذه</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">انقر للاتصال بشبكة WLAN \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"يستخدم هذا التطبيق شبكة WLAN وبيانات النقال لإرسال بيانات المستخدم (مثل الصور/مقاطع الفيديو المسجلة، وبيانات النقال، ومعلومات الحساب الخاصة بالخدمات التي يتم استخدامها، وغير ذلك) إلى الإنترنت.
+يُرجى العلم بأنه قد يتم تحصيل رسوم منك مقابل البيانات بناءً على عقود مشغل الشبكة أو مزود خدمة الإنترنت."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">لا يوجد اتصال WLAN</string>
+    <string name="mv_wireless_network_txt">استخدام WLAN وبيانات نقال</string>
+</resources>

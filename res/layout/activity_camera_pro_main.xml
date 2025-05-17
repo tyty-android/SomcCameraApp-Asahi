@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jp.co.sony.mc.camera.view.widget.CameraRootLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <View android:id="@id/default_focused_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1.0px" android:layout_height="1.0px">
+            <requestFocus />
+        </View>
+        <FrameLayout android:id="@id/preview_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <jp.co.sony.mc.camera.view.widget.AutoSwapPortraitFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+                <FrameLayout android:id="@id/operation_frame_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/fragment_common_operation_frame" app:layout_constraintTop_toTopOf="parent" />
+                <FrameLayout android:id="@id/fragment_common_operation_frame" android:layout_width="fill_parent" android:layout_height="@dimen/camera_fragment_common_operation_frame_height" android:layout_marginBottom="@dimen/camera_fragment_common_operation_frame_margin_bottom" app:layout_constraintBottom_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </jp.co.sony.mc.camera.view.widget.AutoSwapPortraitFrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/dummy_finder_talk_back_view" android:focusable="true" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="3:4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <jp.co.sony.mc.camera.view.widget.UserOperationBlocker android:id="@id/user_operation_blocker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/cover_frame" android:focusable="true" android:visibility="gone" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/saving_cover_frame" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</jp.co.sony.mc.camera.view.widget.CameraRootLayout>

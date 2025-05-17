@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="debug_menu_simulate_sd_card_error_list">
+        <item>OFF</item>
+        <item>READ-ONLY</item>
+        <item>BROKEN</item>
+    </string-array>
+    <string-array name="facebook_privacy_values">
+        <item>@string/camera_strings_facebook_live_privacy_public_txt</item>
+        <item>@string/camera_strings_facebook_live_privacy_friends_txt</item>
+        <item>@string/camera_strings_facebook_live_privacy_only_me_txt</item>
+    </string-array>
+    <string-array name="license_file_list">
+        <item>android_open_source_project.txt</item>
+        <item>android_annotations_support_library.txt</item>
+        <item>error_prone.txt</item>
+        <item>external_display_surface_view.txt</item>
+        <item>guava_jdk7.txt</item>
+        <item>jai_imageio.txt</item>
+        <item>jsr_250.txt</item>
+        <item>jsr_305.txt</item>
+        <item>material_components_for_android.txt</item>
+        <item>live_event.txt</item>
+        <item>renderscript_toolkit_for_android.txt</item>
+        <item>rtmp_rtsp_stream_client_java.txt</item>
+        <item>presentation_fragment.txt</item>
+        <item>protobuf_nano.txt</item>
+        <item>spotbugs_gradle_plugin.txt</item>
+        <item>z_xing.txt</item>
+    </string-array>
+    <string-array name="ux_recommended_high_resolution_array_maunakea">
+        <item>_4_3_48MP</item>
+    </string-array>
+    <string-array name="ux_recommended_resolution_array_crocus">
+        <item>_4_3_12MP_MILVUS</item>
+        <item>_16_9_9MP</item>
+        <item>_1_1_9MP_MILVUS</item>
+    </string-array>
+    <string-array name="ux_recommended_resolution_array_crocus_yodo">
+        <item>_4_3_12MP</item>
+        <item>_16_9_9MP_MAUNAKEA</item>
+        <item>_1_1_9MP</item>
+    </string-array>
+    <string-array name="ux_recommended_resolution_array_eiger">
+        <item>_4_3_12MP_MILVUS</item>
+        <item>_16_9_9MP</item>
+        <item>_1_1_9MP_MILVUS</item>
+        <item>_3_2_10MP</item>
+    </string-array>
+    <string-array name="ux_recommended_resolution_array_maunakea">
+        <item>_4_3_12MP</item>
+        <item>_3_2_10MP_MAUNAKEA</item>
+        <item>_16_9_9MP_MAUNAKEA</item>
+        <item>_1_1_9MP</item>
+    </string-array>
+    <string-array name="ux_recommended_video_size_array">
+        <item>HD</item>
+        <item>FULL_HD</item>
+        <item>FOUR_K_UHD</item>
+    </string-array>
+    <string-array name="zoom_slider_label_zoom_ratio_pdx_223">
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>10.0</item>
+    </string-array>
+    <string-array name="zoom_slider_label_zoom_ratio_pdx_224">
+        <item>1.0</item>
+        <item>5.0</item>
+    </string-array>
+    <string-array name="zoom_slider_label_zoom_ratio_pdx_234">
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>10.0</item>
+    </string-array>
+    <string-array name="zoom_slider_label_zoom_ratio_pdx_237">
+        <item>1.0</item>
+        <item>2.0</item>
+    </string-array>
+    <string-array name="zoom_slider_label_zoom_ratio_pdx_245">
+        <item>2.0</item>
+        <item>10.0</item>
+    </string-array>
+</resources>

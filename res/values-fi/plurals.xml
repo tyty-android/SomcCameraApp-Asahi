@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d uutta ilmoitusta</item>
+        <item quantity="one">%d uusi ilmoitus</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">%1$d minuuttia jäljellä</item>
+        <item quantity="one">1 minuutti jäljellä</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d minuuttia</item>
+        <item quantity="one">1 minuutti</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">%1$d sekuntia jäljellä</item>
+        <item quantity="one">1 sekunti jäljellä</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d sekuntia</item>
+        <item quantity="one">1 sekunti</item>
+    </plurals>
+</resources>

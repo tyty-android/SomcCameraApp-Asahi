@@ -1,0 +1,34 @@
+.class public interface abstract Ljp/co/sony/mc/camera/recorder/RecorderController$RecorderListener;
+.super Ljava/lang/Object;
+.source "RecorderController.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/recorder/RecorderController;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "RecorderListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onRecordError(II)V
+.end method
+
+.method public abstract onRecordFinished(Ljp/co/sony/mc/camera/recorder/RecorderController$Result;)V
+.end method
+
+.method public abstract onRecordProgress(J)V
+.end method
+
+.method public abstract onRecordSetOutputDone()V
+.end method
+
+.method public abstract onRecordStopped()V
+.end method
+
+.method public abstract setSavingRequestBuilder(Ljp/co/sony/mc/camera/storage/RequestFactory$VideoSavingRequestBuilder;)V
+.end method

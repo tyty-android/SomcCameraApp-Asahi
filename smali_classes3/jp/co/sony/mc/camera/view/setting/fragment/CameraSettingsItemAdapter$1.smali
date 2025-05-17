@@ -1,0 +1,47 @@
+.class Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter$1;
+.super Landroid/view/View$AccessibilityDelegate;
+.source "CameraSettingsItemAdapter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;
+
+
+# direct methods
+.method constructor <init>(Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;)V
+    .locals 0
+
+    .line 102
+    iput-object p1, p0, Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter$1;->this$0:Ljp/co/sony/mc/camera/view/setting/fragment/CameraSettingsItemAdapter;
+
+    invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
+    .locals 0
+
+    .line 106
+    invoke-super {p0, p1, p2}, Landroid/view/View$AccessibilityDelegate;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
+
+    const/4 p0, 0x0
+
+    .line 107
+    invoke-virtual {p2, p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClickable(Z)V
+
+    return-void
+.end method

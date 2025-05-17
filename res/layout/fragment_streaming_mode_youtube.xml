@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/youtube" android:tag="layout/fragment_streaming_mode_youtube_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/youtube_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/camera_streaming_mode_quick_setting_height" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_strings_youtube_account_txt" style="@style/QuickSettingMenuTitle" />
+            <TextView android:id="@id/youtube_account_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_value_margin_top" android:layout_marginBottom="@dimen/camera_streaming_mode_quick_setting_item_value_margin_bottom" style="@style/QuickSettingMenuValue" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/camera_quick_setting_selector_text" android:textColor="@color/quick_setting_title_area_text_color" android:layout_gravity="center" android:id="@id/login" android:tag="binding_1" android:layout_width="@dimen/camera_streaming_mode_login_button_width" android:layout_height="@dimen/camera_streaming_mode_login_button_height" android:text="@string/camera_strings_streaming_sign_in_text" android:soundEffectsEnabled="false" android:contentDescription="@null" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Camera.TextButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_margin_top" android:minHeight="@dimen/camera_streaming_mode_quick_setting_height" android:soundEffectsEnabled="false">
+        <LinearLayout android:orientation="vertical" android:tag="binding_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_title_margin_top" android:text="@string/camera_strings_youtube_live_event_txt" style="@style/QuickSettingMenuTitle" />
+            <TextView android:id="@id/youtube_event_text" android:tag="binding_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_value_margin_top" android:layout_marginBottom="@dimen/camera_streaming_mode_quick_setting_item_value_margin_bottom" style="@style/QuickSettingMenuValue" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_margin_top" android:minHeight="@dimen/camera_streaming_mode_quick_setting_height" android:soundEffectsEnabled="false">
+        <LinearLayout android:orientation="vertical" android:tag="binding_5" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:tag="binding_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_title_margin_top" android:text="@string/camera_strings_youtube_stream_url_txt" style="@style/QuickSettingMenuTitle" />
+            <TextView android:id="@id/live_event_url_text" android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_value_margin_top" android:layout_marginBottom="@dimen/camera_streaming_mode_quick_setting_item_value_margin_bottom" style="@style/QuickSettingMenuValue" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

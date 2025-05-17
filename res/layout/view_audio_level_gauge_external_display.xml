@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="@dimen/external_display_audio_level_bar_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/external_display_audio_level_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/gauge" android:background="@drawable/audio_level_gauge_normal" android:layout_width="@dimen/external_display_audio_level_bar_width" android:layout_height="fill_parent" />
+</LinearLayout>

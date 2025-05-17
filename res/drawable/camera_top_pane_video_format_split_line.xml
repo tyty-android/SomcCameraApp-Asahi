@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:width="1.0dip">
+        <color android:color="@color/camera_top_pane_video_format_split_line_color" />
+    </item>
+</layer-list>

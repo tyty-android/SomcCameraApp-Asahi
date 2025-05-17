@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Nincs WLAN-jel</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">A WLAN-jel 1 sávos</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">A WLAN-jel 2 sávos</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">A WLAN-jel 3 sávos</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Teljes WLAN-jel</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Hálózat
+WLAN-hálózathoz való csatlakoztatáshoz"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"A WLAN ki van kapcsolva és a Repülőgépes üzemmód be van kapcsolva.
+A BEÁLLÍTÁSOK gombra koppintva módosítsa ezeket a beállításokat."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"A WLAN ki van kapcsolva.
+A BEÁLLÍTÁSOK gombot használva kapcsolja ki a WLAN funkciót."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nem lehet csatlakozni WLAN-hálózathoz</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Csak WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Nem lehet csatlakozni ehhez a WLAN-hálózathoz</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Kopp. csatlakozás WLAN-hálózathoz: %1$s</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ez az alkalmazás WLAN- és mobilhálózati adatokat használ a felhasználói adatok (pl. rögzített képek/videók, hangadatok, a használt szolgáltatások számlainformációi stb.) internetre való küldésére.
+Ne feledje, hogy a hálózatüzemeltető vagy az internetszolgáltató szerződéseitől függően az adatforgalomért díjat számíthatnak fel."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nincs WLAN kapcsolat</string>
+    <string name="mv_wireless_network_txt">WLAN és mobiladatok haszn.</string>
+</resources>

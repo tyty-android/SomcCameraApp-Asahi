@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Tiada isyarat WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Isyarat WLAN pada 1 bar</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Isyarat WLAN pada 2 bar</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Isyarat WLAN pada 3 bar</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Isyarat WLAN penuh</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Rangkaian
+Untuk menyambung ke WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN dimatikan dan mod Pesawat dihidupkan.
+Sila ubah tetapan ini dengan mengetik pada TETAPAN."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN dimatikan.
+Sila hidupkan WLAN daripada TETAPAN."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Tidak boleh menyambung ke WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLAN sahaja</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Tidak dapat menyambung ke rangkaian WLAN ini</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Ketik utk samb ke rangkaian WLAN \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Aplikasi ini menggunakan WLAN dan data mudah alih untuk menghantar data pengguna (iaitu gambar/video yang dirakam, data suara, maklumat akaun perkhidmatan digunakan, dll) kepada Internet.
+Ambil perhatian bahawa anda mungkin dikenakan bayaran untuk data bergantung pada pengendali rangkaian atau kontrak pembekal khidmat Internet."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Tiada sambungan WLAN</string>
+    <string name="mv_wireless_network_txt">Guna WLAN &amp; data mdh alih</string>
+</resources>

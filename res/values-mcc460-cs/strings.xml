@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Žádný signál WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Signál WLAN má 1 čárku</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Signál WLAN má 2 čárky</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Signál WLAN má 3 čárky</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Signál WLAN je plný</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Síť
+Pro připojení k síti WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"Síť WLAN je vypnutá a režim Letadlo je zapnutý.
+Změňte toto nastavení ťuknutím na položku NASTAVENÍ."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"Síť WLAN je vypnutá.
+Zapněte WLAN v nabídce NASTAVENÍ."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Nelze se připojit k WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Pouze WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">K této síti WLAN se nelze připojit</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Ťuknutím se připojíte k síti WLAN %1$s</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Tato aplikace pomocí sítě WLAN a mobilních dat odesílá data uživatele (tj. zaznamenané snímky/videa, hlasová data, informace o účtech pro používané služby atd.) na internet.
+V závislosti na vašich smlouvách s mobilním operátorem nebo poskytovatele internetových služeb vám mohou být účtovány poplatky."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Žádné připojení WLAN</string>
+    <string name="mv_wireless_network_txt">Použít WLAN a mobilní data</string>
+</resources>

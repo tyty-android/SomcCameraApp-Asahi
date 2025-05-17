@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rtmp" android:tag="layout/fragment_streaming_mode_rtmp_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/camera_streaming_mode_quick_setting_height" android:soundEffectsEnabled="false">
+        <TextView android:id="@id/rtmp_url" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_strings_rtmp_stream_url_txt" android:contentDescription="@null" style="@style/QuickSettingMenuTitle" />
+        <TextView android:id="@id/rtmp_url_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_value_margin_top" android:layout_marginBottom="@dimen/camera_streaming_mode_quick_setting_item_value_margin_bottom" style="@style/QuickSettingMenuValue" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_2" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_margin_top" android:minHeight="@dimen/camera_streaming_mode_quick_setting_height" android:soundEffectsEnabled="false">
+        <TextView android:id="@id/rtmp_key" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_title_margin_top" android:text="@string/camera_strings_rtmp_stream_key_txt" android:contentDescription="@null" style="@style/QuickSettingMenuTitle" />
+        <TextView android:id="@id/rtmp_key_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/camera_streaming_mode_quick_setting_item_value_margin_top" android:layout_marginBottom="@dimen/camera_streaming_mode_quick_setting_item_value_margin_bottom" style="@style/QuickSettingMenuValue" />
+    </LinearLayout>
+</LinearLayout>

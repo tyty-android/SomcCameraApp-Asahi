@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mv_settings_background_playback_txt">Fondo en reproducción</string>
+    <string name="mv_settings_sbt_font_size_txt">Tamaño fuente</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_preview_surface_overlay_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.co.sony.mc.camera.view.widget.GridLineView android:id="@id/grid_line" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:strokeColor="@color/grid_line_stroke_color" app:strokeWidth="@dimen/grid_line_stroke_width" />
+    <jp.co.sony.mc.camera.view.widget.JustOnceDrawnView android:id="@id/burst_frame_view" android:background="@drawable/camera_burst_frame_line" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleX="0.85" android:scaleY="0.85" />
+    <jp.co.sony.mc.camera.view.widget.AutoSwapPortraitFrameLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/gesture_shutter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/gesture_shutter_view" />
+    </jp.co.sony.mc.camera.view.widget.AutoSwapPortraitFrameLayout>
+    <View android:id="@id/center_rectangle" android:background="@drawable/camera_wb_cwb_set_icn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_percent="0.06" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.06" />
+</androidx.constraintlayout.widget.ConstraintLayout>

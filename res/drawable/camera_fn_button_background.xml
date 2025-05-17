@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list>
+        <item android:state_activated="false">
+            <ripple android:color="?android:colorControlHighlight">
+                <item android:id="@id/mask">
+                    <shape android:shape="rectangle">
+                        <corners android:radius="4.0dip" />
+                        <solid android:color="@color/camera_fn_button_background_color" />
+                    </shape>
+                </item>
+            </ripple>
+        </item>
+    </layer-list>
+</inset>

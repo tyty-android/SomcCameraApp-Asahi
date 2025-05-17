@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/audio_level_view" android:layout_width="wrap_content" android:layout_height="@dimen/external_display_audio_level_meter_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/external_display_audio_level_parts_height" android:layout_marginTop="@dimen/external_display_audio_level_vertical_padding" android:layout_marginBottom="@dimen/external_display_audio_level_vertical_padding" android:layoutDirection="ltr">
+        <Space android:layout_width="@dimen/external_display_audio_level_horizontal_padding" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/external_display_audio_level_number_text_size" android:textColor="@color/external_display_audio_level_number_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/audio_level_text_1st" android:layout_width="@dimen/external_display_audio_level_number_text_width" android:layout_height="@dimen/external_display_audio_level_meter_height" android:text="@string/camera_strings_audio_channel_1_txt" />
+        <include android:id="@id/audio_level_gauge1" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge2" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge3" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge4" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge5" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge6" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge7" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge8" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge9" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge10" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge11" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge12" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge13" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge14" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge15" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_gauge16" layout="@layout/view_audio_level_gauge_external_display" />
+        <Space android:layout_width="@dimen/external_display_audio_level_horizontal_padding" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/audio_level_2" android:layout_width="wrap_content" android:layout_height="@dimen/external_display_audio_level_parts_height" android:layout_marginBottom="@dimen/external_display_audio_level_vertical_padding" android:layoutDirection="ltr">
+        <Space android:layout_width="@dimen/external_display_audio_level_horizontal_padding" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/external_display_audio_level_number_text_size" android:textColor="@color/external_display_audio_level_number_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/audio_level_text_2nd" android:layout_width="@dimen/external_display_audio_level_number_text_width" android:layout_height="@dimen/external_display_audio_level_meter_height" android:text="@string/camera_strings_audio_channel_2_txt" />
+        <include android:id="@id/audio_level_2_gauge1" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge2" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge3" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge4" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge5" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge6" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge7" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge8" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge9" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge10" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge11" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge12" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge13" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge14" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge15" layout="@layout/view_audio_level_gauge_external_display" />
+        <include android:id="@id/audio_level_2_gauge16" layout="@layout/view_audio_level_gauge_external_display" />
+        <Space android:layout_width="@dimen/external_display_audio_level_horizontal_padding" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

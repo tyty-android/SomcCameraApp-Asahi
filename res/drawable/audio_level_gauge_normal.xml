@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@color/audio_level_gauge_on_pressed_color" android:state_activated="true" />
+    <item android:drawable="@color/audio_level_gauge_normal_on_color" android:state_activated="true" />
+    <item android:state_pressed="true" android:drawable="@color/audio_level_gauge_off_pressed_color" />
+    <item android:drawable="@color/audio_level_gauge_normal_off_color" />
+</selector>

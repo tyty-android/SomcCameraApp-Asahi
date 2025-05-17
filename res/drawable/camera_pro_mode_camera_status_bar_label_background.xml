@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape>
+            <solid android:color="@color/camera_text_on_preview_active_background_color" />
+            <corners android:radius="4.0dip" />
+        </shape>
+    </item>
+</selector>

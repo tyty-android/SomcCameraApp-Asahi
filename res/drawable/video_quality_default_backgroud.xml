@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+            <stroke android:width="1.0dip" android:color="#ff727272" />
+            <solid android:color="#b3000000" />
+        </shape>
+    </item>
+    <item android:gravity="end|center" android:end="@dimen/camera_streaming_mode_quick_setting_video_quality_padding">
+        <vector android:height="8.0dip" android:width="11.0dip" android:viewportWidth="11.0" android:viewportHeight="8.0">
+            <path android:fillColor="#ffffffff" android:pathData="M0,0 L11,0 L5.5,8 z" />
+        </vector>
+    </item>
+</ripple>

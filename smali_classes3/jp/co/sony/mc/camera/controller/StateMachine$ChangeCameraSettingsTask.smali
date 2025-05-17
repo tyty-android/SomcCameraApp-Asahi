@@ -1,0 +1,91 @@
+.class Ljp/co/sony/mc/camera/controller/StateMachine$ChangeCameraSettingsTask;
+.super Ljava/lang/Object;
+.source "StateMachine.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Ljp/co/sony/mc/camera/controller/StateMachine;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x2
+    name = "ChangeCameraSettingsTask"
+.end annotation
+
+
+# instance fields
+.field private final mCallback:Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
+
+.field final synthetic this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+
+# direct methods
+.method private constructor <init>(Ljp/co/sony/mc/camera/controller/StateMachine;Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;)V
+    .locals 0
+
+    .line 7569
+    iput-object p1, p0, Ljp/co/sony/mc/camera/controller/StateMachine$ChangeCameraSettingsTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7570
+    iput-object p2, p0, Ljp/co/sony/mc/camera/controller/StateMachine$ChangeCameraSettingsTask;->mCallback:Ljp/co/sony/mc/camera/CameraAccessor$ModeAndCameraSwitchCallback;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 1
+
+    .line 7575
+    sget-boolean v0, Ljp/co/sony/mc/camera/util/CamLog;->DEBUG:Z
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "invoke ChangeCameraSettingsTask"
+
+    filled-new-array {v0}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/util/CamLog;->d([Ljava/lang/String;)V
+
+    .line 7576
+    :cond_0
+    iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$ChangeCameraSettingsTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    return-void
+
+    .line 7580
+    :cond_1
+    iget-object v0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$ChangeCameraSettingsTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    invoke-static {v0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmHandShutterController(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/controller/StateMachine$HandShutterController;->stopPreview()V
+
+    .line 7581
+    iget-object p0, p0, Ljp/co/sony/mc/camera/controller/StateMachine$ChangeCameraSettingsTask;->this$0:Ljp/co/sony/mc/camera/controller/StateMachine;
+
+    invoke-static {p0}, Ljp/co/sony/mc/camera/controller/StateMachine;->-$$Nest$fgetmCameraDeviceHandler(Ljp/co/sony/mc/camera/controller/StateMachine;)Ljp/co/sony/mc/camera/device/CameraDeviceHandler;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->stopPreview()V
+
+    return-void
+.end method

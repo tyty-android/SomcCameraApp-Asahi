@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Δεν υπάρχει σήμα WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Υπάρχει 1 γραμμή σήματος WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Υπάρχουν 2 γραμμές σήματος WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Υπάρχουν 3 γραμμές σήματος WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Πλήρες σήμα WLAN</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Δίκτυο
+Για σύνδεση με WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"Το WLAN απενεργοποιήθηκε και η Λειτουργία πτήσης ενεργοποιήθηκε.
+Αλλάξτε αυτές τις ρυθμίσεις πατώντας το στοιχείο ΡΥΘΜΙΣΕΙΣ."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"Το WLAN απενεργοποιήθηκε.
+Ενεργοποιήστε το WLAN από τις ΡΥΘΜΙΣΕΙΣ."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Αδυναμία σύνδεσης με WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Μόνο WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Αδυναμία σύνδεσης σε αυτό το δίκτυο WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Πατ. για σύνδ. με το δίκτυο WLAN \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Αυτή η εφαρμογή χρησιμοποιεί Ασύρματο Τοπικό Δίκτυο (WLAN) και δεδομένα κινητής τηλεφωνίας για την αποστολή δεδομένων χρήστη (π.χ. εγγεγραμμένες φωτογραφίες/βίντεο, δεδομένα φωνής, πληροφορίες λογαριασμού των χρησιμοποιούμενων υπηρεσιών κ.λπ.) στο Internet.
+Έχετε υπόψη ότι μπορεί να χρεωθείτε για δεδομένα ανάλογα με τις συμβάσεις που έχετε υπογράψει με τον λειτουργό του δικτύου ή τον πάροχο υπηρεσιών Internet."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Δεν υπάρχει σύνδεση WLAN</string>
+    <string name="mv_wireless_network_txt">Χρησ. WLAN &amp; δεδ. κιν. τηλ.</string>
+</resources>

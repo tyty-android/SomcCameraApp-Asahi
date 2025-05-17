@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nieuwe meldingen</item>
+        <item quantity="one">%d nieuwe melding</item>
+    </plurals>
+    <plurals name="mv_minute_remaining_txt">
+        <item quantity="other">%1$d minuten resterend</item>
+        <item quantity="one">1 minuut resterend</item>
+    </plurals>
+    <plurals name="mv_minute_txt">
+        <item quantity="other">%1$d minuten</item>
+        <item quantity="one">1 minuut</item>
+    </plurals>
+    <plurals name="mv_second_remaining_txt">
+        <item quantity="other">%1$d seconden resterend</item>
+        <item quantity="one">1 seconde resterend</item>
+    </plurals>
+    <plurals name="mv_second_txt">
+        <item quantity="other">%1$d seconden</item>
+        <item quantity="one">1 seconde</item>
+    </plurals>
+</resources>

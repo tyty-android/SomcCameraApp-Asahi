@@ -1,0 +1,10033 @@
+.class public final Ljp/co/sony/mc/camera/idd/value/IddSetting;
+.super Ljava/lang/Object;
+.source "IddSetting.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u00db\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0003\u0008\u00ee\u0002\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u000f\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004B\u0088\u0007\u0012\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0008\u0012\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u0012\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c\u0012\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e\u0012\n\u0008\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0010\u0012\n\u0008\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\n\u0008\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014\u0012\n\u0008\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u0016\u0012\n\u0008\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u0018\u0012\n\u0008\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u001a\u0012\n\u0008\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u001c\u0012\n\u0008\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\n\u0008\u0002\u0010\u001f\u001a\u0004\u0018\u00010 \u0012\n\u0008\u0002\u0010!\u001a\u0004\u0018\u00010\"\u0012\n\u0008\u0002\u0010#\u001a\u0004\u0018\u00010$\u0012\n\u0008\u0002\u0010%\u001a\u0004\u0018\u00010&\u0012\n\u0008\u0002\u0010\'\u001a\u0004\u0018\u00010(\u0012\n\u0008\u0002\u0010)\u001a\u0004\u0018\u00010*\u0012\n\u0008\u0002\u0010+\u001a\u0004\u0018\u00010,\u0012\n\u0008\u0002\u0010-\u001a\u0004\u0018\u00010.\u0012\n\u0008\u0002\u0010/\u001a\u0004\u0018\u000100\u0012\n\u0008\u0002\u00101\u001a\u0004\u0018\u000102\u0012\n\u0008\u0002\u00103\u001a\u0004\u0018\u000104\u0012\n\u0008\u0002\u00105\u001a\u0004\u0018\u000106\u0012\n\u0008\u0002\u00107\u001a\u0004\u0018\u000108\u0012\n\u0008\u0002\u00109\u001a\u0004\u0018\u00010:\u0012\n\u0008\u0002\u0010;\u001a\u0004\u0018\u00010<\u0012\n\u0008\u0002\u0010=\u001a\u0004\u0018\u00010>\u0012\n\u0008\u0002\u0010?\u001a\u0004\u0018\u00010@\u0012\n\u0008\u0002\u0010A\u001a\u0004\u0018\u00010B\u0012\n\u0008\u0002\u0010C\u001a\u0004\u0018\u00010D\u0012\n\u0008\u0002\u0010E\u001a\u0004\u0018\u00010F\u0012\n\u0008\u0002\u0010G\u001a\u0004\u0018\u00010H\u0012\n\u0008\u0002\u0010I\u001a\u0004\u0018\u00010J\u0012\n\u0008\u0002\u0010K\u001a\u0004\u0018\u00010L\u0012\n\u0008\u0002\u0010M\u001a\u0004\u0018\u00010N\u0012\n\u0008\u0002\u0010O\u001a\u0004\u0018\u00010P\u0012\n\u0008\u0002\u0010Q\u001a\u0004\u0018\u00010R\u0012\n\u0008\u0002\u0010S\u001a\u0004\u0018\u00010T\u0012\n\u0008\u0002\u0010U\u001a\u0004\u0018\u00010V\u0012\n\u0008\u0002\u0010W\u001a\u0004\u0018\u00010X\u0012\n\u0008\u0002\u0010Y\u001a\u0004\u0018\u00010Z\u0012\n\u0008\u0002\u0010[\u001a\u0004\u0018\u00010\\\u0012\n\u0008\u0002\u0010]\u001a\u0004\u0018\u00010^\u0012\n\u0008\u0002\u0010_\u001a\u0004\u0018\u00010`\u0012\n\u0008\u0002\u0010a\u001a\u0004\u0018\u00010b\u0012\n\u0008\u0002\u0010c\u001a\u0004\u0018\u00010d\u0012\n\u0008\u0002\u0010e\u001a\u0004\u0018\u00010f\u0012\n\u0008\u0002\u0010g\u001a\u0004\u0018\u00010h\u0012\n\u0008\u0002\u0010i\u001a\u0004\u0018\u00010j\u0012\n\u0008\u0002\u0010k\u001a\u0004\u0018\u00010l\u0012\n\u0008\u0002\u0010m\u001a\u0004\u0018\u00010n\u0012\n\u0008\u0002\u0010o\u001a\u0004\u0018\u00010p\u0012\n\u0008\u0002\u0010q\u001a\u0004\u0018\u00010r\u0012\n\u0008\u0002\u0010s\u001a\u0004\u0018\u00010t\u0012\n\u0008\u0002\u0010u\u001a\u0004\u0018\u00010v\u0012\n\u0008\u0002\u0010w\u001a\u0004\u0018\u00010x\u0012\n\u0008\u0002\u0010y\u001a\u0004\u0018\u00010z\u0012\n\u0008\u0002\u0010{\u001a\u0004\u0018\u00010|\u0012\n\u0008\u0002\u0010}\u001a\u0004\u0018\u00010~\u0012\u000b\u0008\u0002\u0010\u007f\u001a\u0005\u0018\u00010\u0080\u0001\u0012\u000c\u0008\u0002\u0010\u0081\u0001\u001a\u0005\u0018\u00010\u0082\u0001\u0012\u000c\u0008\u0002\u0010\u0083\u0001\u001a\u0005\u0018\u00010\u0084\u0001\u0012\u000c\u0008\u0002\u0010\u0085\u0001\u001a\u0005\u0018\u00010\u0086\u0001\u0012\u000c\u0008\u0002\u0010\u0087\u0001\u001a\u0005\u0018\u00010\u0088\u0001\u0012\u000c\u0008\u0002\u0010\u0089\u0001\u001a\u0005\u0018\u00010\u008a\u0001\u0012\u000c\u0008\u0002\u0010\u008b\u0001\u001a\u0005\u0018\u00010\u008c\u0001\u0012\u000b\u0008\u0002\u0010\u008d\u0001\u001a\u0004\u0018\u00010 \u0012\u000c\u0008\u0002\u0010\u008e\u0001\u001a\u0005\u0018\u00010\u008f\u0001\u0012\u000c\u0008\u0002\u0010\u0090\u0001\u001a\u0005\u0018\u00010\u0091\u0001\u0012\u000c\u0008\u0002\u0010\u0092\u0001\u001a\u0005\u0018\u00010\u0093\u0001\u0012\u000c\u0008\u0002\u0010\u0094\u0001\u001a\u0005\u0018\u00010\u0095\u0001\u00a2\u0006\u0003\u0010\u0096\u0001J\u000c\u0010\u00b9\u0003\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003J\u000c\u0010\u00ba\u0003\u001a\u0004\u0018\u00010\u0018H\u00c6\u0003J\u000c\u0010\u00bb\u0003\u001a\u0004\u0018\u00010\u001aH\u00c6\u0003J\u000c\u0010\u00bc\u0003\u001a\u0004\u0018\u00010\u001cH\u00c6\u0003J\u000c\u0010\u00bd\u0003\u001a\u0004\u0018\u00010\u001eH\u00c6\u0003J\u000c\u0010\u00be\u0003\u001a\u0004\u0018\u00010 H\u00c6\u0003J\u000c\u0010\u00bf\u0003\u001a\u0004\u0018\u00010\"H\u00c6\u0003J\u000c\u0010\u00c0\u0003\u001a\u0004\u0018\u00010$H\u00c6\u0003J\u000c\u0010\u00c1\u0003\u001a\u0004\u0018\u00010&H\u00c6\u0003J\u000c\u0010\u00c2\u0003\u001a\u0004\u0018\u00010(H\u00c6\u0003J\u000c\u0010\u00c3\u0003\u001a\u0004\u0018\u00010*H\u00c6\u0003J\u000c\u0010\u00c4\u0003\u001a\u0004\u0018\u00010\u0008H\u00c6\u0003J\u000c\u0010\u00c5\u0003\u001a\u0004\u0018\u00010,H\u00c6\u0003J\u000c\u0010\u00c6\u0003\u001a\u0004\u0018\u00010.H\u00c6\u0003J\u000c\u0010\u00c7\u0003\u001a\u0004\u0018\u000100H\u00c6\u0003J\u000c\u0010\u00c8\u0003\u001a\u0004\u0018\u000102H\u00c6\u0003J\u000c\u0010\u00c9\u0003\u001a\u0004\u0018\u000104H\u00c6\u0003J\u000c\u0010\u00ca\u0003\u001a\u0004\u0018\u000106H\u00c6\u0003J\u000c\u0010\u00cb\u0003\u001a\u0004\u0018\u000108H\u00c6\u0003J\u000c\u0010\u00cc\u0003\u001a\u0004\u0018\u00010:H\u00c6\u0003J\u000c\u0010\u00cd\u0003\u001a\u0004\u0018\u00010<H\u00c6\u0003J\u000c\u0010\u00ce\u0003\u001a\u0004\u0018\u00010>H\u00c6\u0003J\u000c\u0010\u00cf\u0003\u001a\u0004\u0018\u00010\nH\u00c6\u0003J\u000c\u0010\u00d0\u0003\u001a\u0004\u0018\u00010@H\u00c6\u0003J\u000c\u0010\u00d1\u0003\u001a\u0004\u0018\u00010BH\u00c6\u0003J\u000c\u0010\u00d2\u0003\u001a\u0004\u0018\u00010DH\u00c6\u0003J\u000c\u0010\u00d3\u0003\u001a\u0004\u0018\u00010FH\u00c6\u0003J\u000c\u0010\u00d4\u0003\u001a\u0004\u0018\u00010HH\u00c6\u0003J\u000c\u0010\u00d5\u0003\u001a\u0004\u0018\u00010JH\u00c6\u0003J\u000c\u0010\u00d6\u0003\u001a\u0004\u0018\u00010LH\u00c6\u0003J\u000c\u0010\u00d7\u0003\u001a\u0004\u0018\u00010NH\u00c6\u0003J\u000c\u0010\u00d8\u0003\u001a\u0004\u0018\u00010PH\u00c6\u0003J\u000c\u0010\u00d9\u0003\u001a\u0004\u0018\u00010RH\u00c6\u0003J\u000c\u0010\u00da\u0003\u001a\u0004\u0018\u00010\u000cH\u00c6\u0003J\u000c\u0010\u00db\u0003\u001a\u0004\u0018\u00010TH\u00c6\u0003J\u000c\u0010\u00dc\u0003\u001a\u0004\u0018\u00010VH\u00c6\u0003J\u000c\u0010\u00dd\u0003\u001a\u0004\u0018\u00010XH\u00c6\u0003J\u000c\u0010\u00de\u0003\u001a\u0004\u0018\u00010ZH\u00c6\u0003J\u000c\u0010\u00df\u0003\u001a\u0004\u0018\u00010\\H\u00c6\u0003J\u000c\u0010\u00e0\u0003\u001a\u0004\u0018\u00010^H\u00c6\u0003J\u000c\u0010\u00e1\u0003\u001a\u0004\u0018\u00010`H\u00c6\u0003J\u000c\u0010\u00e2\u0003\u001a\u0004\u0018\u00010bH\u00c6\u0003J\u000c\u0010\u00e3\u0003\u001a\u0004\u0018\u00010dH\u00c6\u0003J\u000c\u0010\u00e4\u0003\u001a\u0004\u0018\u00010fH\u00c6\u0003J\u000c\u0010\u00e5\u0003\u001a\u0004\u0018\u00010\u000eH\u00c6\u0003J\u000c\u0010\u00e6\u0003\u001a\u0004\u0018\u00010hH\u00c6\u0003J\u000c\u0010\u00e7\u0003\u001a\u0004\u0018\u00010jH\u00c6\u0003J\u000c\u0010\u00e8\u0003\u001a\u0004\u0018\u00010lH\u00c6\u0003J\u000c\u0010\u00e9\u0003\u001a\u0004\u0018\u00010nH\u00c6\u0003J\u000c\u0010\u00ea\u0003\u001a\u0004\u0018\u00010pH\u00c6\u0003J\u000c\u0010\u00eb\u0003\u001a\u0004\u0018\u00010rH\u00c6\u0003J\u000c\u0010\u00ec\u0003\u001a\u0004\u0018\u00010tH\u00c6\u0003J\u000c\u0010\u00ed\u0003\u001a\u0004\u0018\u00010vH\u00c6\u0003J\u000c\u0010\u00ee\u0003\u001a\u0004\u0018\u00010xH\u00c6\u0003J\u000c\u0010\u00ef\u0003\u001a\u0004\u0018\u00010zH\u00c6\u0003J\u000c\u0010\u00f0\u0003\u001a\u0004\u0018\u00010\u0010H\u00c6\u0003J\u000c\u0010\u00f1\u0003\u001a\u0004\u0018\u00010|H\u00c6\u0003J\u000c\u0010\u00f2\u0003\u001a\u0004\u0018\u00010~H\u00c6\u0003J\r\u0010\u00f3\u0003\u001a\u0005\u0018\u00010\u0080\u0001H\u00c6\u0003J\r\u0010\u00f4\u0003\u001a\u0005\u0018\u00010\u0082\u0001H\u00c6\u0003J\r\u0010\u00f5\u0003\u001a\u0005\u0018\u00010\u0084\u0001H\u00c6\u0003J\r\u0010\u00f6\u0003\u001a\u0005\u0018\u00010\u0086\u0001H\u00c6\u0003J\r\u0010\u00f7\u0003\u001a\u0005\u0018\u00010\u0088\u0001H\u00c6\u0003J\r\u0010\u00f8\u0003\u001a\u0005\u0018\u00010\u008a\u0001H\u00c6\u0003J\r\u0010\u00f9\u0003\u001a\u0005\u0018\u00010\u008c\u0001H\u00c6\u0003J\u000c\u0010\u00fa\u0003\u001a\u0004\u0018\u00010 H\u00c6\u0003J\u000c\u0010\u00fb\u0003\u001a\u0004\u0018\u00010\u0012H\u00c6\u0003J\r\u0010\u00fc\u0003\u001a\u0005\u0018\u00010\u008f\u0001H\u00c6\u0003J\r\u0010\u00fd\u0003\u001a\u0005\u0018\u00010\u0091\u0001H\u00c6\u0003J\r\u0010\u00fe\u0003\u001a\u0005\u0018\u00010\u0093\u0001H\u00c6\u0003J\r\u0010\u00ff\u0003\u001a\u0005\u0018\u00010\u0095\u0001H\u00c6\u0003J\u000c\u0010\u0080\u0004\u001a\u0004\u0018\u00010\u0014H\u00c6\u0003J\u000c\u0010\u0081\u0004\u001a\u0004\u0018\u00010\u0016H\u00c6\u0003J\u008c\u0007\u0010\u0082\u0004\u001a\u00020\u00002\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00082\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\n2\n\u0008\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u000c2\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\u0008\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00102\n\u0008\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\n\u0008\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00142\n\u0008\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00162\n\u0008\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00182\n\u0008\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u001a2\n\u0008\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\n\u0008\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\n\u0008\u0002\u0010\u001f\u001a\u0004\u0018\u00010 2\n\u0008\u0002\u0010!\u001a\u0004\u0018\u00010\"2\n\u0008\u0002\u0010#\u001a\u0004\u0018\u00010$2\n\u0008\u0002\u0010%\u001a\u0004\u0018\u00010&2\n\u0008\u0002\u0010\'\u001a\u0004\u0018\u00010(2\n\u0008\u0002\u0010)\u001a\u0004\u0018\u00010*2\n\u0008\u0002\u0010+\u001a\u0004\u0018\u00010,2\n\u0008\u0002\u0010-\u001a\u0004\u0018\u00010.2\n\u0008\u0002\u0010/\u001a\u0004\u0018\u0001002\n\u0008\u0002\u00101\u001a\u0004\u0018\u0001022\n\u0008\u0002\u00103\u001a\u0004\u0018\u0001042\n\u0008\u0002\u00105\u001a\u0004\u0018\u0001062\n\u0008\u0002\u00107\u001a\u0004\u0018\u0001082\n\u0008\u0002\u00109\u001a\u0004\u0018\u00010:2\n\u0008\u0002\u0010;\u001a\u0004\u0018\u00010<2\n\u0008\u0002\u0010=\u001a\u0004\u0018\u00010>2\n\u0008\u0002\u0010?\u001a\u0004\u0018\u00010@2\n\u0008\u0002\u0010A\u001a\u0004\u0018\u00010B2\n\u0008\u0002\u0010C\u001a\u0004\u0018\u00010D2\n\u0008\u0002\u0010E\u001a\u0004\u0018\u00010F2\n\u0008\u0002\u0010G\u001a\u0004\u0018\u00010H2\n\u0008\u0002\u0010I\u001a\u0004\u0018\u00010J2\n\u0008\u0002\u0010K\u001a\u0004\u0018\u00010L2\n\u0008\u0002\u0010M\u001a\u0004\u0018\u00010N2\n\u0008\u0002\u0010O\u001a\u0004\u0018\u00010P2\n\u0008\u0002\u0010Q\u001a\u0004\u0018\u00010R2\n\u0008\u0002\u0010S\u001a\u0004\u0018\u00010T2\n\u0008\u0002\u0010U\u001a\u0004\u0018\u00010V2\n\u0008\u0002\u0010W\u001a\u0004\u0018\u00010X2\n\u0008\u0002\u0010Y\u001a\u0004\u0018\u00010Z2\n\u0008\u0002\u0010[\u001a\u0004\u0018\u00010\\2\n\u0008\u0002\u0010]\u001a\u0004\u0018\u00010^2\n\u0008\u0002\u0010_\u001a\u0004\u0018\u00010`2\n\u0008\u0002\u0010a\u001a\u0004\u0018\u00010b2\n\u0008\u0002\u0010c\u001a\u0004\u0018\u00010d2\n\u0008\u0002\u0010e\u001a\u0004\u0018\u00010f2\n\u0008\u0002\u0010g\u001a\u0004\u0018\u00010h2\n\u0008\u0002\u0010i\u001a\u0004\u0018\u00010j2\n\u0008\u0002\u0010k\u001a\u0004\u0018\u00010l2\n\u0008\u0002\u0010m\u001a\u0004\u0018\u00010n2\n\u0008\u0002\u0010o\u001a\u0004\u0018\u00010p2\n\u0008\u0002\u0010q\u001a\u0004\u0018\u00010r2\n\u0008\u0002\u0010s\u001a\u0004\u0018\u00010t2\n\u0008\u0002\u0010u\u001a\u0004\u0018\u00010v2\n\u0008\u0002\u0010w\u001a\u0004\u0018\u00010x2\n\u0008\u0002\u0010y\u001a\u0004\u0018\u00010z2\n\u0008\u0002\u0010{\u001a\u0004\u0018\u00010|2\n\u0008\u0002\u0010}\u001a\u0004\u0018\u00010~2\u000b\u0008\u0002\u0010\u007f\u001a\u0005\u0018\u00010\u0080\u00012\u000c\u0008\u0002\u0010\u0081\u0001\u001a\u0005\u0018\u00010\u0082\u00012\u000c\u0008\u0002\u0010\u0083\u0001\u001a\u0005\u0018\u00010\u0084\u00012\u000c\u0008\u0002\u0010\u0085\u0001\u001a\u0005\u0018\u00010\u0086\u00012\u000c\u0008\u0002\u0010\u0087\u0001\u001a\u0005\u0018\u00010\u0088\u00012\u000c\u0008\u0002\u0010\u0089\u0001\u001a\u0005\u0018\u00010\u008a\u00012\u000c\u0008\u0002\u0010\u008b\u0001\u001a\u0005\u0018\u00010\u008c\u00012\u000b\u0008\u0002\u0010\u008d\u0001\u001a\u0004\u0018\u00010 2\u000c\u0008\u0002\u0010\u008e\u0001\u001a\u0005\u0018\u00010\u008f\u00012\u000c\u0008\u0002\u0010\u0090\u0001\u001a\u0005\u0018\u00010\u0091\u00012\u000c\u0008\u0002\u0010\u0092\u0001\u001a\u0005\u0018\u00010\u0093\u00012\u000c\u0008\u0002\u0010\u0094\u0001\u001a\u0005\u0018\u00010\u0095\u0001H\u00c6\u0001J\u0016\u0010\u0083\u0004\u001a\u00030\u0084\u00042\t\u0010\u0085\u0004\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\u000b\u0010\u0086\u0004\u001a\u00030\u0087\u0004H\u00d6\u0001J\u000b\u0010\u0088\u0004\u001a\u00030\u0089\u0004H\u00d6\u0001R \u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0097\u0001\u0010\u0098\u0001\"\u0006\u0008\u0099\u0001\u0010\u009a\u0001R \u0010\u0007\u001a\u0004\u0018\u00010\u0008X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u009b\u0001\u0010\u009c\u0001\"\u0006\u0008\u009d\u0001\u0010\u009e\u0001R \u0010Q\u001a\u0004\u0018\u00010RX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u009f\u0001\u0010\u00a0\u0001\"\u0006\u0008\u00a1\u0001\u0010\u00a2\u0001R \u0010\t\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a3\u0001\u0010\u00a4\u0001\"\u0006\u0008\u00a5\u0001\u0010\u00a6\u0001R \u0010\u000b\u001a\u0004\u0018\u00010\u000cX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a7\u0001\u0010\u00a8\u0001\"\u0006\u0008\u00a9\u0001\u0010\u00aa\u0001R \u0010u\u001a\u0004\u0018\u00010vX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00ab\u0001\u0010\u00ac\u0001\"\u0006\u0008\u00ad\u0001\u0010\u00ae\u0001R \u0010[\u001a\u0004\u0018\u00010\\X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00af\u0001\u0010\u00b0\u0001\"\u0006\u0008\u00b1\u0001\u0010\u00b2\u0001R \u0010O\u001a\u0004\u0018\u00010PX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00b3\u0001\u0010\u00b4\u0001\"\u0006\u0008\u00b5\u0001\u0010\u00b6\u0001R \u0010_\u001a\u0004\u0018\u00010`X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00b7\u0001\u0010\u00b8\u0001\"\u0006\u0008\u00b9\u0001\u0010\u00ba\u0001R \u0010\u001f\u001a\u0004\u0018\u00010 X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00bb\u0001\u0010\u00bc\u0001\"\u0006\u0008\u00bd\u0001\u0010\u00be\u0001R\"\u0010\u0081\u0001\u001a\u0005\u0018\u00010\u0082\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00bf\u0001\u0010\u00c0\u0001\"\u0006\u0008\u00c1\u0001\u0010\u00c2\u0001R \u0010s\u001a\u0004\u0018\u00010tX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00c3\u0001\u0010\u00c4\u0001\"\u0006\u0008\u00c5\u0001\u0010\u00c6\u0001R \u0010w\u001a\u0004\u0018\u00010xX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00c7\u0001\u0010\u00c8\u0001\"\u0006\u0008\u00c9\u0001\u0010\u00ca\u0001R \u0010{\u001a\u0004\u0018\u00010|X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00cb\u0001\u0010\u00cc\u0001\"\u0006\u0008\u00cd\u0001\u0010\u00ce\u0001R!\u0010\u008d\u0001\u001a\u0004\u0018\u00010 X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00cf\u0001\u0010\u00bc\u0001\"\u0006\u0008\u00d0\u0001\u0010\u00be\u0001R \u0010\r\u001a\u0004\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00d1\u0001\u0010\u00d2\u0001\"\u0006\u0008\u00d3\u0001\u0010\u00d4\u0001R \u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00d5\u0001\u0010\u00d6\u0001\"\u0006\u0008\u00d7\u0001\u0010\u00d8\u0001R \u0010]\u001a\u0004\u0018\u00010^X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00d9\u0001\u0010\u00da\u0001\"\u0006\u0008\u00db\u0001\u0010\u00dc\u0001R \u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00dd\u0001\u0010\u00de\u0001\"\u0006\u0008\u00df\u0001\u0010\u00e0\u0001R \u0010c\u001a\u0004\u0018\u00010dX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00e1\u0001\u0010\u00e2\u0001\"\u0006\u0008\u00e3\u0001\u0010\u00e4\u0001R \u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00e5\u0001\u0010\u00e6\u0001\"\u0006\u0008\u00e7\u0001\u0010\u00e8\u0001R \u0010M\u001a\u0004\u0018\u00010NX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00e9\u0001\u0010\u00ea\u0001\"\u0006\u0008\u00eb\u0001\u0010\u00ec\u0001R \u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00ed\u0001\u0010\u00ee\u0001\"\u0006\u0008\u00ef\u0001\u0010\u00f0\u0001R \u0010S\u001a\u0004\u0018\u00010TX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00f1\u0001\u0010\u00f2\u0001\"\u0006\u0008\u00f3\u0001\u0010\u00f4\u0001R \u0010=\u001a\u0004\u0018\u00010>X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00f5\u0001\u0010\u00f6\u0001\"\u0006\u0008\u00f7\u0001\u0010\u00f8\u0001R \u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00f9\u0001\u0010\u00fa\u0001\"\u0006\u0008\u00fb\u0001\u0010\u00fc\u0001R \u0010\u0019\u001a\u0004\u0018\u00010\u001aX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00fd\u0001\u0010\u00fe\u0001\"\u0006\u0008\u00ff\u0001\u0010\u0080\u0002R\"\u0010\u0090\u0001\u001a\u0005\u0018\u00010\u0091\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0081\u0002\u0010\u0082\u0002\"\u0006\u0008\u0083\u0002\u0010\u0084\u0002R \u0010;\u001a\u0004\u0018\u00010<X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0085\u0002\u0010\u0086\u0002\"\u0006\u0008\u0087\u0002\u0010\u0088\u0002R \u0010\u001b\u001a\u0004\u0018\u00010\u001cX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0089\u0002\u0010\u008a\u0002\"\u0006\u0008\u008b\u0002\u0010\u008c\u0002R\"\u0010\u0089\u0001\u001a\u0005\u0018\u00010\u008a\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u008d\u0002\u0010\u008e\u0002\"\u0006\u0008\u008f\u0002\u0010\u0090\u0002R \u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0091\u0002\u0010\u0092\u0002\"\u0006\u0008\u0093\u0002\u0010\u0094\u0002R \u0010!\u001a\u0004\u0018\u00010\"X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0095\u0002\u0010\u0096\u0002\"\u0006\u0008\u0097\u0002\u0010\u0098\u0002R \u00101\u001a\u0004\u0018\u000102X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0099\u0002\u0010\u009a\u0002\"\u0006\u0008\u009b\u0002\u0010\u009c\u0002R \u0010a\u001a\u0004\u0018\u00010bX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u009d\u0002\u0010\u009e\u0002\"\u0006\u0008\u009f\u0002\u0010\u00a0\u0002R \u0010#\u001a\u0004\u0018\u00010$X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a1\u0002\u0010\u00a2\u0002\"\u0006\u0008\u00a3\u0002\u0010\u00a4\u0002R \u0010e\u001a\u0004\u0018\u00010fX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a5\u0002\u0010\u00a6\u0002\"\u0006\u0008\u00a7\u0002\u0010\u00a8\u0002R \u0010g\u001a\u0004\u0018\u00010hX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a9\u0002\u0010\u00aa\u0002\"\u0006\u0008\u00ab\u0002\u0010\u00ac\u0002R\"\u0010\u0085\u0001\u001a\u0005\u0018\u00010\u0086\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00ad\u0002\u0010\u00ae\u0002\"\u0006\u0008\u00af\u0002\u0010\u00b0\u0002R \u0010+\u001a\u0004\u0018\u00010,X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00b1\u0002\u0010\u00b2\u0002\"\u0006\u0008\u00b3\u0002\u0010\u00b4\u0002R \u0010A\u001a\u0004\u0018\u00010BX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00b5\u0002\u0010\u00b6\u0002\"\u0006\u0008\u00b7\u0002\u0010\u00b8\u0002R \u0010%\u001a\u0004\u0018\u00010&X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00b9\u0002\u0010\u00ba\u0002\"\u0006\u0008\u00bb\u0002\u0010\u00bc\u0002R \u0010\'\u001a\u0004\u0018\u00010(X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00bd\u0002\u0010\u00be\u0002\"\u0006\u0008\u00bf\u0002\u0010\u00c0\u0002R \u0010)\u001a\u0004\u0018\u00010*X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00c1\u0002\u0010\u00c2\u0002\"\u0006\u0008\u00c3\u0002\u0010\u00c4\u0002R \u0010-\u001a\u0004\u0018\u00010.X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00c5\u0002\u0010\u00c6\u0002\"\u0006\u0008\u00c7\u0002\u0010\u00c8\u0002R\"\u0010\u0087\u0001\u001a\u0005\u0018\u00010\u0088\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00c9\u0002\u0010\u00ca\u0002\"\u0006\u0008\u00cb\u0002\u0010\u00cc\u0002R\"\u0010\u0083\u0001\u001a\u0005\u0018\u00010\u0084\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00cd\u0002\u0010\u00ce\u0002\"\u0006\u0008\u00cf\u0002\u0010\u00d0\u0002R \u0010m\u001a\u0004\u0018\u00010nX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00d1\u0002\u0010\u00d2\u0002\"\u0006\u0008\u00d3\u0002\u0010\u00d4\u0002R \u0010o\u001a\u0004\u0018\u00010pX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00d5\u0002\u0010\u00d6\u0002\"\u0006\u0008\u00d7\u0002\u0010\u00d8\u0002R \u0010q\u001a\u0004\u0018\u00010rX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00d9\u0002\u0010\u00da\u0002\"\u0006\u0008\u00db\u0002\u0010\u00dc\u0002R \u0010U\u001a\u0004\u0018\u00010VX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00dd\u0002\u0010\u00de\u0002\"\u0006\u0008\u00df\u0002\u0010\u00e0\u0002R \u0010k\u001a\u0004\u0018\u00010lX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00e1\u0002\u0010\u00e2\u0002\"\u0006\u0008\u00e3\u0002\u0010\u00e4\u0002R \u0010Y\u001a\u0004\u0018\u00010ZX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00e5\u0002\u0010\u00e6\u0002\"\u0006\u0008\u00e7\u0002\u0010\u00e8\u0002R \u0010?\u001a\u0004\u0018\u00010@X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00e9\u0002\u0010\u00ea\u0002\"\u0006\u0008\u00eb\u0002\u0010\u00ec\u0002R \u0010y\u001a\u0004\u0018\u00010zX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00ed\u0002\u0010\u00ee\u0002\"\u0006\u0008\u00ef\u0002\u0010\u00f0\u0002R \u0010/\u001a\u0004\u0018\u000100X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00f1\u0002\u0010\u00f2\u0002\"\u0006\u0008\u00f3\u0002\u0010\u00f4\u0002R \u00103\u001a\u0004\u0018\u000104X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00f5\u0002\u0010\u00f6\u0002\"\u0006\u0008\u00f7\u0002\u0010\u00f8\u0002R\"\u0010\u008b\u0001\u001a\u0005\u0018\u00010\u008c\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00f9\u0002\u0010\u00fa\u0002\"\u0006\u0008\u00fb\u0002\u0010\u00fc\u0002R \u0010}\u001a\u0004\u0018\u00010~X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00fd\u0002\u0010\u00fe\u0002\"\u0006\u0008\u00ff\u0002\u0010\u0080\u0003R!\u0010\u007f\u001a\u0005\u0018\u00010\u0080\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0081\u0003\u0010\u0082\u0003\"\u0006\u0008\u0083\u0003\u0010\u0084\u0003R \u0010G\u001a\u0004\u0018\u00010HX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0085\u0003\u0010\u0086\u0003\"\u0006\u0008\u0087\u0003\u0010\u0088\u0003R \u0010i\u001a\u0004\u0018\u00010jX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0089\u0003\u0010\u008a\u0003\"\u0006\u0008\u008b\u0003\u0010\u008c\u0003R \u00105\u001a\u0004\u0018\u000106X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u008d\u0003\u0010\u008e\u0003\"\u0006\u0008\u008f\u0003\u0010\u0090\u0003R\"\u0010\u008e\u0001\u001a\u0005\u0018\u00010\u008f\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0091\u0003\u0010\u0092\u0003\"\u0006\u0008\u0093\u0003\u0010\u0094\u0003R \u0010K\u001a\u0004\u0018\u00010LX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0095\u0003\u0010\u0096\u0003\"\u0006\u0008\u0097\u0003\u0010\u0098\u0003R \u0010I\u001a\u0004\u0018\u00010JX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u0099\u0003\u0010\u009a\u0003\"\u0006\u0008\u009b\u0003\u0010\u009c\u0003R \u0010W\u001a\u0004\u0018\u00010XX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u009d\u0003\u0010\u009e\u0003\"\u0006\u0008\u009f\u0003\u0010\u00a0\u0003R \u00107\u001a\u0004\u0018\u000108X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a1\u0003\u0010\u00a2\u0003\"\u0006\u0008\u00a3\u0003\u0010\u00a4\u0003R \u00109\u001a\u0004\u0018\u00010:X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a5\u0003\u0010\u00a6\u0003\"\u0006\u0008\u00a7\u0003\u0010\u00a8\u0003R \u0010C\u001a\u0004\u0018\u00010DX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00a9\u0003\u0010\u00aa\u0003\"\u0006\u0008\u00ab\u0003\u0010\u00ac\u0003R \u0010E\u001a\u0004\u0018\u00010FX\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00ad\u0003\u0010\u00ae\u0003\"\u0006\u0008\u00af\u0003\u0010\u00b0\u0003R\"\u0010\u0092\u0001\u001a\u0005\u0018\u00010\u0093\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00b1\u0003\u0010\u00b2\u0003\"\u0006\u0008\u00b3\u0003\u0010\u00b4\u0003R\"\u0010\u0094\u0001\u001a\u0005\u0018\u00010\u0095\u0001X\u0086\u000e\u00a2\u0006\u0012\n\u0000\u001a\u0006\u0008\u00b5\u0003\u0010\u00b6\u0003\"\u0006\u0008\u00b7\u0003\u0010\u00b8\u0003\u00a8\u0006\u008a\u0004"
+    }
+    d2 = {
+        "Ljp/co/sony/mc/camera/idd/value/IddSetting;",
+        "",
+        "value",
+        "Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;",
+        "(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V",
+        "accessaryFlip",
+        "Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;",
+        "ael",
+        "Ljp/co/sony/mc/camera/idd/value/IddAel;",
+        "aspectRatio",
+        "Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;",
+        "audioSignals",
+        "Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;",
+        "destinationToSave",
+        "Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;",
+        "disp",
+        "Ljp/co/sony/mc/camera/idd/value/IddDisp;",
+        "driveMode",
+        "Ljp/co/sony/mc/camera/idd/value/IddDriveMode;",
+        "ev",
+        "Ljp/co/sony/mc/camera/idd/value/IddEv;",
+        "faceDetectionEyeAf",
+        "Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;",
+        "flash",
+        "Ljp/co/sony/mc/camera/idd/value/IddFlash;",
+        "focusArea",
+        "Ljp/co/sony/mc/camera/idd/value/IddFocusArea;",
+        "focusMode",
+        "Ljp/co/sony/mc/camera/idd/value/IddFocusMode;",
+        "geoTag",
+        "Ljp/co/sony/mc/camera/idd/value/IddGeoTag;",
+        "burstFeedback",
+        "Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;",
+        "gridLine",
+        "Ljp/co/sony/mc/camera/idd/value/IddGridLine;",
+        "hdrDro",
+        "Ljp/co/sony/mc/camera/idd/value/IddHdrDro;",
+        "lens",
+        "Ljp/co/sony/mc/camera/idd/value/IddLens;",
+        "lensCorrection",
+        "Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;",
+        "lock",
+        "Ljp/co/sony/mc/camera/idd/value/IddLock;",
+        "iso",
+        "Ljp/co/sony/mc/camera/idd/value/IddIso;",
+        "metering",
+        "Ljp/co/sony/mc/camera/idd/value/IddMetering;",
+        "shutterSpeed",
+        "Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;",
+        "handShutter",
+        "Ljp/co/sony/mc/camera/idd/value/IddHandShutter;",
+        "softSkin",
+        "Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;",
+        "touchToAdjust",
+        "Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;",
+        "volumeKey",
+        "Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;",
+        "whiteBalance",
+        "Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;",
+        "focusFrameColor",
+        "Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;",
+        "fileFormat",
+        "Ljp/co/sony/mc/camera/idd/value/IddFileFormat;",
+        "resolution",
+        "Ljp/co/sony/mc/camera/idd/value/IddResolution;",
+        "layoutMode",
+        "Ljp/co/sony/mc/camera/idd/value/IddMode;",
+        "whiteBalanceAB",
+        "Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;",
+        "whiteBalanceGm",
+        "Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;",
+        "superResolutionZoom",
+        "Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;",
+        "videoSize",
+        "Ljp/co/sony/mc/camera/idd/value/IddVideoSize;",
+        "videoFps",
+        "Ljp/co/sony/mc/camera/idd/value/IddVideoFps;",
+        "extendFps",
+        "Ljp/co/sony/mc/camera/idd/value/IddExtendFps;",
+        "brightness",
+        "Ljp/co/sony/mc/camera/idd/value/IddBrightness;",
+        "amberBlue",
+        "Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;",
+        "fastCapture",
+        "Ljp/co/sony/mc/camera/idd/value/IddFastCapture;",
+        "photoLight",
+        "Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;",
+        "videoStabilizer",
+        "Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;",
+        "qrCodeDetection",
+        "Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;",
+        "bokehStrength",
+        "Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;",
+        "displayFlash",
+        "Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;",
+        "btRemote",
+        "Ljp/co/sony/mc/camera/idd/value/IddBtRemote;",
+        "hapticFeedback",
+        "Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;",
+        "enduranceMode",
+        "Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;",
+        "hdrFormat",
+        "Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;",
+        "hdrQuality",
+        "Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;",
+        "temperature",
+        "Ljp/co/sony/mc/camera/idd/value/IddTemperature;",
+        "productShowcase",
+        "Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;",
+        "night",
+        "Ljp/co/sony/mc/camera/idd/value/IddNight;",
+        "peaking",
+        "Ljp/co/sony/mc/camera/idd/value/IddPeaking;",
+        "peakingColor",
+        "Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;",
+        "colorToneProfile",
+        "Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;",
+        "autoFrameRate",
+        "Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;",
+        "computationalPhoto",
+        "Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;",
+        "selfTimer",
+        "Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;",
+        "connectTo",
+        "Ljp/co/sony/mc/camera/idd/value/IddConnectMode;",
+        "streamingMute",
+        "Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;",
+        "streamingVideoQuality",
+        "Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;",
+        "closeUpShooting",
+        "Ljp/co/sony/mc/camera/idd/value/IddMacroMode;",
+        "networkUsage",
+        "Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;",
+        "hdrSdr",
+        "Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;",
+        "mic",
+        "Ljp/co/sony/mc/camera/idd/value/IddMic;",
+        "focusUi",
+        "Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;",
+        "ssUi",
+        "Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;",
+        "continuousFeedback",
+        "touchTracking",
+        "Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;",
+        "focusDistance",
+        "Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;",
+        "windFilter",
+        "Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;",
+        "zoom",
+        "Ljp/co/sony/mc/camera/idd/value/IddZoom;",
+        "(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;)V",
+        "getAccessaryFlip",
+        "()Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;",
+        "setAccessaryFlip",
+        "(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;)V",
+        "getAel",
+        "()Ljp/co/sony/mc/camera/idd/value/IddAel;",
+        "setAel",
+        "(Ljp/co/sony/mc/camera/idd/value/IddAel;)V",
+        "getAmberBlue",
+        "()Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;",
+        "setAmberBlue",
+        "(Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;)V",
+        "getAspectRatio",
+        "()Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;",
+        "setAspectRatio",
+        "(Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;)V",
+        "getAudioSignals",
+        "()Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;",
+        "setAudioSignals",
+        "(Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;)V",
+        "getAutoFrameRate",
+        "()Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;",
+        "setAutoFrameRate",
+        "(Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;)V",
+        "getBokehStrength",
+        "()Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;",
+        "setBokehStrength",
+        "(Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;)V",
+        "getBrightness",
+        "()Ljp/co/sony/mc/camera/idd/value/IddBrightness;",
+        "setBrightness",
+        "(Ljp/co/sony/mc/camera/idd/value/IddBrightness;)V",
+        "getBtRemote",
+        "()Ljp/co/sony/mc/camera/idd/value/IddBtRemote;",
+        "setBtRemote",
+        "(Ljp/co/sony/mc/camera/idd/value/IddBtRemote;)V",
+        "getBurstFeedback",
+        "()Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;",
+        "setBurstFeedback",
+        "(Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;)V",
+        "getCloseUpShooting",
+        "()Ljp/co/sony/mc/camera/idd/value/IddMacroMode;",
+        "setCloseUpShooting",
+        "(Ljp/co/sony/mc/camera/idd/value/IddMacroMode;)V",
+        "getColorToneProfile",
+        "()Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;",
+        "setColorToneProfile",
+        "(Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;)V",
+        "getComputationalPhoto",
+        "()Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;",
+        "setComputationalPhoto",
+        "(Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;)V",
+        "getConnectTo",
+        "()Ljp/co/sony/mc/camera/idd/value/IddConnectMode;",
+        "setConnectTo",
+        "(Ljp/co/sony/mc/camera/idd/value/IddConnectMode;)V",
+        "getContinuousFeedback",
+        "setContinuousFeedback",
+        "getDestinationToSave",
+        "()Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;",
+        "setDestinationToSave",
+        "(Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;)V",
+        "getDisp",
+        "()Ljp/co/sony/mc/camera/idd/value/IddDisp;",
+        "setDisp",
+        "(Ljp/co/sony/mc/camera/idd/value/IddDisp;)V",
+        "getDisplayFlash",
+        "()Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;",
+        "setDisplayFlash",
+        "(Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;)V",
+        "getDriveMode",
+        "()Ljp/co/sony/mc/camera/idd/value/IddDriveMode;",
+        "setDriveMode",
+        "(Ljp/co/sony/mc/camera/idd/value/IddDriveMode;)V",
+        "getEnduranceMode",
+        "()Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;",
+        "setEnduranceMode",
+        "(Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;)V",
+        "getEv",
+        "()Ljp/co/sony/mc/camera/idd/value/IddEv;",
+        "setEv",
+        "(Ljp/co/sony/mc/camera/idd/value/IddEv;)V",
+        "getExtendFps",
+        "()Ljp/co/sony/mc/camera/idd/value/IddExtendFps;",
+        "setExtendFps",
+        "(Ljp/co/sony/mc/camera/idd/value/IddExtendFps;)V",
+        "getFaceDetectionEyeAf",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;",
+        "setFaceDetectionEyeAf",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;)V",
+        "getFastCapture",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFastCapture;",
+        "setFastCapture",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFastCapture;)V",
+        "getFileFormat",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFileFormat;",
+        "setFileFormat",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFileFormat;)V",
+        "getFlash",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFlash;",
+        "setFlash",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFlash;)V",
+        "getFocusArea",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFocusArea;",
+        "setFocusArea",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFocusArea;)V",
+        "getFocusDistance",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;",
+        "setFocusDistance",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;)V",
+        "getFocusFrameColor",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;",
+        "setFocusFrameColor",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;)V",
+        "getFocusMode",
+        "()Ljp/co/sony/mc/camera/idd/value/IddFocusMode;",
+        "setFocusMode",
+        "(Ljp/co/sony/mc/camera/idd/value/IddFocusMode;)V",
+        "getFocusUi",
+        "()Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;",
+        "setFocusUi",
+        "(Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;)V",
+        "getGeoTag",
+        "()Ljp/co/sony/mc/camera/idd/value/IddGeoTag;",
+        "setGeoTag",
+        "(Ljp/co/sony/mc/camera/idd/value/IddGeoTag;)V",
+        "getGridLine",
+        "()Ljp/co/sony/mc/camera/idd/value/IddGridLine;",
+        "setGridLine",
+        "(Ljp/co/sony/mc/camera/idd/value/IddGridLine;)V",
+        "getHandShutter",
+        "()Ljp/co/sony/mc/camera/idd/value/IddHandShutter;",
+        "setHandShutter",
+        "(Ljp/co/sony/mc/camera/idd/value/IddHandShutter;)V",
+        "getHapticFeedback",
+        "()Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;",
+        "setHapticFeedback",
+        "(Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;)V",
+        "getHdrDro",
+        "()Ljp/co/sony/mc/camera/idd/value/IddHdrDro;",
+        "setHdrDro",
+        "(Ljp/co/sony/mc/camera/idd/value/IddHdrDro;)V",
+        "getHdrFormat",
+        "()Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;",
+        "setHdrFormat",
+        "(Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;)V",
+        "getHdrQuality",
+        "()Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;",
+        "setHdrQuality",
+        "(Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;)V",
+        "getHdrSdr",
+        "()Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;",
+        "setHdrSdr",
+        "(Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;)V",
+        "getIso",
+        "()Ljp/co/sony/mc/camera/idd/value/IddIso;",
+        "setIso",
+        "(Ljp/co/sony/mc/camera/idd/value/IddIso;)V",
+        "getLayoutMode",
+        "()Ljp/co/sony/mc/camera/idd/value/IddMode;",
+        "setLayoutMode",
+        "(Ljp/co/sony/mc/camera/idd/value/IddMode;)V",
+        "getLens",
+        "()Ljp/co/sony/mc/camera/idd/value/IddLens;",
+        "setLens",
+        "(Ljp/co/sony/mc/camera/idd/value/IddLens;)V",
+        "getLensCorrection",
+        "()Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;",
+        "setLensCorrection",
+        "(Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;)V",
+        "getLock",
+        "()Ljp/co/sony/mc/camera/idd/value/IddLock;",
+        "setLock",
+        "(Ljp/co/sony/mc/camera/idd/value/IddLock;)V",
+        "getMetering",
+        "()Ljp/co/sony/mc/camera/idd/value/IddMetering;",
+        "setMetering",
+        "(Ljp/co/sony/mc/camera/idd/value/IddMetering;)V",
+        "getMic",
+        "()Ljp/co/sony/mc/camera/idd/value/IddMic;",
+        "setMic",
+        "(Ljp/co/sony/mc/camera/idd/value/IddMic;)V",
+        "getNetworkUsage",
+        "()Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;",
+        "setNetworkUsage",
+        "(Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;)V",
+        "getNight",
+        "()Ljp/co/sony/mc/camera/idd/value/IddNight;",
+        "setNight",
+        "(Ljp/co/sony/mc/camera/idd/value/IddNight;)V",
+        "getPeaking",
+        "()Ljp/co/sony/mc/camera/idd/value/IddPeaking;",
+        "setPeaking",
+        "(Ljp/co/sony/mc/camera/idd/value/IddPeaking;)V",
+        "getPeakingColor",
+        "()Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;",
+        "setPeakingColor",
+        "(Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;)V",
+        "getPhotoLight",
+        "()Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;",
+        "setPhotoLight",
+        "(Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;)V",
+        "getProductShowcase",
+        "()Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;",
+        "setProductShowcase",
+        "(Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;)V",
+        "getQrCodeDetection",
+        "()Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;",
+        "setQrCodeDetection",
+        "(Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;)V",
+        "getResolution",
+        "()Ljp/co/sony/mc/camera/idd/value/IddResolution;",
+        "setResolution",
+        "(Ljp/co/sony/mc/camera/idd/value/IddResolution;)V",
+        "getSelfTimer",
+        "()Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;",
+        "setSelfTimer",
+        "(Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;)V",
+        "getShutterSpeed",
+        "()Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;",
+        "setShutterSpeed",
+        "(Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;)V",
+        "getSoftSkin",
+        "()Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;",
+        "setSoftSkin",
+        "(Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;)V",
+        "getSsUi",
+        "()Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;",
+        "setSsUi",
+        "(Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;)V",
+        "getStreamingMute",
+        "()Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;",
+        "setStreamingMute",
+        "(Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;)V",
+        "getStreamingVideoQuality",
+        "()Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;",
+        "setStreamingVideoQuality",
+        "(Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;)V",
+        "getSuperResolutionZoom",
+        "()Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;",
+        "setSuperResolutionZoom",
+        "(Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;)V",
+        "getTemperature",
+        "()Ljp/co/sony/mc/camera/idd/value/IddTemperature;",
+        "setTemperature",
+        "(Ljp/co/sony/mc/camera/idd/value/IddTemperature;)V",
+        "getTouchToAdjust",
+        "()Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;",
+        "setTouchToAdjust",
+        "(Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;)V",
+        "getTouchTracking",
+        "()Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;",
+        "setTouchTracking",
+        "(Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;)V",
+        "getVideoFps",
+        "()Ljp/co/sony/mc/camera/idd/value/IddVideoFps;",
+        "setVideoFps",
+        "(Ljp/co/sony/mc/camera/idd/value/IddVideoFps;)V",
+        "getVideoSize",
+        "()Ljp/co/sony/mc/camera/idd/value/IddVideoSize;",
+        "setVideoSize",
+        "(Ljp/co/sony/mc/camera/idd/value/IddVideoSize;)V",
+        "getVideoStabilizer",
+        "()Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;",
+        "setVideoStabilizer",
+        "(Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;)V",
+        "getVolumeKey",
+        "()Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;",
+        "setVolumeKey",
+        "(Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;)V",
+        "getWhiteBalance",
+        "()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;",
+        "setWhiteBalance",
+        "(Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;)V",
+        "getWhiteBalanceAB",
+        "()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;",
+        "setWhiteBalanceAB",
+        "(Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;)V",
+        "getWhiteBalanceGm",
+        "()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;",
+        "setWhiteBalanceGm",
+        "(Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;)V",
+        "getWindFilter",
+        "()Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;",
+        "setWindFilter",
+        "(Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;)V",
+        "getZoom",
+        "()Ljp/co/sony/mc/camera/idd/value/IddZoom;",
+        "setZoom",
+        "(Ljp/co/sony/mc/camera/idd/value/IddZoom;)V",
+        "component1",
+        "component10",
+        "component11",
+        "component12",
+        "component13",
+        "component14",
+        "component15",
+        "component16",
+        "component17",
+        "component18",
+        "component19",
+        "component2",
+        "component20",
+        "component21",
+        "component22",
+        "component23",
+        "component24",
+        "component25",
+        "component26",
+        "component27",
+        "component28",
+        "component29",
+        "component3",
+        "component30",
+        "component31",
+        "component32",
+        "component33",
+        "component34",
+        "component35",
+        "component36",
+        "component37",
+        "component38",
+        "component39",
+        "component4",
+        "component40",
+        "component41",
+        "component42",
+        "component43",
+        "component44",
+        "component45",
+        "component46",
+        "component47",
+        "component48",
+        "component49",
+        "component5",
+        "component50",
+        "component51",
+        "component52",
+        "component53",
+        "component54",
+        "component55",
+        "component56",
+        "component57",
+        "component58",
+        "component59",
+        "component6",
+        "component60",
+        "component61",
+        "component62",
+        "component63",
+        "component64",
+        "component65",
+        "component66",
+        "component67",
+        "component68",
+        "component69",
+        "component7",
+        "component70",
+        "component71",
+        "component72",
+        "component73",
+        "component8",
+        "component9",
+        "copy",
+        "equals",
+        "",
+        "other",
+        "hashCode",
+        "",
+        "toString",
+        "",
+        "SomcCamera_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# instance fields
+.field private accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+.field private ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+.field private amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+.field private aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+.field private audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+.field private autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+.field private bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+.field private brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+.field private btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+.field private burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+.field private closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+.field private colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+.field private computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+.field private connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+.field private continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+.field private destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+.field private disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+.field private displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+.field private driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+.field private enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+.field private ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+.field private extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+.field private faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+.field private fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+.field private fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+.field private flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+.field private focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+.field private focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+.field private focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+.field private focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+.field private focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+.field private geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+.field private gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+.field private handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+.field private hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+.field private hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+.field private hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+.field private hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+.field private hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+.field private iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+.field private layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+.field private lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+.field private lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+.field private lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+.field private metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+.field private mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+.field private networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+.field private night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+.field private peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+.field private peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+.field private photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+.field private productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+.field private qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+.field private resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+.field private selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+.field private shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+.field private softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+.field private ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+.field private streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+.field private streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+.field private superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+.field private temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+.field private touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+.field private touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+.field private videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+.field private videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+.field private videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+.field private volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+.field private whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+.field private whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+.field private whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+.field private windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+.field private zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 78
+
+    move-object/from16 v0, p0
+
+    const/16 v76, 0x1ff
+
+    const/16 v77, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const/16 v28, 0x0
+
+    const/16 v29, 0x0
+
+    const/16 v30, 0x0
+
+    const/16 v31, 0x0
+
+    const/16 v32, 0x0
+
+    const/16 v33, 0x0
+
+    const/16 v34, 0x0
+
+    const/16 v35, 0x0
+
+    const/16 v36, 0x0
+
+    const/16 v37, 0x0
+
+    const/16 v38, 0x0
+
+    const/16 v39, 0x0
+
+    const/16 v40, 0x0
+
+    const/16 v41, 0x0
+
+    const/16 v42, 0x0
+
+    const/16 v43, 0x0
+
+    const/16 v44, 0x0
+
+    const/16 v45, 0x0
+
+    const/16 v46, 0x0
+
+    const/16 v47, 0x0
+
+    const/16 v48, 0x0
+
+    const/16 v49, 0x0
+
+    const/16 v50, 0x0
+
+    const/16 v51, 0x0
+
+    const/16 v52, 0x0
+
+    const/16 v53, 0x0
+
+    const/16 v54, 0x0
+
+    const/16 v55, 0x0
+
+    const/16 v56, 0x0
+
+    const/16 v57, 0x0
+
+    const/16 v58, 0x0
+
+    const/16 v59, 0x0
+
+    const/16 v60, 0x0
+
+    const/16 v61, 0x0
+
+    const/16 v62, 0x0
+
+    const/16 v63, 0x0
+
+    const/16 v64, 0x0
+
+    const/16 v65, 0x0
+
+    const/16 v66, 0x0
+
+    const/16 v67, 0x0
+
+    const/16 v68, 0x0
+
+    const/16 v69, 0x0
+
+    const/16 v70, 0x0
+
+    const/16 v71, 0x0
+
+    const/16 v72, 0x0
+
+    const/16 v73, 0x0
+
+    const/16 v74, -0x1
+
+    const/16 v75, -0x1
+
+    invoke-direct/range {v0 .. v77}, Ljp/co/sony/mc/camera/idd/value/IddSetting;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;)V
+    .locals 2
+
+    move-object v0, p0
+
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    move-object v1, p1
+
+    .line 10
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    move-object v1, p2
+
+    .line 11
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    move-object v1, p3
+
+    .line 12
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    move-object v1, p4
+
+    .line 13
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    move-object v1, p5
+
+    .line 14
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    move-object v1, p6
+
+    .line 15
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    move-object v1, p7
+
+    .line 16
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    move-object v1, p8
+
+    .line 17
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    move-object v1, p9
+
+    .line 18
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    move-object v1, p10
+
+    .line 19
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    move-object v1, p11
+
+    .line 20
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    move-object v1, p12
+
+    .line 21
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    move-object v1, p13
+
+    .line 22
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    move-object/from16 v1, p14
+
+    .line 23
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    move-object/from16 v1, p15
+
+    .line 24
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    move-object/from16 v1, p16
+
+    .line 25
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    move-object/from16 v1, p17
+
+    .line 26
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    move-object/from16 v1, p18
+
+    .line 27
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    move-object/from16 v1, p19
+
+    .line 28
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    move-object/from16 v1, p20
+
+    .line 29
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    move-object/from16 v1, p21
+
+    .line 30
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    move-object/from16 v1, p22
+
+    .line 31
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    move-object/from16 v1, p23
+
+    .line 32
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    move-object/from16 v1, p24
+
+    .line 33
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    move-object/from16 v1, p25
+
+    .line 34
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    move-object/from16 v1, p26
+
+    .line 35
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    move-object/from16 v1, p27
+
+    .line 36
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    move-object/from16 v1, p28
+
+    .line 37
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    move-object/from16 v1, p29
+
+    .line 38
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    move-object/from16 v1, p30
+
+    .line 39
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    move-object/from16 v1, p31
+
+    .line 40
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    move-object/from16 v1, p32
+
+    .line 41
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    move-object/from16 v1, p33
+
+    .line 42
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    move-object/from16 v1, p34
+
+    .line 43
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    move-object/from16 v1, p35
+
+    .line 44
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    move-object/from16 v1, p36
+
+    .line 45
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    move-object/from16 v1, p37
+
+    .line 46
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    move-object/from16 v1, p38
+
+    .line 47
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    move-object/from16 v1, p39
+
+    .line 48
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    move-object/from16 v1, p40
+
+    .line 49
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    move-object/from16 v1, p41
+
+    .line 50
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    move-object/from16 v1, p42
+
+    .line 51
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    move-object/from16 v1, p43
+
+    .line 52
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    move-object/from16 v1, p44
+
+    .line 53
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    move-object/from16 v1, p45
+
+    .line 54
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    move-object/from16 v1, p46
+
+    .line 55
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    move-object/from16 v1, p47
+
+    .line 56
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    move-object/from16 v1, p48
+
+    .line 57
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    move-object/from16 v1, p49
+
+    .line 58
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    move-object/from16 v1, p50
+
+    .line 59
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    move-object/from16 v1, p51
+
+    .line 60
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    move-object/from16 v1, p52
+
+    .line 61
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    move-object/from16 v1, p53
+
+    .line 62
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    move-object/from16 v1, p54
+
+    .line 63
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    move-object/from16 v1, p55
+
+    .line 64
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    move-object/from16 v1, p56
+
+    .line 65
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    move-object/from16 v1, p57
+
+    .line 66
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    move-object/from16 v1, p58
+
+    .line 67
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    move-object/from16 v1, p59
+
+    .line 68
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    move-object/from16 v1, p60
+
+    .line 69
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    move-object/from16 v1, p61
+
+    .line 70
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    move-object/from16 v1, p62
+
+    .line 71
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    move-object/from16 v1, p63
+
+    .line 72
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    move-object/from16 v1, p64
+
+    .line 73
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    move-object/from16 v1, p65
+
+    .line 74
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    move-object/from16 v1, p66
+
+    .line 75
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    move-object/from16 v1, p67
+
+    .line 76
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    move-object/from16 v1, p68
+
+    .line 77
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    move-object/from16 v1, p69
+
+    .line 78
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    move-object/from16 v1, p70
+
+    .line 79
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    move-object/from16 v1, p71
+
+    .line 80
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    move-object/from16 v1, p72
+
+    .line 81
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    move-object/from16 v1, p73
+
+    .line 82
+    iput-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;IIILkotlin/jvm/internal/DefaultConstructorMarker;)V
+    .locals 62
+
+    move/from16 v0, p74
+
+    move/from16 v1, p75
+
+    move/from16 v2, p76
+
+    and-int/lit8 v3, v0, 0x1
+
+    if-eqz v3, :cond_0
+
+    const/4 v3, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    move-object/from16 v3, p1
+
+    :goto_0
+    and-int/lit8 v5, v0, 0x2
+
+    if-eqz v5, :cond_1
+
+    const/4 v5, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    move-object/from16 v5, p2
+
+    :goto_1
+    and-int/lit8 v6, v0, 0x4
+
+    if-eqz v6, :cond_2
+
+    const/4 v6, 0x0
+
+    goto :goto_2
+
+    :cond_2
+    move-object/from16 v6, p3
+
+    :goto_2
+    and-int/lit8 v7, v0, 0x8
+
+    if-eqz v7, :cond_3
+
+    const/4 v7, 0x0
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v7, p4
+
+    :goto_3
+    and-int/lit8 v8, v0, 0x10
+
+    if-eqz v8, :cond_4
+
+    const/4 v8, 0x0
+
+    goto :goto_4
+
+    :cond_4
+    move-object/from16 v8, p5
+
+    :goto_4
+    and-int/lit8 v9, v0, 0x20
+
+    if-eqz v9, :cond_5
+
+    const/4 v9, 0x0
+
+    goto :goto_5
+
+    :cond_5
+    move-object/from16 v9, p6
+
+    :goto_5
+    and-int/lit8 v10, v0, 0x40
+
+    if-eqz v10, :cond_6
+
+    const/4 v10, 0x0
+
+    goto :goto_6
+
+    :cond_6
+    move-object/from16 v10, p7
+
+    :goto_6
+    and-int/lit16 v11, v0, 0x80
+
+    if-eqz v11, :cond_7
+
+    const/4 v11, 0x0
+
+    goto :goto_7
+
+    :cond_7
+    move-object/from16 v11, p8
+
+    :goto_7
+    and-int/lit16 v12, v0, 0x100
+
+    if-eqz v12, :cond_8
+
+    const/4 v12, 0x0
+
+    goto :goto_8
+
+    :cond_8
+    move-object/from16 v12, p9
+
+    :goto_8
+    and-int/lit16 v13, v0, 0x200
+
+    if-eqz v13, :cond_9
+
+    const/4 v13, 0x0
+
+    goto :goto_9
+
+    :cond_9
+    move-object/from16 v13, p10
+
+    :goto_9
+    and-int/lit16 v14, v0, 0x400
+
+    if-eqz v14, :cond_a
+
+    const/4 v14, 0x0
+
+    goto :goto_a
+
+    :cond_a
+    move-object/from16 v14, p11
+
+    :goto_a
+    and-int/lit16 v15, v0, 0x800
+
+    if-eqz v15, :cond_b
+
+    const/4 v15, 0x0
+
+    goto :goto_b
+
+    :cond_b
+    move-object/from16 v15, p12
+
+    :goto_b
+    and-int/lit16 v4, v0, 0x1000
+
+    if-eqz v4, :cond_c
+
+    const/4 v4, 0x0
+
+    goto :goto_c
+
+    :cond_c
+    move-object/from16 v4, p13
+
+    :goto_c
+    move-object/from16 p13, v4
+
+    and-int/lit16 v4, v0, 0x2000
+
+    if-eqz v4, :cond_d
+
+    const/4 v4, 0x0
+
+    goto :goto_d
+
+    :cond_d
+    move-object/from16 v4, p14
+
+    :goto_d
+    move-object/from16 p14, v4
+
+    and-int/lit16 v4, v0, 0x4000
+
+    if-eqz v4, :cond_e
+
+    const/4 v4, 0x0
+
+    goto :goto_e
+
+    :cond_e
+    move-object/from16 v4, p15
+
+    :goto_e
+    const v16, 0x8000
+
+    and-int v17, v0, v16
+
+    if-eqz v17, :cond_f
+
+    const/16 v17, 0x0
+
+    goto :goto_f
+
+    :cond_f
+    move-object/from16 v17, p16
+
+    :goto_f
+    const/high16 v18, 0x10000
+
+    and-int v19, v0, v18
+
+    if-eqz v19, :cond_10
+
+    const/16 v19, 0x0
+
+    goto :goto_10
+
+    :cond_10
+    move-object/from16 v19, p17
+
+    :goto_10
+    const/high16 v20, 0x20000
+
+    and-int v21, v0, v20
+
+    if-eqz v21, :cond_11
+
+    const/16 v21, 0x0
+
+    goto :goto_11
+
+    :cond_11
+    move-object/from16 v21, p18
+
+    :goto_11
+    const/high16 v22, 0x40000
+
+    and-int v23, v0, v22
+
+    if-eqz v23, :cond_12
+
+    const/16 v23, 0x0
+
+    goto :goto_12
+
+    :cond_12
+    move-object/from16 v23, p19
+
+    :goto_12
+    const/high16 v24, 0x80000
+
+    and-int v25, v0, v24
+
+    if-eqz v25, :cond_13
+
+    const/16 v25, 0x0
+
+    goto :goto_13
+
+    :cond_13
+    move-object/from16 v25, p20
+
+    :goto_13
+    const/high16 v26, 0x100000
+
+    and-int v27, v0, v26
+
+    if-eqz v27, :cond_14
+
+    const/16 v27, 0x0
+
+    goto :goto_14
+
+    :cond_14
+    move-object/from16 v27, p21
+
+    :goto_14
+    const/high16 v28, 0x200000
+
+    and-int v28, v0, v28
+
+    if-eqz v28, :cond_15
+
+    const/16 v28, 0x0
+
+    goto :goto_15
+
+    :cond_15
+    move-object/from16 v28, p22
+
+    :goto_15
+    const/high16 v29, 0x400000
+
+    and-int v29, v0, v29
+
+    if-eqz v29, :cond_16
+
+    const/16 v29, 0x0
+
+    goto :goto_16
+
+    :cond_16
+    move-object/from16 v29, p23
+
+    :goto_16
+    const/high16 v30, 0x800000
+
+    and-int v30, v0, v30
+
+    if-eqz v30, :cond_17
+
+    const/16 v30, 0x0
+
+    goto :goto_17
+
+    :cond_17
+    move-object/from16 v30, p24
+
+    :goto_17
+    const/high16 v31, 0x1000000
+
+    and-int v31, v0, v31
+
+    if-eqz v31, :cond_18
+
+    const/16 v31, 0x0
+
+    goto :goto_18
+
+    :cond_18
+    move-object/from16 v31, p25
+
+    :goto_18
+    const/high16 v32, 0x2000000
+
+    and-int v32, v0, v32
+
+    if-eqz v32, :cond_19
+
+    const/16 v32, 0x0
+
+    goto :goto_19
+
+    :cond_19
+    move-object/from16 v32, p26
+
+    :goto_19
+    const/high16 v33, 0x4000000
+
+    and-int v33, v0, v33
+
+    if-eqz v33, :cond_1a
+
+    const/16 v33, 0x0
+
+    goto :goto_1a
+
+    :cond_1a
+    move-object/from16 v33, p27
+
+    :goto_1a
+    const/high16 v34, 0x8000000
+
+    and-int v34, v0, v34
+
+    if-eqz v34, :cond_1b
+
+    const/16 v34, 0x0
+
+    goto :goto_1b
+
+    :cond_1b
+    move-object/from16 v34, p28
+
+    :goto_1b
+    const/high16 v35, 0x10000000
+
+    and-int v35, v0, v35
+
+    if-eqz v35, :cond_1c
+
+    const/16 v35, 0x0
+
+    goto :goto_1c
+
+    :cond_1c
+    move-object/from16 v35, p29
+
+    :goto_1c
+    const/high16 v36, 0x20000000
+
+    and-int v36, v0, v36
+
+    if-eqz v36, :cond_1d
+
+    const/16 v36, 0x0
+
+    goto :goto_1d
+
+    :cond_1d
+    move-object/from16 v36, p30
+
+    :goto_1d
+    const/high16 v37, 0x40000000    # 2.0f
+
+    and-int v37, v0, v37
+
+    if-eqz v37, :cond_1e
+
+    const/16 v37, 0x0
+
+    goto :goto_1e
+
+    :cond_1e
+    move-object/from16 v37, p31
+
+    :goto_1e
+    const/high16 v38, -0x80000000
+
+    and-int v0, v0, v38
+
+    if-eqz v0, :cond_1f
+
+    const/4 v0, 0x0
+
+    goto :goto_1f
+
+    :cond_1f
+    move-object/from16 v0, p32
+
+    :goto_1f
+    and-int/lit8 v38, v1, 0x1
+
+    if-eqz v38, :cond_20
+
+    const/16 v38, 0x0
+
+    goto :goto_20
+
+    :cond_20
+    move-object/from16 v38, p33
+
+    :goto_20
+    and-int/lit8 v39, v1, 0x2
+
+    if-eqz v39, :cond_21
+
+    const/16 v39, 0x0
+
+    goto :goto_21
+
+    :cond_21
+    move-object/from16 v39, p34
+
+    :goto_21
+    and-int/lit8 v40, v1, 0x4
+
+    if-eqz v40, :cond_22
+
+    const/16 v40, 0x0
+
+    goto :goto_22
+
+    :cond_22
+    move-object/from16 v40, p35
+
+    :goto_22
+    and-int/lit8 v41, v1, 0x8
+
+    if-eqz v41, :cond_23
+
+    const/16 v41, 0x0
+
+    goto :goto_23
+
+    :cond_23
+    move-object/from16 v41, p36
+
+    :goto_23
+    and-int/lit8 v42, v1, 0x10
+
+    if-eqz v42, :cond_24
+
+    const/16 v42, 0x0
+
+    goto :goto_24
+
+    :cond_24
+    move-object/from16 v42, p37
+
+    :goto_24
+    and-int/lit8 v43, v1, 0x20
+
+    if-eqz v43, :cond_25
+
+    const/16 v43, 0x0
+
+    goto :goto_25
+
+    :cond_25
+    move-object/from16 v43, p38
+
+    :goto_25
+    and-int/lit8 v44, v1, 0x40
+
+    if-eqz v44, :cond_26
+
+    const/16 v44, 0x0
+
+    goto :goto_26
+
+    :cond_26
+    move-object/from16 v44, p39
+
+    :goto_26
+    move-object/from16 p32, v0
+
+    and-int/lit16 v0, v1, 0x80
+
+    if-eqz v0, :cond_27
+
+    const/4 v0, 0x0
+
+    goto :goto_27
+
+    :cond_27
+    move-object/from16 v0, p40
+
+    :goto_27
+    move-object/from16 p40, v0
+
+    and-int/lit16 v0, v1, 0x100
+
+    if-eqz v0, :cond_28
+
+    const/4 v0, 0x0
+
+    goto :goto_28
+
+    :cond_28
+    move-object/from16 v0, p41
+
+    :goto_28
+    move-object/from16 p41, v0
+
+    and-int/lit16 v0, v1, 0x200
+
+    if-eqz v0, :cond_29
+
+    const/4 v0, 0x0
+
+    goto :goto_29
+
+    :cond_29
+    move-object/from16 v0, p42
+
+    :goto_29
+    move-object/from16 p42, v0
+
+    and-int/lit16 v0, v1, 0x400
+
+    if-eqz v0, :cond_2a
+
+    const/4 v0, 0x0
+
+    goto :goto_2a
+
+    :cond_2a
+    move-object/from16 v0, p43
+
+    :goto_2a
+    move-object/from16 p43, v0
+
+    and-int/lit16 v0, v1, 0x800
+
+    if-eqz v0, :cond_2b
+
+    const/4 v0, 0x0
+
+    goto :goto_2b
+
+    :cond_2b
+    move-object/from16 v0, p44
+
+    :goto_2b
+    move-object/from16 p44, v0
+
+    and-int/lit16 v0, v1, 0x1000
+
+    if-eqz v0, :cond_2c
+
+    const/4 v0, 0x0
+
+    goto :goto_2c
+
+    :cond_2c
+    move-object/from16 v0, p45
+
+    :goto_2c
+    move-object/from16 p45, v0
+
+    and-int/lit16 v0, v1, 0x2000
+
+    if-eqz v0, :cond_2d
+
+    const/4 v0, 0x0
+
+    goto :goto_2d
+
+    :cond_2d
+    move-object/from16 v0, p46
+
+    :goto_2d
+    move-object/from16 p46, v0
+
+    and-int/lit16 v0, v1, 0x4000
+
+    if-eqz v0, :cond_2e
+
+    const/4 v0, 0x0
+
+    goto :goto_2e
+
+    :cond_2e
+    move-object/from16 v0, p47
+
+    :goto_2e
+    and-int v16, v1, v16
+
+    if-eqz v16, :cond_2f
+
+    const/16 v16, 0x0
+
+    goto :goto_2f
+
+    :cond_2f
+    move-object/from16 v16, p48
+
+    :goto_2f
+    and-int v18, v1, v18
+
+    if-eqz v18, :cond_30
+
+    const/16 v18, 0x0
+
+    goto :goto_30
+
+    :cond_30
+    move-object/from16 v18, p49
+
+    :goto_30
+    and-int v20, v1, v20
+
+    if-eqz v20, :cond_31
+
+    const/16 v20, 0x0
+
+    goto :goto_31
+
+    :cond_31
+    move-object/from16 v20, p50
+
+    :goto_31
+    and-int v22, v1, v22
+
+    if-eqz v22, :cond_32
+
+    const/16 v22, 0x0
+
+    goto :goto_32
+
+    :cond_32
+    move-object/from16 v22, p51
+
+    :goto_32
+    and-int v24, v1, v24
+
+    if-eqz v24, :cond_33
+
+    const/16 v24, 0x0
+
+    goto :goto_33
+
+    :cond_33
+    move-object/from16 v24, p52
+
+    :goto_33
+    and-int v26, v1, v26
+
+    if-eqz v26, :cond_34
+
+    const/16 v26, 0x0
+
+    goto :goto_34
+
+    :cond_34
+    move-object/from16 v26, p53
+
+    :goto_34
+    const/high16 v45, 0x200000
+
+    and-int v45, v1, v45
+
+    if-eqz v45, :cond_35
+
+    const/16 v45, 0x0
+
+    goto :goto_35
+
+    :cond_35
+    move-object/from16 v45, p54
+
+    :goto_35
+    const/high16 v46, 0x400000
+
+    and-int v46, v1, v46
+
+    if-eqz v46, :cond_36
+
+    const/16 v46, 0x0
+
+    goto :goto_36
+
+    :cond_36
+    move-object/from16 v46, p55
+
+    :goto_36
+    const/high16 v47, 0x800000
+
+    and-int v47, v1, v47
+
+    if-eqz v47, :cond_37
+
+    const/16 v47, 0x0
+
+    goto :goto_37
+
+    :cond_37
+    move-object/from16 v47, p56
+
+    :goto_37
+    const/high16 v48, 0x1000000
+
+    and-int v48, v1, v48
+
+    if-eqz v48, :cond_38
+
+    const/16 v48, 0x0
+
+    goto :goto_38
+
+    :cond_38
+    move-object/from16 v48, p57
+
+    :goto_38
+    const/high16 v49, 0x2000000
+
+    and-int v49, v1, v49
+
+    if-eqz v49, :cond_39
+
+    const/16 v49, 0x0
+
+    goto :goto_39
+
+    :cond_39
+    move-object/from16 v49, p58
+
+    :goto_39
+    const/high16 v50, 0x4000000
+
+    and-int v50, v1, v50
+
+    if-eqz v50, :cond_3a
+
+    const/16 v50, 0x0
+
+    goto :goto_3a
+
+    :cond_3a
+    move-object/from16 v50, p59
+
+    :goto_3a
+    const/high16 v51, 0x8000000
+
+    and-int v51, v1, v51
+
+    if-eqz v51, :cond_3b
+
+    const/16 v51, 0x0
+
+    goto :goto_3b
+
+    :cond_3b
+    move-object/from16 v51, p60
+
+    :goto_3b
+    const/high16 v52, 0x10000000
+
+    and-int v52, v1, v52
+
+    if-eqz v52, :cond_3c
+
+    const/16 v52, 0x0
+
+    goto :goto_3c
+
+    :cond_3c
+    move-object/from16 v52, p61
+
+    :goto_3c
+    const/high16 v53, 0x20000000
+
+    and-int v53, v1, v53
+
+    if-eqz v53, :cond_3d
+
+    const/16 v53, 0x0
+
+    goto :goto_3d
+
+    :cond_3d
+    move-object/from16 v53, p62
+
+    :goto_3d
+    const/high16 v54, 0x40000000    # 2.0f
+
+    and-int v54, v1, v54
+
+    if-eqz v54, :cond_3e
+
+    const/16 v54, 0x0
+
+    goto :goto_3e
+
+    :cond_3e
+    move-object/from16 v54, p63
+
+    :goto_3e
+    const/high16 v55, -0x80000000
+
+    and-int v1, v1, v55
+
+    if-eqz v1, :cond_3f
+
+    const/4 v1, 0x0
+
+    goto :goto_3f
+
+    :cond_3f
+    move-object/from16 v1, p64
+
+    :goto_3f
+    and-int/lit8 v55, v2, 0x1
+
+    if-eqz v55, :cond_40
+
+    const/16 v55, 0x0
+
+    goto :goto_40
+
+    :cond_40
+    move-object/from16 v55, p65
+
+    :goto_40
+    and-int/lit8 v56, v2, 0x2
+
+    if-eqz v56, :cond_41
+
+    const/16 v56, 0x0
+
+    goto :goto_41
+
+    :cond_41
+    move-object/from16 v56, p66
+
+    :goto_41
+    and-int/lit8 v57, v2, 0x4
+
+    if-eqz v57, :cond_42
+
+    const/16 v57, 0x0
+
+    goto :goto_42
+
+    :cond_42
+    move-object/from16 v57, p67
+
+    :goto_42
+    and-int/lit8 v58, v2, 0x8
+
+    if-eqz v58, :cond_43
+
+    const/16 v58, 0x0
+
+    goto :goto_43
+
+    :cond_43
+    move-object/from16 v58, p68
+
+    :goto_43
+    and-int/lit8 v59, v2, 0x10
+
+    if-eqz v59, :cond_44
+
+    const/16 v59, 0x0
+
+    goto :goto_44
+
+    :cond_44
+    move-object/from16 v59, p69
+
+    :goto_44
+    and-int/lit8 v60, v2, 0x20
+
+    if-eqz v60, :cond_45
+
+    const/16 v60, 0x0
+
+    goto :goto_45
+
+    :cond_45
+    move-object/from16 v60, p70
+
+    :goto_45
+    and-int/lit8 v61, v2, 0x40
+
+    if-eqz v61, :cond_46
+
+    const/16 v61, 0x0
+
+    goto :goto_46
+
+    :cond_46
+    move-object/from16 v61, p71
+
+    :goto_46
+    move-object/from16 p64, v1
+
+    and-int/lit16 v1, v2, 0x80
+
+    if-eqz v1, :cond_47
+
+    const/4 v1, 0x0
+
+    goto :goto_47
+
+    :cond_47
+    move-object/from16 v1, p72
+
+    :goto_47
+    and-int/lit16 v2, v2, 0x100
+
+    if-eqz v2, :cond_48
+
+    const/4 v2, 0x0
+
+    goto :goto_48
+
+    :cond_48
+    move-object/from16 v2, p73
+
+    :goto_48
+    move-object/from16 p1, v3
+
+    move-object/from16 p2, v5
+
+    move-object/from16 p3, v6
+
+    move-object/from16 p4, v7
+
+    move-object/from16 p5, v8
+
+    move-object/from16 p6, v9
+
+    move-object/from16 p7, v10
+
+    move-object/from16 p8, v11
+
+    move-object/from16 p9, v12
+
+    move-object/from16 p10, v13
+
+    move-object/from16 p11, v14
+
+    move-object/from16 p12, v15
+
+    move-object/from16 p15, v4
+
+    move-object/from16 p16, v17
+
+    move-object/from16 p17, v19
+
+    move-object/from16 p18, v21
+
+    move-object/from16 p19, v23
+
+    move-object/from16 p20, v25
+
+    move-object/from16 p21, v27
+
+    move-object/from16 p22, v28
+
+    move-object/from16 p23, v29
+
+    move-object/from16 p24, v30
+
+    move-object/from16 p25, v31
+
+    move-object/from16 p26, v32
+
+    move-object/from16 p27, v33
+
+    move-object/from16 p28, v34
+
+    move-object/from16 p29, v35
+
+    move-object/from16 p30, v36
+
+    move-object/from16 p31, v37
+
+    move-object/from16 p33, v38
+
+    move-object/from16 p34, v39
+
+    move-object/from16 p35, v40
+
+    move-object/from16 p36, v41
+
+    move-object/from16 p37, v42
+
+    move-object/from16 p38, v43
+
+    move-object/from16 p39, v44
+
+    move-object/from16 p47, v0
+
+    move-object/from16 p48, v16
+
+    move-object/from16 p49, v18
+
+    move-object/from16 p50, v20
+
+    move-object/from16 p51, v22
+
+    move-object/from16 p52, v24
+
+    move-object/from16 p53, v26
+
+    move-object/from16 p54, v45
+
+    move-object/from16 p55, v46
+
+    move-object/from16 p56, v47
+
+    move-object/from16 p57, v48
+
+    move-object/from16 p58, v49
+
+    move-object/from16 p59, v50
+
+    move-object/from16 p60, v51
+
+    move-object/from16 p61, v52
+
+    move-object/from16 p62, v53
+
+    move-object/from16 p63, v54
+
+    move-object/from16 p65, v55
+
+    move-object/from16 p66, v56
+
+    move-object/from16 p67, v57
+
+    move-object/from16 p68, v58
+
+    move-object/from16 p69, v59
+
+    move-object/from16 p70, v60
+
+    move-object/from16 p71, v61
+
+    move-object/from16 p72, v1
+
+    move-object/from16 p73, v2
+
+    .line 9
+    invoke-direct/range {p0 .. p73}, Ljp/co/sony/mc/camera/idd/value/IddSetting;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;)V
+    .locals 79
+
+    move-object/from16 v0, p0
+
+    const-string/jumbo v1, "value"
+
+    move-object/from16 v15, p1
+
+    invoke-static {v15, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 85
+    new-instance v2, Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    move-object v1, v2
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getAccessaryFlip()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;
+
+    move-result-object v3
+
+    const-string v4, "getAccessaryFlip(...)"
+
+    invoke-static {v3, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v2, v3}, Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlip;)V
+
+    .line 86
+    new-instance v3, Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    move-object v2, v3
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getAutoExposureLock()Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;
+
+    move-result-object v4
+
+    const-string v5, "getAutoExposureLock(...)"
+
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v3, v4}, Ljp/co/sony/mc/camera/idd/value/IddAel;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/AutoExposureLock;)V
+
+    .line 87
+    new-instance v4, Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    move-object v3, v4
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getAspectRatio()Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;
+
+    move-result-object v5
+
+    const-string v6, "getAspectRatio(...)"
+
+    invoke-static {v5, v6}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v4, v5}, Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/AspectRatio;)V
+
+    .line 88
+    new-instance v5, Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    move-object v4, v5
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getShutterSound()Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;
+
+    move-result-object v6
+
+    const-string v7, "getShutterSound(...)"
+
+    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v5, v6}, Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ShutterSound;)V
+
+    .line 89
+    new-instance v6, Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    move-object v5, v6
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getSaveDestination()Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;
+
+    move-result-object v7
+
+    const-string v8, "getSaveDestination(...)"
+
+    invoke-static {v7, v8}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v6, v7}, Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/DestinationToSave;)V
+
+    .line 90
+    new-instance v7, Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    move-object v6, v7
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getDisplayMode()Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;
+
+    move-result-object v8
+
+    const-string v9, "getDisplayMode(...)"
+
+    invoke-static {v8, v9}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v7, v8}, Ljp/co/sony/mc/camera/idd/value/IddDisp;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/DisplayMode;)V
+
+    .line 91
+    new-instance v8, Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    move-object v7, v8
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getDriveMode()Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;
+
+    move-result-object v9
+
+    const-string v10, "getDriveMode(...)"
+
+    invoke-static {v9, v10}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v8, v9}, Ljp/co/sony/mc/camera/idd/value/IddDriveMode;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/DriveMode;)V
+
+    .line 92
+    new-instance v9, Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    move-object v8, v9
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getEv()Ljp/co/sony/mc/camera/configuration/parameters/Ev;
+
+    move-result-object v10
+
+    const-string v11, "getEv(...)"
+
+    invoke-static {v10, v11}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v9, v10}, Ljp/co/sony/mc/camera/idd/value/IddEv;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/Ev;)V
+
+    .line 93
+    new-instance v10, Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    move-object v9, v10
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFaceDetection()Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;
+
+    move-result-object v11
+
+    const-string v12, "getFaceDetection(...)"
+
+    invoke-static {v11, v12}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v10, v11}, Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/FaceDetection;)V
+
+    .line 94
+    new-instance v11, Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    move-object v10, v11
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFlash()Ljp/co/sony/mc/camera/configuration/parameters/Flash;
+
+    move-result-object v12
+
+    const-string v13, "getFlash(...)"
+
+    invoke-static {v12, v13}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v11, v12}, Ljp/co/sony/mc/camera/idd/value/IddFlash;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/Flash;)V
+
+    .line 95
+    new-instance v12, Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    move-object v11, v12
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusArea()Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;
+
+    move-result-object v13
+
+    const-string v14, "getFocusArea(...)"
+
+    invoke-static {v13, v14}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v12, v13}, Ljp/co/sony/mc/camera/idd/value/IddFocusArea;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/FocusArea;)V
+
+    .line 96
+    new-instance v13, Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    move-object v12, v13
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusMode()Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;
+
+    move-result-object v14
+
+    const-string v15, "getFocusMode(...)"
+
+    invoke-static {v14, v15}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v13, v14}, Ljp/co/sony/mc/camera/idd/value/IddFocusMode;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/FocusMode;)V
+
+    .line 97
+    new-instance v14, Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    move-object v13, v14
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getGeotag()Ljp/co/sony/mc/camera/configuration/parameters/Geotag;
+
+    move-result-object v15
+
+    const-string v0, "getGeotag(...)"
+
+    invoke-static {v15, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v14, v15}, Ljp/co/sony/mc/camera/idd/value/IddGeoTag;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/Geotag;)V
+
+    .line 98
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    move-object v14, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBurstFeedback()Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
+
+    move-result-object v15
+
+    move-object/from16 v74, v1
+
+    const-string v1, "getBurstFeedback(...)"
+
+    invoke-static {v15, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v15}, Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;)V
+
+    .line 99
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    move-object v15, v0
+
+    move-object/from16 v75, v2
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getGridLine()Ljp/co/sony/mc/camera/configuration/parameters/GridLine;
+
+    move-result-object v2
+
+    move-object/from16 v76, v3
+
+    const-string v3, "getGridLine(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddGridLine;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/GridLine;)V
+
+    .line 100
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    move-object/from16 v16, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getHdr()Ljp/co/sony/mc/camera/configuration/parameters/Hdr;
+
+    move-result-object v2
+
+    const-string v3, "getHdr(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddHdrDro;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/Hdr;)V
+
+    .line 101
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    move-object/from16 v17, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCameraId()Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;
+
+    move-result-object v2
+
+    const-string v3, "getCameraId(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddLens;-><init>(Ljp/co/sony/mc/camera/device/CameraInfo$CameraId;)V
+
+    .line 102
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    move-object/from16 v18, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getDistortionCorrection()Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;
+
+    move-result-object v2
+
+    const-string v3, "getDistortionCorrection(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/DistortionCorrection;)V
+
+    .line 103
+    sget-object v19, Ljp/co/sony/mc/camera/idd/value/IddLock;->OFF:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    .line 104
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    move-object/from16 v20, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getIso()Ljp/co/sony/mc/camera/configuration/parameters/Iso;
+
+    move-result-object v2
+
+    const-string v3, "getIso(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddIso;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/Iso;)V
+
+    .line 105
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    move-object/from16 v21, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getMetering()Ljp/co/sony/mc/camera/configuration/parameters/Metering;
+
+    move-result-object v2
+
+    const-string v3, "getMetering(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddMetering;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/Metering;)V
+
+    .line 106
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    move-object/from16 v22, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getShutterSpeed()Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;
+
+    move-result-object v2
+
+    const-string v3, "getShutterSpeed(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ShutterSpeed;)V
+
+    .line 107
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    move-object/from16 v23, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getHandShutter()Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;
+
+    move-result-object v2
+
+    const-string v3, "getHandShutter(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddHandShutter;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/HandShutter;)V
+
+    .line 108
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    move-object/from16 v24, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBackSoftSkin()Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;
+
+    move-result-object v2
+
+    const-string v3, "getBackSoftSkin(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/BackSoftSkin;)V
+
+    .line 109
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    move-object/from16 v25, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getTouchIntention()Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;
+
+    move-result-object v2
+
+    const-string v3, "getTouchIntention(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/TouchIntention;)V
+
+    .line 110
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    move-object/from16 v26, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVolumeKey()Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;
+
+    move-result-object v2
+
+    const-string v3, "getVolumeKey(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VolumeKey;)V
+
+    .line 111
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    move-object/from16 v27, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getWhiteBalance()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
+
+    move-result-object v2
+
+    const-string v3, "getWhiteBalance(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;)V
+
+    .line 112
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    move-object/from16 v28, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusFrameColor()Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;
+
+    move-result-object v2
+
+    const-string v3, "getFocusFrameColor(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/FocusFrameColor;)V
+
+    .line 113
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    move-object/from16 v29, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getPhotoFormat()Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;
+
+    move-result-object v2
+
+    const-string v3, "getPhotoFormat(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddFileFormat;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/PhotoFormat;)V
+
+    .line 114
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    move-object/from16 v30, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoSize()Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    move-result-object v2
+
+    const-string v3, "getVideoSize(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddResolution;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)V
+
+    .line 115
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddMode$Wrapper;
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getCapturingMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;->getLayoutMode()Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;
+
+    move-result-object v2
+
+    move-object/from16 v77, v4
+
+    const-string v4, "getLayoutMode(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddMode$Wrapper;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/CapturingMode;)V
+
+    move-object/from16 v31, v0
+
+    check-cast v31, Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    .line 116
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    move-object/from16 v32, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getWbExtensionData()Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
+
+    move-result-object v2
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getWhiteBalance()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getAbGmValue(Ljava/lang/String;)[F
+
+    move-result-object v2
+
+    const/4 v4, 0x0
+
+    aget v2, v2, v4
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;-><init>(F)V
+
+    .line 117
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    move-object/from16 v33, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getWbExtensionData()Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
+
+    move-result-object v2
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getWhiteBalance()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v2, v4}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getAbGmValue(Ljava/lang/String;)[F
+
+    move-result-object v2
+
+    const/4 v4, 0x1
+
+    aget v2, v2, v4
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;-><init>(F)V
+
+    .line 118
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    move-object/from16 v34, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getSuperResolutionZoom()Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;
+
+    move-result-object v2
+
+    const-string v4, "getSuperResolutionZoom(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/SuperResolutionZoom;)V
+
+    .line 119
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    move-object/from16 v35, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoSize()Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;
+
+    move-result-object v2
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoSize;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoSize;)V
+
+    .line 120
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    move-object/from16 v36, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoFps()Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;
+
+    move-result-object v2
+
+    const-string v3, "getVideoFps(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoFps;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoFps;)V
+
+    .line 121
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    move-object/from16 v37, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getExtendFps()Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
+
+    move-result-object v2
+
+    const-string v3, "getExtendFps(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddExtendFps;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;)V
+
+    .line 122
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    move-object/from16 v38, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBrightness()I
+
+    move-result v2
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddBrightness;-><init>(I)V
+
+    .line 123
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    move-object/from16 v39, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getAmberBlue()F
+
+    move-result v2
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;-><init>(F)V
+
+    .line 124
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    move-object/from16 v40, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getQuickLaunch()Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;
+
+    move-result-object v2
+
+    const-string v4, "getQuickLaunch(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddFastCapture;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/FastCapture;)V
+
+    .line 125
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    move-object/from16 v41, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getPhotoLight()Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;
+
+    move-result-object v2
+
+    const-string v4, "getPhotoLight(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/PhotoLight;)V
+
+    .line 126
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    move-object/from16 v42, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoStabilizer()Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;
+
+    move-result-object v2
+
+    const-string v4, "getVideoStabilizer(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoStabilizer;)V
+
+    .line 127
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    move-object/from16 v43, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getQrCodeDetection()Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;
+
+    move-result-object v2
+
+    const-string v4, "getQrCodeDetection(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/QrCodeDetection;)V
+
+    .line 128
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    move-object/from16 v44, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBokehStrength()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;-><init>(Ljava/lang/Integer;)V
+
+    .line 129
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    move-object/from16 v45, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getDisplayFlash()Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;
+
+    move-result-object v2
+
+    const-string v4, "getDisplayFlash(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/DisplayFlash;)V
+
+    .line 130
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    move-object/from16 v46, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getRemoteControl()Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;
+
+    move-result-object v2
+
+    const-string v4, "getRemoteControl(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddBtRemote;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/RemoteControl;)V
+
+    .line 131
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    move-object/from16 v47, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getHapticFeedback()Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;
+
+    move-result-object v2
+
+    const-string v4, "getHapticFeedback(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/HapticFeedback;)V
+
+    .line 132
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    move-object/from16 v48, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getEnduranceMode()Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;
+
+    move-result-object v2
+
+    const-string v4, "getEnduranceMode(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/EnduranceMode;)V
+
+    .line 133
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    move-object/from16 v49, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+
+    move-result-object v2
+
+    const-string v4, "getVideoHdr(...)"
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)V
+
+    .line 134
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    move-object/from16 v50, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoMfHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;
+
+    move-result-object v2
+
+    move-object/from16 v78, v5
+
+    const-string v5, "getVideoMfHdr(...)"
+
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoMfHdr;)V
+
+    .line 135
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    move-object/from16 v51, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getWbExtensionData()Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;
+
+    move-result-object v2
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getWhiteBalance()Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljp/co/sony/mc/camera/configuration/parameters/WhiteBalance;->getValue()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v2, v5}, Ljp/co/sony/mc/camera/configuration/parameters/WbExtensionData;->getTemperature(Ljava/lang/String;)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddTemperature;-><init>(I)V
+
+    .line 136
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    move-object/from16 v52, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getProductShowcase()Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;
+
+    move-result-object v2
+
+    const-string v5, "getProductShowcase(...)"
+
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ProductShowcase;)V
+
+    .line 137
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    move-object/from16 v53, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getLowLightMode()Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;
+
+    move-result-object v2
+
+    const-string v5, "getLowLightMode(...)"
+
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddNight;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/LowLightMode;)V
+
+    .line 138
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    move-object/from16 v54, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getPeaking()Ljp/co/sony/mc/camera/configuration/parameters/Peaking;
+
+    move-result-object v2
+
+    const-string v5, "getPeaking(...)"
+
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddPeaking;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/Peaking;)V
+
+    .line 139
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    move-object/from16 v55, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getPeakingColor()Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;
+
+    move-result-object v2
+
+    const-string v5, "getPeakingColor(...)"
+
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/PeakingColor;)V
+
+    .line 140
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    move-object/from16 v56, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getColorToneProfile()Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;
+
+    move-result-object v2
+
+    const-string v5, "getColorToneProfile(...)"
+
+    invoke-static {v2, v5}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ColorToneProfile;)V
+
+    .line 141
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    move-object/from16 v57, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getExtendFps()Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;
+
+    move-result-object v2
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ExtendFps;)V
+
+    .line 142
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    move-object/from16 v58, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getComputationalMode()Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;
+
+    move-result-object v2
+
+    const-string v3, "getComputationalMode(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ComputationalMode;)V
+
+    .line 143
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    move-object/from16 v59, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getSelfTimer()Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;
+
+    move-result-object v2
+
+    const-string v3, "getSelfTimer(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/SelfTimer;)V
+
+    .line 144
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    move-object/from16 v60, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getStreamingConnectMode()Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;
+
+    move-result-object v2
+
+    const-string v3, "getStreamingConnectMode(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddConnectMode;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/StreamingConnectMode;)V
+
+    .line 145
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    move-object/from16 v61, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getStreamingAudioMute()Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;
+
+    move-result-object v2
+
+    const-string v3, "getStreamingAudioMute(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/StreamingAudioMute;)V
+
+    .line 146
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    move-object/from16 v62, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoQuality()Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;
+
+    move-result-object v2
+
+    const-string v3, "getVideoQuality(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoQuality;)V
+
+    .line 147
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    move-object/from16 v63, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getMacroMode()Ljp/co/sony/mc/camera/configuration/parameters/MacroMode;
+
+    move-result-object v2
+
+    const-string v3, "getMacroMode(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddMacroMode;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/MacroMode;)V
+
+    .line 148
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    move-object/from16 v64, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getNetworkUsage()Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;
+
+    move-result-object v2
+
+    const-string v3, "getNetworkUsage(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/NetworkUsage;)V
+
+    .line 149
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    move-object/from16 v65, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getVideoHdr()Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;
+
+    move-result-object v2
+
+    invoke-static {v2, v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/VideoHdr;)V
+
+    .line 150
+    sget-object v0, Ljp/co/sony/mc/camera/idd/value/IddMic;->Companion:Ljp/co/sony/mc/camera/idd/value/IddMic$Companion;
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getMic()Ljp/co/sony/mc/camera/configuration/parameters/Mic;
+
+    move-result-object v2
+
+    const-string v3, "getMic(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddMic$Companion;->getMicTypeFromSetting(Ljp/co/sony/mc/camera/configuration/parameters/Mic;)Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    move-result-object v66
+
+    .line 151
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    move-object/from16 v67, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBasicModeFocusDisplay()Ljp/co/sony/mc/camera/configuration/parameters/BasicModeFocusDisplay;
+
+    move-result-object v2
+
+    const-string v3, "getBasicModeFocusDisplay(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/BasicModeFocusDisplay;)V
+
+    .line 152
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    move-object/from16 v68, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBasicModeShutterSpeedDisplay()Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;
+
+    move-result-object v2
+
+    const-string v3, "getBasicModeShutterSpeedDisplay(...)"
+
+    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/BasicModeShutterSpeedDisplay;)V
+
+    .line 153
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    move-object/from16 v69, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getBurstFeedback()Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;
+
+    move-result-object v2
+
+    invoke-static {v2, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v2}, Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/BurstFeedback;)V
+
+    .line 154
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    move-object/from16 v70, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getObjectTracking()Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;
+
+    move-result-object v1
+
+    const-string v2, "getObjectTracking(...)"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/ObjectTracking;)V
+
+    .line 155
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    move-object/from16 v71, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getFocusDistance()F
+
+    move-result v1
+
+    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;-><init>(F)V
+
+    .line 156
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    move-object/from16 v72, v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2, v1}, Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;-><init>(Ljp/co/sony/mc/camera/configuration/parameters/WindNoiseReduction;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 157
+    new-instance v0, Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    move-object/from16 v73, v0
+
+    invoke-virtual/range {p1 .. p1}, Ljp/co/sony/mc/camera/setting/CameraSettingsHolder;->getZoomRatio()F
+
+    move-result v1
+
+    invoke-direct {v0, v1}, Ljp/co/sony/mc/camera/idd/value/IddZoom;-><init>(F)V
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v74
+
+    move-object/from16 v2, v75
+
+    move-object/from16 v3, v76
+
+    move-object/from16 v4, v77
+
+    move-object/from16 v5, v78
+
+    .line 84
+    invoke-direct/range {v0 .. v73}, Ljp/co/sony/mc/camera/idd/value/IddSetting;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;)V
+
+    return-void
+.end method
+
+.method public static synthetic copy$default(Ljp/co/sony/mc/camera/idd/value/IddSetting;Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;IIILjava/lang/Object;)Ljp/co/sony/mc/camera/idd/value/IddSetting;
+    .locals 24
+
+    move-object/from16 v0, p0
+
+    move/from16 v1, p74
+
+    move/from16 v2, p75
+
+    move/from16 v3, p76
+
+    and-int/lit8 v4, v1, 0x1
+
+    if-eqz v4, :cond_0
+
+    iget-object v4, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    goto :goto_0
+
+    :cond_0
+    move-object/from16 v4, p1
+
+    :goto_0
+    and-int/lit8 v5, v1, 0x2
+
+    if-eqz v5, :cond_1
+
+    iget-object v5, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    goto :goto_1
+
+    :cond_1
+    move-object/from16 v5, p2
+
+    :goto_1
+    and-int/lit8 v6, v1, 0x4
+
+    if-eqz v6, :cond_2
+
+    iget-object v6, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    goto :goto_2
+
+    :cond_2
+    move-object/from16 v6, p3
+
+    :goto_2
+    and-int/lit8 v7, v1, 0x8
+
+    if-eqz v7, :cond_3
+
+    iget-object v7, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    goto :goto_3
+
+    :cond_3
+    move-object/from16 v7, p4
+
+    :goto_3
+    and-int/lit8 v8, v1, 0x10
+
+    if-eqz v8, :cond_4
+
+    iget-object v8, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    goto :goto_4
+
+    :cond_4
+    move-object/from16 v8, p5
+
+    :goto_4
+    and-int/lit8 v9, v1, 0x20
+
+    if-eqz v9, :cond_5
+
+    iget-object v9, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    goto :goto_5
+
+    :cond_5
+    move-object/from16 v9, p6
+
+    :goto_5
+    and-int/lit8 v10, v1, 0x40
+
+    if-eqz v10, :cond_6
+
+    iget-object v10, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    goto :goto_6
+
+    :cond_6
+    move-object/from16 v10, p7
+
+    :goto_6
+    and-int/lit16 v11, v1, 0x80
+
+    if-eqz v11, :cond_7
+
+    iget-object v11, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    goto :goto_7
+
+    :cond_7
+    move-object/from16 v11, p8
+
+    :goto_7
+    and-int/lit16 v12, v1, 0x100
+
+    if-eqz v12, :cond_8
+
+    iget-object v12, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    goto :goto_8
+
+    :cond_8
+    move-object/from16 v12, p9
+
+    :goto_8
+    and-int/lit16 v13, v1, 0x200
+
+    if-eqz v13, :cond_9
+
+    iget-object v13, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    goto :goto_9
+
+    :cond_9
+    move-object/from16 v13, p10
+
+    :goto_9
+    and-int/lit16 v14, v1, 0x400
+
+    if-eqz v14, :cond_a
+
+    iget-object v14, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    goto :goto_a
+
+    :cond_a
+    move-object/from16 v14, p11
+
+    :goto_a
+    and-int/lit16 v15, v1, 0x800
+
+    if-eqz v15, :cond_b
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    goto :goto_b
+
+    :cond_b
+    move-object/from16 v15, p12
+
+    :goto_b
+    move-object/from16 p12, v15
+
+    and-int/lit16 v15, v1, 0x1000
+
+    if-eqz v15, :cond_c
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    goto :goto_c
+
+    :cond_c
+    move-object/from16 v15, p13
+
+    :goto_c
+    move-object/from16 p13, v15
+
+    and-int/lit16 v15, v1, 0x2000
+
+    if-eqz v15, :cond_d
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    goto :goto_d
+
+    :cond_d
+    move-object/from16 v15, p14
+
+    :goto_d
+    move-object/from16 p14, v15
+
+    and-int/lit16 v15, v1, 0x4000
+
+    if-eqz v15, :cond_e
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    goto :goto_e
+
+    :cond_e
+    move-object/from16 v15, p15
+
+    :goto_e
+    const v16, 0x8000
+
+    and-int v17, v1, v16
+
+    move-object/from16 p15, v15
+
+    if-eqz v17, :cond_f
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    goto :goto_f
+
+    :cond_f
+    move-object/from16 v15, p16
+
+    :goto_f
+    const/high16 v17, 0x10000
+
+    and-int v18, v1, v17
+
+    move-object/from16 p16, v15
+
+    if-eqz v18, :cond_10
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    goto :goto_10
+
+    :cond_10
+    move-object/from16 v15, p17
+
+    :goto_10
+    const/high16 v18, 0x20000
+
+    and-int v19, v1, v18
+
+    move-object/from16 p17, v15
+
+    if-eqz v19, :cond_11
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    goto :goto_11
+
+    :cond_11
+    move-object/from16 v15, p18
+
+    :goto_11
+    const/high16 v19, 0x40000
+
+    and-int v20, v1, v19
+
+    move-object/from16 p18, v15
+
+    if-eqz v20, :cond_12
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    goto :goto_12
+
+    :cond_12
+    move-object/from16 v15, p19
+
+    :goto_12
+    const/high16 v20, 0x80000
+
+    and-int v21, v1, v20
+
+    move-object/from16 p19, v15
+
+    if-eqz v21, :cond_13
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    goto :goto_13
+
+    :cond_13
+    move-object/from16 v15, p20
+
+    :goto_13
+    const/high16 v21, 0x100000
+
+    and-int v22, v1, v21
+
+    move-object/from16 p20, v15
+
+    if-eqz v22, :cond_14
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    goto :goto_14
+
+    :cond_14
+    move-object/from16 v15, p21
+
+    :goto_14
+    const/high16 v22, 0x200000
+
+    and-int v23, v1, v22
+
+    move-object/from16 p21, v15
+
+    if-eqz v23, :cond_15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    goto :goto_15
+
+    :cond_15
+    move-object/from16 v15, p22
+
+    :goto_15
+    const/high16 v23, 0x400000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p22, v15
+
+    if-eqz v23, :cond_16
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    goto :goto_16
+
+    :cond_16
+    move-object/from16 v15, p23
+
+    :goto_16
+    const/high16 v23, 0x800000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p23, v15
+
+    if-eqz v23, :cond_17
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    goto :goto_17
+
+    :cond_17
+    move-object/from16 v15, p24
+
+    :goto_17
+    const/high16 v23, 0x1000000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p24, v15
+
+    if-eqz v23, :cond_18
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    goto :goto_18
+
+    :cond_18
+    move-object/from16 v15, p25
+
+    :goto_18
+    const/high16 v23, 0x2000000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p25, v15
+
+    if-eqz v23, :cond_19
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    goto :goto_19
+
+    :cond_19
+    move-object/from16 v15, p26
+
+    :goto_19
+    const/high16 v23, 0x4000000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p26, v15
+
+    if-eqz v23, :cond_1a
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    goto :goto_1a
+
+    :cond_1a
+    move-object/from16 v15, p27
+
+    :goto_1a
+    const/high16 v23, 0x8000000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p27, v15
+
+    if-eqz v23, :cond_1b
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    goto :goto_1b
+
+    :cond_1b
+    move-object/from16 v15, p28
+
+    :goto_1b
+    const/high16 v23, 0x10000000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p28, v15
+
+    if-eqz v23, :cond_1c
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    goto :goto_1c
+
+    :cond_1c
+    move-object/from16 v15, p29
+
+    :goto_1c
+    const/high16 v23, 0x20000000
+
+    and-int v23, v1, v23
+
+    move-object/from16 p29, v15
+
+    if-eqz v23, :cond_1d
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    goto :goto_1d
+
+    :cond_1d
+    move-object/from16 v15, p30
+
+    :goto_1d
+    const/high16 v23, 0x40000000    # 2.0f
+
+    and-int v23, v1, v23
+
+    move-object/from16 p30, v15
+
+    if-eqz v23, :cond_1e
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    goto :goto_1e
+
+    :cond_1e
+    move-object/from16 v15, p31
+
+    :goto_1e
+    const/high16 v23, -0x80000000
+
+    and-int v1, v1, v23
+
+    if-eqz v1, :cond_1f
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    goto :goto_1f
+
+    :cond_1f
+    move-object/from16 v1, p32
+
+    :goto_1f
+    and-int/lit8 v23, v2, 0x1
+
+    move-object/from16 p32, v1
+
+    if-eqz v23, :cond_20
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    goto :goto_20
+
+    :cond_20
+    move-object/from16 v1, p33
+
+    :goto_20
+    and-int/lit8 v23, v2, 0x2
+
+    move-object/from16 p33, v1
+
+    if-eqz v23, :cond_21
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    goto :goto_21
+
+    :cond_21
+    move-object/from16 v1, p34
+
+    :goto_21
+    and-int/lit8 v23, v2, 0x4
+
+    move-object/from16 p34, v1
+
+    if-eqz v23, :cond_22
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    goto :goto_22
+
+    :cond_22
+    move-object/from16 v1, p35
+
+    :goto_22
+    and-int/lit8 v23, v2, 0x8
+
+    move-object/from16 p35, v1
+
+    if-eqz v23, :cond_23
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    goto :goto_23
+
+    :cond_23
+    move-object/from16 v1, p36
+
+    :goto_23
+    and-int/lit8 v23, v2, 0x10
+
+    move-object/from16 p36, v1
+
+    if-eqz v23, :cond_24
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    goto :goto_24
+
+    :cond_24
+    move-object/from16 v1, p37
+
+    :goto_24
+    and-int/lit8 v23, v2, 0x20
+
+    move-object/from16 p37, v1
+
+    if-eqz v23, :cond_25
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    goto :goto_25
+
+    :cond_25
+    move-object/from16 v1, p38
+
+    :goto_25
+    and-int/lit8 v23, v2, 0x40
+
+    move-object/from16 p38, v1
+
+    if-eqz v23, :cond_26
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    goto :goto_26
+
+    :cond_26
+    move-object/from16 v1, p39
+
+    :goto_26
+    move-object/from16 p39, v1
+
+    and-int/lit16 v1, v2, 0x80
+
+    if-eqz v1, :cond_27
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    goto :goto_27
+
+    :cond_27
+    move-object/from16 v1, p40
+
+    :goto_27
+    move-object/from16 p40, v1
+
+    and-int/lit16 v1, v2, 0x100
+
+    if-eqz v1, :cond_28
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    goto :goto_28
+
+    :cond_28
+    move-object/from16 v1, p41
+
+    :goto_28
+    move-object/from16 p41, v1
+
+    and-int/lit16 v1, v2, 0x200
+
+    if-eqz v1, :cond_29
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    goto :goto_29
+
+    :cond_29
+    move-object/from16 v1, p42
+
+    :goto_29
+    move-object/from16 p42, v1
+
+    and-int/lit16 v1, v2, 0x400
+
+    if-eqz v1, :cond_2a
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    goto :goto_2a
+
+    :cond_2a
+    move-object/from16 v1, p43
+
+    :goto_2a
+    move-object/from16 p43, v1
+
+    and-int/lit16 v1, v2, 0x800
+
+    if-eqz v1, :cond_2b
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    goto :goto_2b
+
+    :cond_2b
+    move-object/from16 v1, p44
+
+    :goto_2b
+    move-object/from16 p44, v1
+
+    and-int/lit16 v1, v2, 0x1000
+
+    if-eqz v1, :cond_2c
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    goto :goto_2c
+
+    :cond_2c
+    move-object/from16 v1, p45
+
+    :goto_2c
+    move-object/from16 p45, v1
+
+    and-int/lit16 v1, v2, 0x2000
+
+    if-eqz v1, :cond_2d
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    goto :goto_2d
+
+    :cond_2d
+    move-object/from16 v1, p46
+
+    :goto_2d
+    move-object/from16 p46, v1
+
+    and-int/lit16 v1, v2, 0x4000
+
+    if-eqz v1, :cond_2e
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    goto :goto_2e
+
+    :cond_2e
+    move-object/from16 v1, p47
+
+    :goto_2e
+    and-int v16, v2, v16
+
+    move-object/from16 p47, v1
+
+    if-eqz v16, :cond_2f
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    goto :goto_2f
+
+    :cond_2f
+    move-object/from16 v1, p48
+
+    :goto_2f
+    and-int v16, v2, v17
+
+    move-object/from16 p48, v1
+
+    if-eqz v16, :cond_30
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    goto :goto_30
+
+    :cond_30
+    move-object/from16 v1, p49
+
+    :goto_30
+    and-int v16, v2, v18
+
+    move-object/from16 p49, v1
+
+    if-eqz v16, :cond_31
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    goto :goto_31
+
+    :cond_31
+    move-object/from16 v1, p50
+
+    :goto_31
+    and-int v16, v2, v19
+
+    move-object/from16 p50, v1
+
+    if-eqz v16, :cond_32
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    goto :goto_32
+
+    :cond_32
+    move-object/from16 v1, p51
+
+    :goto_32
+    and-int v16, v2, v20
+
+    move-object/from16 p51, v1
+
+    if-eqz v16, :cond_33
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    goto :goto_33
+
+    :cond_33
+    move-object/from16 v1, p52
+
+    :goto_33
+    and-int v16, v2, v21
+
+    move-object/from16 p52, v1
+
+    if-eqz v16, :cond_34
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    goto :goto_34
+
+    :cond_34
+    move-object/from16 v1, p53
+
+    :goto_34
+    and-int v16, v2, v22
+
+    move-object/from16 p53, v1
+
+    if-eqz v16, :cond_35
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    goto :goto_35
+
+    :cond_35
+    move-object/from16 v1, p54
+
+    :goto_35
+    const/high16 v16, 0x400000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p54, v1
+
+    if-eqz v16, :cond_36
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    goto :goto_36
+
+    :cond_36
+    move-object/from16 v1, p55
+
+    :goto_36
+    const/high16 v16, 0x800000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p55, v1
+
+    if-eqz v16, :cond_37
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    goto :goto_37
+
+    :cond_37
+    move-object/from16 v1, p56
+
+    :goto_37
+    const/high16 v16, 0x1000000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p56, v1
+
+    if-eqz v16, :cond_38
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    goto :goto_38
+
+    :cond_38
+    move-object/from16 v1, p57
+
+    :goto_38
+    const/high16 v16, 0x2000000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p57, v1
+
+    if-eqz v16, :cond_39
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    goto :goto_39
+
+    :cond_39
+    move-object/from16 v1, p58
+
+    :goto_39
+    const/high16 v16, 0x4000000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p58, v1
+
+    if-eqz v16, :cond_3a
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    goto :goto_3a
+
+    :cond_3a
+    move-object/from16 v1, p59
+
+    :goto_3a
+    const/high16 v16, 0x8000000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p59, v1
+
+    if-eqz v16, :cond_3b
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    goto :goto_3b
+
+    :cond_3b
+    move-object/from16 v1, p60
+
+    :goto_3b
+    const/high16 v16, 0x10000000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p60, v1
+
+    if-eqz v16, :cond_3c
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    goto :goto_3c
+
+    :cond_3c
+    move-object/from16 v1, p61
+
+    :goto_3c
+    const/high16 v16, 0x20000000
+
+    and-int v16, v2, v16
+
+    move-object/from16 p61, v1
+
+    if-eqz v16, :cond_3d
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    goto :goto_3d
+
+    :cond_3d
+    move-object/from16 v1, p62
+
+    :goto_3d
+    const/high16 v16, 0x40000000    # 2.0f
+
+    and-int v16, v2, v16
+
+    move-object/from16 p62, v1
+
+    if-eqz v16, :cond_3e
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    goto :goto_3e
+
+    :cond_3e
+    move-object/from16 v1, p63
+
+    :goto_3e
+    const/high16 v16, -0x80000000
+
+    and-int v2, v2, v16
+
+    if-eqz v2, :cond_3f
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    goto :goto_3f
+
+    :cond_3f
+    move-object/from16 v2, p64
+
+    :goto_3f
+    and-int/lit8 v16, v3, 0x1
+
+    move-object/from16 p64, v2
+
+    if-eqz v16, :cond_40
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    goto :goto_40
+
+    :cond_40
+    move-object/from16 v2, p65
+
+    :goto_40
+    and-int/lit8 v16, v3, 0x2
+
+    move-object/from16 p65, v2
+
+    if-eqz v16, :cond_41
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    goto :goto_41
+
+    :cond_41
+    move-object/from16 v2, p66
+
+    :goto_41
+    and-int/lit8 v16, v3, 0x4
+
+    move-object/from16 p66, v2
+
+    if-eqz v16, :cond_42
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    goto :goto_42
+
+    :cond_42
+    move-object/from16 v2, p67
+
+    :goto_42
+    and-int/lit8 v16, v3, 0x8
+
+    move-object/from16 p67, v2
+
+    if-eqz v16, :cond_43
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    goto :goto_43
+
+    :cond_43
+    move-object/from16 v2, p68
+
+    :goto_43
+    and-int/lit8 v16, v3, 0x10
+
+    move-object/from16 p68, v2
+
+    if-eqz v16, :cond_44
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    goto :goto_44
+
+    :cond_44
+    move-object/from16 v2, p69
+
+    :goto_44
+    and-int/lit8 v16, v3, 0x20
+
+    move-object/from16 p69, v2
+
+    if-eqz v16, :cond_45
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    goto :goto_45
+
+    :cond_45
+    move-object/from16 v2, p70
+
+    :goto_45
+    and-int/lit8 v16, v3, 0x40
+
+    move-object/from16 p70, v2
+
+    if-eqz v16, :cond_46
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    goto :goto_46
+
+    :cond_46
+    move-object/from16 v2, p71
+
+    :goto_46
+    move-object/from16 p71, v2
+
+    and-int/lit16 v2, v3, 0x80
+
+    if-eqz v2, :cond_47
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    goto :goto_47
+
+    :cond_47
+    move-object/from16 v2, p72
+
+    :goto_47
+    and-int/lit16 v3, v3, 0x100
+
+    if-eqz v3, :cond_48
+
+    iget-object v3, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    goto :goto_48
+
+    :cond_48
+    move-object/from16 v3, p73
+
+    :goto_48
+    move-object/from16 p1, v4
+
+    move-object/from16 p2, v5
+
+    move-object/from16 p3, v6
+
+    move-object/from16 p4, v7
+
+    move-object/from16 p5, v8
+
+    move-object/from16 p6, v9
+
+    move-object/from16 p7, v10
+
+    move-object/from16 p8, v11
+
+    move-object/from16 p9, v12
+
+    move-object/from16 p10, v13
+
+    move-object/from16 p11, v14
+
+    move-object/from16 p31, v15
+
+    move-object/from16 p63, v1
+
+    move-object/from16 p72, v2
+
+    move-object/from16 p73, v3
+
+    invoke-virtual/range {p0 .. p73}, Ljp/co/sony/mc/camera/idd/value/IddSetting;->copy(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;)Ljp/co/sony/mc/camera/idd/value/IddSetting;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final component1()Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    return-object p0
+.end method
+
+.method public final component10()Ljp/co/sony/mc/camera/idd/value/IddFlash;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    return-object p0
+.end method
+
+.method public final component11()Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    return-object p0
+.end method
+
+.method public final component12()Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    return-object p0
+.end method
+
+.method public final component13()Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    return-object p0
+.end method
+
+.method public final component14()Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    return-object p0
+.end method
+
+.method public final component15()Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    return-object p0
+.end method
+
+.method public final component16()Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    return-object p0
+.end method
+
+.method public final component17()Ljp/co/sony/mc/camera/idd/value/IddLens;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    return-object p0
+.end method
+
+.method public final component18()Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    return-object p0
+.end method
+
+.method public final component19()Ljp/co/sony/mc/camera/idd/value/IddLock;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    return-object p0
+.end method
+
+.method public final component2()Ljp/co/sony/mc/camera/idd/value/IddAel;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    return-object p0
+.end method
+
+.method public final component20()Ljp/co/sony/mc/camera/idd/value/IddIso;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    return-object p0
+.end method
+
+.method public final component21()Ljp/co/sony/mc/camera/idd/value/IddMetering;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    return-object p0
+.end method
+
+.method public final component22()Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    return-object p0
+.end method
+
+.method public final component23()Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    return-object p0
+.end method
+
+.method public final component24()Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    return-object p0
+.end method
+
+.method public final component25()Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    return-object p0
+.end method
+
+.method public final component26()Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    return-object p0
+.end method
+
+.method public final component27()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    return-object p0
+.end method
+
+.method public final component28()Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    return-object p0
+.end method
+
+.method public final component29()Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    return-object p0
+.end method
+
+.method public final component3()Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    return-object p0
+.end method
+
+.method public final component30()Ljp/co/sony/mc/camera/idd/value/IddResolution;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    return-object p0
+.end method
+
+.method public final component31()Ljp/co/sony/mc/camera/idd/value/IddMode;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    return-object p0
+.end method
+
+.method public final component32()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    return-object p0
+.end method
+
+.method public final component33()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    return-object p0
+.end method
+
+.method public final component34()Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    return-object p0
+.end method
+
+.method public final component35()Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    return-object p0
+.end method
+
+.method public final component36()Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    return-object p0
+.end method
+
+.method public final component37()Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    return-object p0
+.end method
+
+.method public final component38()Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    return-object p0
+.end method
+
+.method public final component39()Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    return-object p0
+.end method
+
+.method public final component4()Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    return-object p0
+.end method
+
+.method public final component40()Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    return-object p0
+.end method
+
+.method public final component41()Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    return-object p0
+.end method
+
+.method public final component42()Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    return-object p0
+.end method
+
+.method public final component43()Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    return-object p0
+.end method
+
+.method public final component44()Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    return-object p0
+.end method
+
+.method public final component45()Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    return-object p0
+.end method
+
+.method public final component46()Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    return-object p0
+.end method
+
+.method public final component47()Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    return-object p0
+.end method
+
+.method public final component48()Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    return-object p0
+.end method
+
+.method public final component49()Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    return-object p0
+.end method
+
+.method public final component5()Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    return-object p0
+.end method
+
+.method public final component50()Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    return-object p0
+.end method
+
+.method public final component51()Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    return-object p0
+.end method
+
+.method public final component52()Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    return-object p0
+.end method
+
+.method public final component53()Ljp/co/sony/mc/camera/idd/value/IddNight;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    return-object p0
+.end method
+
+.method public final component54()Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    return-object p0
+.end method
+
+.method public final component55()Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    return-object p0
+.end method
+
+.method public final component56()Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    return-object p0
+.end method
+
+.method public final component57()Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    return-object p0
+.end method
+
+.method public final component58()Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    return-object p0
+.end method
+
+.method public final component59()Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    return-object p0
+.end method
+
+.method public final component6()Ljp/co/sony/mc/camera/idd/value/IddDisp;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    return-object p0
+.end method
+
+.method public final component60()Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    return-object p0
+.end method
+
+.method public final component61()Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    return-object p0
+.end method
+
+.method public final component62()Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    return-object p0
+.end method
+
+.method public final component63()Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    return-object p0
+.end method
+
+.method public final component64()Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    return-object p0
+.end method
+
+.method public final component65()Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    return-object p0
+.end method
+
+.method public final component66()Ljp/co/sony/mc/camera/idd/value/IddMic;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    return-object p0
+.end method
+
+.method public final component67()Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    return-object p0
+.end method
+
+.method public final component68()Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    return-object p0
+.end method
+
+.method public final component69()Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    return-object p0
+.end method
+
+.method public final component7()Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    return-object p0
+.end method
+
+.method public final component70()Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    return-object p0
+.end method
+
+.method public final component71()Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    return-object p0
+.end method
+
+.method public final component72()Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    return-object p0
+.end method
+
+.method public final component73()Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    return-object p0
+.end method
+
+.method public final component8()Ljp/co/sony/mc/camera/idd/value/IddEv;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    return-object p0
+.end method
+
+.method public final component9()Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+    .locals 0
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    return-object p0
+.end method
+
+.method public final copy(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;)Ljp/co/sony/mc/camera/idd/value/IddSetting;
+    .locals 75
+
+    move-object/from16 v1, p1
+
+    move-object/from16 v2, p2
+
+    move-object/from16 v3, p3
+
+    move-object/from16 v4, p4
+
+    move-object/from16 v5, p5
+
+    move-object/from16 v6, p6
+
+    move-object/from16 v7, p7
+
+    move-object/from16 v8, p8
+
+    move-object/from16 v9, p9
+
+    move-object/from16 v10, p10
+
+    move-object/from16 v11, p11
+
+    move-object/from16 v12, p12
+
+    move-object/from16 v13, p13
+
+    move-object/from16 v14, p14
+
+    move-object/from16 v15, p15
+
+    move-object/from16 v16, p16
+
+    move-object/from16 v17, p17
+
+    move-object/from16 v18, p18
+
+    move-object/from16 v19, p19
+
+    move-object/from16 v20, p20
+
+    move-object/from16 v21, p21
+
+    move-object/from16 v22, p22
+
+    move-object/from16 v23, p23
+
+    move-object/from16 v24, p24
+
+    move-object/from16 v25, p25
+
+    move-object/from16 v26, p26
+
+    move-object/from16 v27, p27
+
+    move-object/from16 v28, p28
+
+    move-object/from16 v29, p29
+
+    move-object/from16 v30, p30
+
+    move-object/from16 v31, p31
+
+    move-object/from16 v32, p32
+
+    move-object/from16 v33, p33
+
+    move-object/from16 v34, p34
+
+    move-object/from16 v35, p35
+
+    move-object/from16 v36, p36
+
+    move-object/from16 v37, p37
+
+    move-object/from16 v38, p38
+
+    move-object/from16 v39, p39
+
+    move-object/from16 v40, p40
+
+    move-object/from16 v41, p41
+
+    move-object/from16 v42, p42
+
+    move-object/from16 v43, p43
+
+    move-object/from16 v44, p44
+
+    move-object/from16 v45, p45
+
+    move-object/from16 v46, p46
+
+    move-object/from16 v47, p47
+
+    move-object/from16 v48, p48
+
+    move-object/from16 v49, p49
+
+    move-object/from16 v50, p50
+
+    move-object/from16 v51, p51
+
+    move-object/from16 v52, p52
+
+    move-object/from16 v53, p53
+
+    move-object/from16 v54, p54
+
+    move-object/from16 v55, p55
+
+    move-object/from16 v56, p56
+
+    move-object/from16 v57, p57
+
+    move-object/from16 v58, p58
+
+    move-object/from16 v59, p59
+
+    move-object/from16 v60, p60
+
+    move-object/from16 v61, p61
+
+    move-object/from16 v62, p62
+
+    move-object/from16 v63, p63
+
+    move-object/from16 v64, p64
+
+    move-object/from16 v65, p65
+
+    move-object/from16 v66, p66
+
+    move-object/from16 v67, p67
+
+    move-object/from16 v68, p68
+
+    move-object/from16 v69, p69
+
+    move-object/from16 v70, p70
+
+    move-object/from16 v71, p71
+
+    move-object/from16 v72, p72
+
+    move-object/from16 v73, p73
+
+    new-instance v74, Ljp/co/sony/mc/camera/idd/value/IddSetting;
+
+    move-object/from16 v0, v74
+
+    invoke-direct/range {v0 .. v73}, Ljp/co/sony/mc/camera/idd/value/IddSetting;-><init>(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;Ljp/co/sony/mc/camera/idd/value/IddAel;Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;Ljp/co/sony/mc/camera/idd/value/IddDisp;Ljp/co/sony/mc/camera/idd/value/IddDriveMode;Ljp/co/sony/mc/camera/idd/value/IddEv;Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;Ljp/co/sony/mc/camera/idd/value/IddFlash;Ljp/co/sony/mc/camera/idd/value/IddFocusArea;Ljp/co/sony/mc/camera/idd/value/IddFocusMode;Ljp/co/sony/mc/camera/idd/value/IddGeoTag;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddGridLine;Ljp/co/sony/mc/camera/idd/value/IddHdrDro;Ljp/co/sony/mc/camera/idd/value/IddLens;Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;Ljp/co/sony/mc/camera/idd/value/IddLock;Ljp/co/sony/mc/camera/idd/value/IddIso;Ljp/co/sony/mc/camera/idd/value/IddMetering;Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;Ljp/co/sony/mc/camera/idd/value/IddHandShutter;Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;Ljp/co/sony/mc/camera/idd/value/IddFileFormat;Ljp/co/sony/mc/camera/idd/value/IddResolution;Ljp/co/sony/mc/camera/idd/value/IddMode;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;Ljp/co/sony/mc/camera/idd/value/IddVideoSize;Ljp/co/sony/mc/camera/idd/value/IddVideoFps;Ljp/co/sony/mc/camera/idd/value/IddExtendFps;Ljp/co/sony/mc/camera/idd/value/IddBrightness;Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;Ljp/co/sony/mc/camera/idd/value/IddFastCapture;Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;Ljp/co/sony/mc/camera/idd/value/IddBtRemote;Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;Ljp/co/sony/mc/camera/idd/value/IddTemperature;Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;Ljp/co/sony/mc/camera/idd/value/IddNight;Ljp/co/sony/mc/camera/idd/value/IddPeaking;Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;Ljp/co/sony/mc/camera/idd/value/IddConnectMode;Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;Ljp/co/sony/mc/camera/idd/value/IddMacroMode;Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;Ljp/co/sony/mc/camera/idd/value/IddMic;Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;Ljp/co/sony/mc/camera/idd/value/IddZoom;)V
+
+    return-object v74
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;
+
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    return v2
+
+    :cond_3
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    return v2
+
+    :cond_4
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_5
+
+    return v2
+
+    :cond_5
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_6
+
+    return v2
+
+    :cond_6
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_7
+
+    return v2
+
+    :cond_7
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_8
+
+    return v2
+
+    :cond_8
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_9
+
+    return v2
+
+    :cond_9
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_a
+
+    return v2
+
+    :cond_a
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_b
+
+    return v2
+
+    :cond_b
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_c
+
+    return v2
+
+    :cond_c
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_d
+
+    return v2
+
+    :cond_d
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_e
+
+    return v2
+
+    :cond_e
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_f
+
+    return v2
+
+    :cond_f
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_10
+
+    return v2
+
+    :cond_10
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_11
+
+    return v2
+
+    :cond_11
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_12
+
+    return v2
+
+    :cond_12
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_13
+
+    return v2
+
+    :cond_13
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    if-eq v1, v3, :cond_14
+
+    return v2
+
+    :cond_14
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_15
+
+    return v2
+
+    :cond_15
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_16
+
+    return v2
+
+    :cond_16
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_17
+
+    return v2
+
+    :cond_17
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_18
+
+    return v2
+
+    :cond_18
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_19
+
+    return v2
+
+    :cond_19
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1a
+
+    return v2
+
+    :cond_1a
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1b
+
+    return v2
+
+    :cond_1b
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1c
+
+    return v2
+
+    :cond_1c
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1d
+
+    return v2
+
+    :cond_1d
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1e
+
+    return v2
+
+    :cond_1e
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_1f
+
+    return v2
+
+    :cond_1f
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_20
+
+    return v2
+
+    :cond_20
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_21
+
+    return v2
+
+    :cond_21
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_22
+
+    return v2
+
+    :cond_22
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_23
+
+    return v2
+
+    :cond_23
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_24
+
+    return v2
+
+    :cond_24
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_25
+
+    return v2
+
+    :cond_25
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_26
+
+    return v2
+
+    :cond_26
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_27
+
+    return v2
+
+    :cond_27
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_28
+
+    return v2
+
+    :cond_28
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_29
+
+    return v2
+
+    :cond_29
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2a
+
+    return v2
+
+    :cond_2a
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2b
+
+    return v2
+
+    :cond_2b
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2c
+
+    return v2
+
+    :cond_2c
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2d
+
+    return v2
+
+    :cond_2d
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2e
+
+    return v2
+
+    :cond_2e
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_2f
+
+    return v2
+
+    :cond_2f
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_30
+
+    return v2
+
+    :cond_30
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_31
+
+    return v2
+
+    :cond_31
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_32
+
+    return v2
+
+    :cond_32
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_33
+
+    return v2
+
+    :cond_33
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_34
+
+    return v2
+
+    :cond_34
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_35
+
+    return v2
+
+    :cond_35
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_36
+
+    return v2
+
+    :cond_36
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_37
+
+    return v2
+
+    :cond_37
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_38
+
+    return v2
+
+    :cond_38
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_39
+
+    return v2
+
+    :cond_39
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3a
+
+    return v2
+
+    :cond_3a
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3b
+
+    return v2
+
+    :cond_3b
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3c
+
+    return v2
+
+    :cond_3c
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3d
+
+    return v2
+
+    :cond_3d
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3e
+
+    return v2
+
+    :cond_3e
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3f
+
+    return v2
+
+    :cond_3f
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_40
+
+    return v2
+
+    :cond_40
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_41
+
+    return v2
+
+    :cond_41
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_42
+
+    return v2
+
+    :cond_42
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    if-eq v1, v3, :cond_43
+
+    return v2
+
+    :cond_43
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_44
+
+    return v2
+
+    :cond_44
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_45
+
+    return v2
+
+    :cond_45
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_46
+
+    return v2
+
+    :cond_46
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_47
+
+    return v2
+
+    :cond_47
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_48
+
+    return v2
+
+    :cond_48
+    iget-object v1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    iget-object v3, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_49
+
+    return v2
+
+    :cond_49
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    iget-object p1, p1, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-nez p0, :cond_4a
+
+    return v2
+
+    :cond_4a
+    return v0
+.end method
+
+.method public final getAccessaryFlip()Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+    .locals 0
+
+    .line 10
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    return-object p0
+.end method
+
+.method public final getAel()Ljp/co/sony/mc/camera/idd/value/IddAel;
+    .locals 0
+
+    .line 11
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    return-object p0
+.end method
+
+.method public final getAmberBlue()Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+    .locals 0
+
+    .line 48
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    return-object p0
+.end method
+
+.method public final getAspectRatio()Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+    .locals 0
+
+    .line 12
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    return-object p0
+.end method
+
+.method public final getAudioSignals()Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+    .locals 0
+
+    .line 13
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    return-object p0
+.end method
+
+.method public final getAutoFrameRate()Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+    .locals 0
+
+    .line 66
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    return-object p0
+.end method
+
+.method public final getBokehStrength()Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+    .locals 0
+
+    .line 53
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    return-object p0
+.end method
+
+.method public final getBrightness()Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+    .locals 0
+
+    .line 47
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    return-object p0
+.end method
+
+.method public final getBtRemote()Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+    .locals 0
+
+    .line 55
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    return-object p0
+.end method
+
+.method public final getBurstFeedback()Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+    .locals 0
+
+    .line 23
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    return-object p0
+.end method
+
+.method public final getCloseUpShooting()Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+    .locals 0
+
+    .line 72
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    return-object p0
+.end method
+
+.method public final getColorToneProfile()Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+    .locals 0
+
+    .line 65
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    return-object p0
+.end method
+
+.method public final getComputationalPhoto()Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+    .locals 0
+
+    .line 67
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    return-object p0
+.end method
+
+.method public final getConnectTo()Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+    .locals 0
+
+    .line 69
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    return-object p0
+.end method
+
+.method public final getContinuousFeedback()Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+    .locals 0
+
+    .line 78
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    return-object p0
+.end method
+
+.method public final getDestinationToSave()Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+    .locals 0
+
+    .line 14
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    return-object p0
+.end method
+
+.method public final getDisp()Ljp/co/sony/mc/camera/idd/value/IddDisp;
+    .locals 0
+
+    .line 15
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    return-object p0
+.end method
+
+.method public final getDisplayFlash()Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+    .locals 0
+
+    .line 54
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    return-object p0
+.end method
+
+.method public final getDriveMode()Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+    .locals 0
+
+    .line 16
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    return-object p0
+.end method
+
+.method public final getEnduranceMode()Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+    .locals 0
+
+    .line 57
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    return-object p0
+.end method
+
+.method public final getEv()Ljp/co/sony/mc/camera/idd/value/IddEv;
+    .locals 0
+
+    .line 17
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    return-object p0
+.end method
+
+.method public final getExtendFps()Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+    .locals 0
+
+    .line 46
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    return-object p0
+.end method
+
+.method public final getFaceDetectionEyeAf()Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+    .locals 0
+
+    .line 18
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    return-object p0
+.end method
+
+.method public final getFastCapture()Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+    .locals 0
+
+    .line 49
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    return-object p0
+.end method
+
+.method public final getFileFormat()Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+    .locals 0
+
+    .line 38
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    return-object p0
+.end method
+
+.method public final getFlash()Ljp/co/sony/mc/camera/idd/value/IddFlash;
+    .locals 0
+
+    .line 19
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    return-object p0
+.end method
+
+.method public final getFocusArea()Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+    .locals 0
+
+    .line 20
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    return-object p0
+.end method
+
+.method public final getFocusDistance()Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+    .locals 0
+
+    .line 80
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    return-object p0
+.end method
+
+.method public final getFocusFrameColor()Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+    .locals 0
+
+    .line 37
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    return-object p0
+.end method
+
+.method public final getFocusMode()Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+    .locals 0
+
+    .line 21
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    return-object p0
+.end method
+
+.method public final getFocusUi()Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+    .locals 0
+
+    .line 76
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    return-object p0
+.end method
+
+.method public final getGeoTag()Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+    .locals 0
+
+    .line 22
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    return-object p0
+.end method
+
+.method public final getGridLine()Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+    .locals 0
+
+    .line 24
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    return-object p0
+.end method
+
+.method public final getHandShutter()Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+    .locals 0
+
+    .line 32
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    return-object p0
+.end method
+
+.method public final getHapticFeedback()Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+    .locals 0
+
+    .line 56
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    return-object p0
+.end method
+
+.method public final getHdrDro()Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+    .locals 0
+
+    .line 25
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    return-object p0
+.end method
+
+.method public final getHdrFormat()Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+    .locals 0
+
+    .line 58
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    return-object p0
+.end method
+
+.method public final getHdrQuality()Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+    .locals 0
+
+    .line 59
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    return-object p0
+.end method
+
+.method public final getHdrSdr()Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+    .locals 0
+
+    .line 74
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    return-object p0
+.end method
+
+.method public final getIso()Ljp/co/sony/mc/camera/idd/value/IddIso;
+    .locals 0
+
+    .line 29
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    return-object p0
+.end method
+
+.method public final getLayoutMode()Ljp/co/sony/mc/camera/idd/value/IddMode;
+    .locals 0
+
+    .line 40
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    return-object p0
+.end method
+
+.method public final getLens()Ljp/co/sony/mc/camera/idd/value/IddLens;
+    .locals 0
+
+    .line 26
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    return-object p0
+.end method
+
+.method public final getLensCorrection()Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+    .locals 0
+
+    .line 27
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    return-object p0
+.end method
+
+.method public final getLock()Ljp/co/sony/mc/camera/idd/value/IddLock;
+    .locals 0
+
+    .line 28
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    return-object p0
+.end method
+
+.method public final getMetering()Ljp/co/sony/mc/camera/idd/value/IddMetering;
+    .locals 0
+
+    .line 30
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    return-object p0
+.end method
+
+.method public final getMic()Ljp/co/sony/mc/camera/idd/value/IddMic;
+    .locals 0
+
+    .line 75
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    return-object p0
+.end method
+
+.method public final getNetworkUsage()Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+    .locals 0
+
+    .line 73
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    return-object p0
+.end method
+
+.method public final getNight()Ljp/co/sony/mc/camera/idd/value/IddNight;
+    .locals 0
+
+    .line 62
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    return-object p0
+.end method
+
+.method public final getPeaking()Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+    .locals 0
+
+    .line 63
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    return-object p0
+.end method
+
+.method public final getPeakingColor()Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+    .locals 0
+
+    .line 64
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    return-object p0
+.end method
+
+.method public final getPhotoLight()Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+    .locals 0
+
+    .line 50
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    return-object p0
+.end method
+
+.method public final getProductShowcase()Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+    .locals 0
+
+    .line 61
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    return-object p0
+.end method
+
+.method public final getQrCodeDetection()Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+    .locals 0
+
+    .line 52
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    return-object p0
+.end method
+
+.method public final getResolution()Ljp/co/sony/mc/camera/idd/value/IddResolution;
+    .locals 0
+
+    .line 39
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    return-object p0
+.end method
+
+.method public final getSelfTimer()Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+    .locals 0
+
+    .line 68
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    return-object p0
+.end method
+
+.method public final getShutterSpeed()Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+    .locals 0
+
+    .line 31
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    return-object p0
+.end method
+
+.method public final getSoftSkin()Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+    .locals 0
+
+    .line 33
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    return-object p0
+.end method
+
+.method public final getSsUi()Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+    .locals 0
+
+    .line 77
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    return-object p0
+.end method
+
+.method public final getStreamingMute()Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+    .locals 0
+
+    .line 70
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    return-object p0
+.end method
+
+.method public final getStreamingVideoQuality()Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+    .locals 0
+
+    .line 71
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    return-object p0
+.end method
+
+.method public final getSuperResolutionZoom()Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+    .locals 0
+
+    .line 43
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    return-object p0
+.end method
+
+.method public final getTemperature()Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+    .locals 0
+
+    .line 60
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    return-object p0
+.end method
+
+.method public final getTouchToAdjust()Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+    .locals 0
+
+    .line 34
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    return-object p0
+.end method
+
+.method public final getTouchTracking()Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+    .locals 0
+
+    .line 79
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    return-object p0
+.end method
+
+.method public final getVideoFps()Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+    .locals 0
+
+    .line 45
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    return-object p0
+.end method
+
+.method public final getVideoSize()Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+    .locals 0
+
+    .line 44
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    return-object p0
+.end method
+
+.method public final getVideoStabilizer()Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+    .locals 0
+
+    .line 51
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    return-object p0
+.end method
+
+.method public final getVolumeKey()Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+    .locals 0
+
+    .line 35
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    return-object p0
+.end method
+
+.method public final getWhiteBalance()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+    .locals 0
+
+    .line 36
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    return-object p0
+.end method
+
+.method public final getWhiteBalanceAB()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+    .locals 0
+
+    .line 41
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    return-object p0
+.end method
+
+.method public final getWhiteBalanceGm()Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+    .locals 0
+
+    .line 42
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    return-object p0
+.end method
+
+.method public final getWindFilter()Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+    .locals 0
+
+    .line 81
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    return-object p0
+.end method
+
+.method public final getZoom()Ljp/co/sony/mc/camera/idd/value/IddZoom;
+    .locals 0
+
+    .line 82
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    return-object p0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    iget-object v0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0}, Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;->hashCode()I
+
+    move-result v0
+
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    if-nez v2, :cond_1
+
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_1
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddAel;->hashCode()I
+
+    move-result v2
+
+    :goto_1
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    if-nez v2, :cond_2
+
+    move v2, v1
+
+    goto :goto_2
+
+    :cond_2
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;->hashCode()I
+
+    move-result v2
+
+    :goto_2
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    if-nez v2, :cond_3
+
+    move v2, v1
+
+    goto :goto_3
+
+    :cond_3
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;->hashCode()I
+
+    move-result v2
+
+    :goto_3
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    if-nez v2, :cond_4
+
+    move v2, v1
+
+    goto :goto_4
+
+    :cond_4
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;->hashCode()I
+
+    move-result v2
+
+    :goto_4
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    if-nez v2, :cond_5
+
+    move v2, v1
+
+    goto :goto_5
+
+    :cond_5
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddDisp;->hashCode()I
+
+    move-result v2
+
+    :goto_5
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    if-nez v2, :cond_6
+
+    move v2, v1
+
+    goto :goto_6
+
+    :cond_6
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddDriveMode;->hashCode()I
+
+    move-result v2
+
+    :goto_6
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    if-nez v2, :cond_7
+
+    move v2, v1
+
+    goto :goto_7
+
+    :cond_7
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddEv;->hashCode()I
+
+    move-result v2
+
+    :goto_7
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    if-nez v2, :cond_8
+
+    move v2, v1
+
+    goto :goto_8
+
+    :cond_8
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;->hashCode()I
+
+    move-result v2
+
+    :goto_8
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    if-nez v2, :cond_9
+
+    move v2, v1
+
+    goto :goto_9
+
+    :cond_9
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFlash;->hashCode()I
+
+    move-result v2
+
+    :goto_9
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    if-nez v2, :cond_a
+
+    move v2, v1
+
+    goto :goto_a
+
+    :cond_a
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFocusArea;->hashCode()I
+
+    move-result v2
+
+    :goto_a
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    if-nez v2, :cond_b
+
+    move v2, v1
+
+    goto :goto_b
+
+    :cond_b
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFocusMode;->hashCode()I
+
+    move-result v2
+
+    :goto_b
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    if-nez v2, :cond_c
+
+    move v2, v1
+
+    goto :goto_c
+
+    :cond_c
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddGeoTag;->hashCode()I
+
+    move-result v2
+
+    :goto_c
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    if-nez v2, :cond_d
+
+    move v2, v1
+
+    goto :goto_d
+
+    :cond_d
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;->hashCode()I
+
+    move-result v2
+
+    :goto_d
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    if-nez v2, :cond_e
+
+    move v2, v1
+
+    goto :goto_e
+
+    :cond_e
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddGridLine;->hashCode()I
+
+    move-result v2
+
+    :goto_e
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    if-nez v2, :cond_f
+
+    move v2, v1
+
+    goto :goto_f
+
+    :cond_f
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddHdrDro;->hashCode()I
+
+    move-result v2
+
+    :goto_f
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    if-nez v2, :cond_10
+
+    move v2, v1
+
+    goto :goto_10
+
+    :cond_10
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddLens;->hashCode()I
+
+    move-result v2
+
+    :goto_10
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    if-nez v2, :cond_11
+
+    move v2, v1
+
+    goto :goto_11
+
+    :cond_11
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;->hashCode()I
+
+    move-result v2
+
+    :goto_11
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    if-nez v2, :cond_12
+
+    move v2, v1
+
+    goto :goto_12
+
+    :cond_12
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddLock;->hashCode()I
+
+    move-result v2
+
+    :goto_12
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    if-nez v2, :cond_13
+
+    move v2, v1
+
+    goto :goto_13
+
+    :cond_13
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddIso;->hashCode()I
+
+    move-result v2
+
+    :goto_13
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    if-nez v2, :cond_14
+
+    move v2, v1
+
+    goto :goto_14
+
+    :cond_14
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddMetering;->hashCode()I
+
+    move-result v2
+
+    :goto_14
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    if-nez v2, :cond_15
+
+    move v2, v1
+
+    goto :goto_15
+
+    :cond_15
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;->hashCode()I
+
+    move-result v2
+
+    :goto_15
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    if-nez v2, :cond_16
+
+    move v2, v1
+
+    goto :goto_16
+
+    :cond_16
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddHandShutter;->hashCode()I
+
+    move-result v2
+
+    :goto_16
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    if-nez v2, :cond_17
+
+    move v2, v1
+
+    goto :goto_17
+
+    :cond_17
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;->hashCode()I
+
+    move-result v2
+
+    :goto_17
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    if-nez v2, :cond_18
+
+    move v2, v1
+
+    goto :goto_18
+
+    :cond_18
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;->hashCode()I
+
+    move-result v2
+
+    :goto_18
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    if-nez v2, :cond_19
+
+    move v2, v1
+
+    goto :goto_19
+
+    :cond_19
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;->hashCode()I
+
+    move-result v2
+
+    :goto_19
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    if-nez v2, :cond_1a
+
+    move v2, v1
+
+    goto :goto_1a
+
+    :cond_1a
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;->hashCode()I
+
+    move-result v2
+
+    :goto_1a
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    if-nez v2, :cond_1b
+
+    move v2, v1
+
+    goto :goto_1b
+
+    :cond_1b
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;->hashCode()I
+
+    move-result v2
+
+    :goto_1b
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    if-nez v2, :cond_1c
+
+    move v2, v1
+
+    goto :goto_1c
+
+    :cond_1c
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFileFormat;->hashCode()I
+
+    move-result v2
+
+    :goto_1c
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    if-nez v2, :cond_1d
+
+    move v2, v1
+
+    goto :goto_1d
+
+    :cond_1d
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddResolution;->hashCode()I
+
+    move-result v2
+
+    :goto_1d
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    if-nez v2, :cond_1e
+
+    move v2, v1
+
+    goto :goto_1e
+
+    :cond_1e
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddMode;->hashCode()I
+
+    move-result v2
+
+    :goto_1e
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    if-nez v2, :cond_1f
+
+    move v2, v1
+
+    goto :goto_1f
+
+    :cond_1f
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;->hashCode()I
+
+    move-result v2
+
+    :goto_1f
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    if-nez v2, :cond_20
+
+    move v2, v1
+
+    goto :goto_20
+
+    :cond_20
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;->hashCode()I
+
+    move-result v2
+
+    :goto_20
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    if-nez v2, :cond_21
+
+    move v2, v1
+
+    goto :goto_21
+
+    :cond_21
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;->hashCode()I
+
+    move-result v2
+
+    :goto_21
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    if-nez v2, :cond_22
+
+    move v2, v1
+
+    goto :goto_22
+
+    :cond_22
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoSize;->hashCode()I
+
+    move-result v2
+
+    :goto_22
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    if-nez v2, :cond_23
+
+    move v2, v1
+
+    goto :goto_23
+
+    :cond_23
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoFps;->hashCode()I
+
+    move-result v2
+
+    :goto_23
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    if-nez v2, :cond_24
+
+    move v2, v1
+
+    goto :goto_24
+
+    :cond_24
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddExtendFps;->hashCode()I
+
+    move-result v2
+
+    :goto_24
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    if-nez v2, :cond_25
+
+    move v2, v1
+
+    goto :goto_25
+
+    :cond_25
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddBrightness;->hashCode()I
+
+    move-result v2
+
+    :goto_25
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    if-nez v2, :cond_26
+
+    move v2, v1
+
+    goto :goto_26
+
+    :cond_26
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;->hashCode()I
+
+    move-result v2
+
+    :goto_26
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    if-nez v2, :cond_27
+
+    move v2, v1
+
+    goto :goto_27
+
+    :cond_27
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFastCapture;->hashCode()I
+
+    move-result v2
+
+    :goto_27
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    if-nez v2, :cond_28
+
+    move v2, v1
+
+    goto :goto_28
+
+    :cond_28
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;->hashCode()I
+
+    move-result v2
+
+    :goto_28
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    if-nez v2, :cond_29
+
+    move v2, v1
+
+    goto :goto_29
+
+    :cond_29
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;->hashCode()I
+
+    move-result v2
+
+    :goto_29
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    if-nez v2, :cond_2a
+
+    move v2, v1
+
+    goto :goto_2a
+
+    :cond_2a
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;->hashCode()I
+
+    move-result v2
+
+    :goto_2a
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    if-nez v2, :cond_2b
+
+    move v2, v1
+
+    goto :goto_2b
+
+    :cond_2b
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;->hashCode()I
+
+    move-result v2
+
+    :goto_2b
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    if-nez v2, :cond_2c
+
+    move v2, v1
+
+    goto :goto_2c
+
+    :cond_2c
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;->hashCode()I
+
+    move-result v2
+
+    :goto_2c
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    if-nez v2, :cond_2d
+
+    move v2, v1
+
+    goto :goto_2d
+
+    :cond_2d
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddBtRemote;->hashCode()I
+
+    move-result v2
+
+    :goto_2d
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    if-nez v2, :cond_2e
+
+    move v2, v1
+
+    goto :goto_2e
+
+    :cond_2e
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;->hashCode()I
+
+    move-result v2
+
+    :goto_2e
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    if-nez v2, :cond_2f
+
+    move v2, v1
+
+    goto :goto_2f
+
+    :cond_2f
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;->hashCode()I
+
+    move-result v2
+
+    :goto_2f
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    if-nez v2, :cond_30
+
+    move v2, v1
+
+    goto :goto_30
+
+    :cond_30
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;->hashCode()I
+
+    move-result v2
+
+    :goto_30
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    if-nez v2, :cond_31
+
+    move v2, v1
+
+    goto :goto_31
+
+    :cond_31
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;->hashCode()I
+
+    move-result v2
+
+    :goto_31
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    if-nez v2, :cond_32
+
+    move v2, v1
+
+    goto :goto_32
+
+    :cond_32
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddTemperature;->hashCode()I
+
+    move-result v2
+
+    :goto_32
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    if-nez v2, :cond_33
+
+    move v2, v1
+
+    goto :goto_33
+
+    :cond_33
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;->hashCode()I
+
+    move-result v2
+
+    :goto_33
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    if-nez v2, :cond_34
+
+    move v2, v1
+
+    goto :goto_34
+
+    :cond_34
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddNight;->hashCode()I
+
+    move-result v2
+
+    :goto_34
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    if-nez v2, :cond_35
+
+    move v2, v1
+
+    goto :goto_35
+
+    :cond_35
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddPeaking;->hashCode()I
+
+    move-result v2
+
+    :goto_35
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    if-nez v2, :cond_36
+
+    move v2, v1
+
+    goto :goto_36
+
+    :cond_36
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;->hashCode()I
+
+    move-result v2
+
+    :goto_36
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    if-nez v2, :cond_37
+
+    move v2, v1
+
+    goto :goto_37
+
+    :cond_37
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;->hashCode()I
+
+    move-result v2
+
+    :goto_37
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    if-nez v2, :cond_38
+
+    move v2, v1
+
+    goto :goto_38
+
+    :cond_38
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;->hashCode()I
+
+    move-result v2
+
+    :goto_38
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    if-nez v2, :cond_39
+
+    move v2, v1
+
+    goto :goto_39
+
+    :cond_39
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;->hashCode()I
+
+    move-result v2
+
+    :goto_39
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    if-nez v2, :cond_3a
+
+    move v2, v1
+
+    goto :goto_3a
+
+    :cond_3a
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;->hashCode()I
+
+    move-result v2
+
+    :goto_3a
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    if-nez v2, :cond_3b
+
+    move v2, v1
+
+    goto :goto_3b
+
+    :cond_3b
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddConnectMode;->hashCode()I
+
+    move-result v2
+
+    :goto_3b
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    if-nez v2, :cond_3c
+
+    move v2, v1
+
+    goto :goto_3c
+
+    :cond_3c
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;->hashCode()I
+
+    move-result v2
+
+    :goto_3c
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    if-nez v2, :cond_3d
+
+    move v2, v1
+
+    goto :goto_3d
+
+    :cond_3d
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;->hashCode()I
+
+    move-result v2
+
+    :goto_3d
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    if-nez v2, :cond_3e
+
+    move v2, v1
+
+    goto :goto_3e
+
+    :cond_3e
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddMacroMode;->hashCode()I
+
+    move-result v2
+
+    :goto_3e
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    if-nez v2, :cond_3f
+
+    move v2, v1
+
+    goto :goto_3f
+
+    :cond_3f
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;->hashCode()I
+
+    move-result v2
+
+    :goto_3f
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    if-nez v2, :cond_40
+
+    move v2, v1
+
+    goto :goto_40
+
+    :cond_40
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;->hashCode()I
+
+    move-result v2
+
+    :goto_40
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    if-nez v2, :cond_41
+
+    move v2, v1
+
+    goto :goto_41
+
+    :cond_41
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddMic;->hashCode()I
+
+    move-result v2
+
+    :goto_41
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    if-nez v2, :cond_42
+
+    move v2, v1
+
+    goto :goto_42
+
+    :cond_42
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;->hashCode()I
+
+    move-result v2
+
+    :goto_42
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    if-nez v2, :cond_43
+
+    move v2, v1
+
+    goto :goto_43
+
+    :cond_43
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;->hashCode()I
+
+    move-result v2
+
+    :goto_43
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    if-nez v2, :cond_44
+
+    move v2, v1
+
+    goto :goto_44
+
+    :cond_44
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;->hashCode()I
+
+    move-result v2
+
+    :goto_44
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    if-nez v2, :cond_45
+
+    move v2, v1
+
+    goto :goto_45
+
+    :cond_45
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;->hashCode()I
+
+    move-result v2
+
+    :goto_45
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    if-nez v2, :cond_46
+
+    move v2, v1
+
+    goto :goto_46
+
+    :cond_46
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;->hashCode()I
+
+    move-result v2
+
+    :goto_46
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    if-nez v2, :cond_47
+
+    move v2, v1
+
+    goto :goto_47
+
+    :cond_47
+    invoke-virtual {v2}, Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;->hashCode()I
+
+    move-result v2
+
+    :goto_47
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object p0, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    if-nez p0, :cond_48
+
+    goto :goto_48
+
+    :cond_48
+    invoke-virtual {p0}, Ljp/co/sony/mc/camera/idd/value/IddZoom;->hashCode()I
+
+    move-result v1
+
+    :goto_48
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final setAccessaryFlip(Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;)V
+    .locals 0
+
+    .line 10
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    return-void
+.end method
+
+.method public final setAel(Ljp/co/sony/mc/camera/idd/value/IddAel;)V
+    .locals 0
+
+    .line 11
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    return-void
+.end method
+
+.method public final setAmberBlue(Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;)V
+    .locals 0
+
+    .line 48
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    return-void
+.end method
+
+.method public final setAspectRatio(Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;)V
+    .locals 0
+
+    .line 12
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    return-void
+.end method
+
+.method public final setAudioSignals(Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;)V
+    .locals 0
+
+    .line 13
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    return-void
+.end method
+
+.method public final setAutoFrameRate(Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;)V
+    .locals 0
+
+    .line 66
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    return-void
+.end method
+
+.method public final setBokehStrength(Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;)V
+    .locals 0
+
+    .line 53
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    return-void
+.end method
+
+.method public final setBrightness(Ljp/co/sony/mc/camera/idd/value/IddBrightness;)V
+    .locals 0
+
+    .line 47
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    return-void
+.end method
+
+.method public final setBtRemote(Ljp/co/sony/mc/camera/idd/value/IddBtRemote;)V
+    .locals 0
+
+    .line 55
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    return-void
+.end method
+
+.method public final setBurstFeedback(Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;)V
+    .locals 0
+
+    .line 23
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    return-void
+.end method
+
+.method public final setCloseUpShooting(Ljp/co/sony/mc/camera/idd/value/IddMacroMode;)V
+    .locals 0
+
+    .line 72
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    return-void
+.end method
+
+.method public final setColorToneProfile(Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;)V
+    .locals 0
+
+    .line 65
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    return-void
+.end method
+
+.method public final setComputationalPhoto(Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;)V
+    .locals 0
+
+    .line 67
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    return-void
+.end method
+
+.method public final setConnectTo(Ljp/co/sony/mc/camera/idd/value/IddConnectMode;)V
+    .locals 0
+
+    .line 69
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    return-void
+.end method
+
+.method public final setContinuousFeedback(Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;)V
+    .locals 0
+
+    .line 78
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    return-void
+.end method
+
+.method public final setDestinationToSave(Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;)V
+    .locals 0
+
+    .line 14
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    return-void
+.end method
+
+.method public final setDisp(Ljp/co/sony/mc/camera/idd/value/IddDisp;)V
+    .locals 0
+
+    .line 15
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    return-void
+.end method
+
+.method public final setDisplayFlash(Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;)V
+    .locals 0
+
+    .line 54
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    return-void
+.end method
+
+.method public final setDriveMode(Ljp/co/sony/mc/camera/idd/value/IddDriveMode;)V
+    .locals 0
+
+    .line 16
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    return-void
+.end method
+
+.method public final setEnduranceMode(Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;)V
+    .locals 0
+
+    .line 57
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    return-void
+.end method
+
+.method public final setEv(Ljp/co/sony/mc/camera/idd/value/IddEv;)V
+    .locals 0
+
+    .line 17
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    return-void
+.end method
+
+.method public final setExtendFps(Ljp/co/sony/mc/camera/idd/value/IddExtendFps;)V
+    .locals 0
+
+    .line 46
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    return-void
+.end method
+
+.method public final setFaceDetectionEyeAf(Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;)V
+    .locals 0
+
+    .line 18
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    return-void
+.end method
+
+.method public final setFastCapture(Ljp/co/sony/mc/camera/idd/value/IddFastCapture;)V
+    .locals 0
+
+    .line 49
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    return-void
+.end method
+
+.method public final setFileFormat(Ljp/co/sony/mc/camera/idd/value/IddFileFormat;)V
+    .locals 0
+
+    .line 38
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    return-void
+.end method
+
+.method public final setFlash(Ljp/co/sony/mc/camera/idd/value/IddFlash;)V
+    .locals 0
+
+    .line 19
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    return-void
+.end method
+
+.method public final setFocusArea(Ljp/co/sony/mc/camera/idd/value/IddFocusArea;)V
+    .locals 0
+
+    .line 20
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    return-void
+.end method
+
+.method public final setFocusDistance(Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;)V
+    .locals 0
+
+    .line 80
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    return-void
+.end method
+
+.method public final setFocusFrameColor(Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;)V
+    .locals 0
+
+    .line 37
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    return-void
+.end method
+
+.method public final setFocusMode(Ljp/co/sony/mc/camera/idd/value/IddFocusMode;)V
+    .locals 0
+
+    .line 21
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    return-void
+.end method
+
+.method public final setFocusUi(Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;)V
+    .locals 0
+
+    .line 76
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    return-void
+.end method
+
+.method public final setGeoTag(Ljp/co/sony/mc/camera/idd/value/IddGeoTag;)V
+    .locals 0
+
+    .line 22
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    return-void
+.end method
+
+.method public final setGridLine(Ljp/co/sony/mc/camera/idd/value/IddGridLine;)V
+    .locals 0
+
+    .line 24
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    return-void
+.end method
+
+.method public final setHandShutter(Ljp/co/sony/mc/camera/idd/value/IddHandShutter;)V
+    .locals 0
+
+    .line 32
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    return-void
+.end method
+
+.method public final setHapticFeedback(Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;)V
+    .locals 0
+
+    .line 56
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    return-void
+.end method
+
+.method public final setHdrDro(Ljp/co/sony/mc/camera/idd/value/IddHdrDro;)V
+    .locals 0
+
+    .line 25
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    return-void
+.end method
+
+.method public final setHdrFormat(Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;)V
+    .locals 0
+
+    .line 58
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    return-void
+.end method
+
+.method public final setHdrQuality(Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;)V
+    .locals 0
+
+    .line 59
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    return-void
+.end method
+
+.method public final setHdrSdr(Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;)V
+    .locals 0
+
+    .line 74
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    return-void
+.end method
+
+.method public final setIso(Ljp/co/sony/mc/camera/idd/value/IddIso;)V
+    .locals 0
+
+    .line 29
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    return-void
+.end method
+
+.method public final setLayoutMode(Ljp/co/sony/mc/camera/idd/value/IddMode;)V
+    .locals 0
+
+    .line 40
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    return-void
+.end method
+
+.method public final setLens(Ljp/co/sony/mc/camera/idd/value/IddLens;)V
+    .locals 0
+
+    .line 26
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    return-void
+.end method
+
+.method public final setLensCorrection(Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;)V
+    .locals 0
+
+    .line 27
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    return-void
+.end method
+
+.method public final setLock(Ljp/co/sony/mc/camera/idd/value/IddLock;)V
+    .locals 0
+
+    .line 28
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    return-void
+.end method
+
+.method public final setMetering(Ljp/co/sony/mc/camera/idd/value/IddMetering;)V
+    .locals 0
+
+    .line 30
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    return-void
+.end method
+
+.method public final setMic(Ljp/co/sony/mc/camera/idd/value/IddMic;)V
+    .locals 0
+
+    .line 75
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    return-void
+.end method
+
+.method public final setNetworkUsage(Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;)V
+    .locals 0
+
+    .line 73
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    return-void
+.end method
+
+.method public final setNight(Ljp/co/sony/mc/camera/idd/value/IddNight;)V
+    .locals 0
+
+    .line 62
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    return-void
+.end method
+
+.method public final setPeaking(Ljp/co/sony/mc/camera/idd/value/IddPeaking;)V
+    .locals 0
+
+    .line 63
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    return-void
+.end method
+
+.method public final setPeakingColor(Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;)V
+    .locals 0
+
+    .line 64
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    return-void
+.end method
+
+.method public final setPhotoLight(Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;)V
+    .locals 0
+
+    .line 50
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    return-void
+.end method
+
+.method public final setProductShowcase(Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;)V
+    .locals 0
+
+    .line 61
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    return-void
+.end method
+
+.method public final setQrCodeDetection(Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;)V
+    .locals 0
+
+    .line 52
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    return-void
+.end method
+
+.method public final setResolution(Ljp/co/sony/mc/camera/idd/value/IddResolution;)V
+    .locals 0
+
+    .line 39
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    return-void
+.end method
+
+.method public final setSelfTimer(Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;)V
+    .locals 0
+
+    .line 68
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    return-void
+.end method
+
+.method public final setShutterSpeed(Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;)V
+    .locals 0
+
+    .line 31
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    return-void
+.end method
+
+.method public final setSoftSkin(Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;)V
+    .locals 0
+
+    .line 33
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    return-void
+.end method
+
+.method public final setSsUi(Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;)V
+    .locals 0
+
+    .line 77
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    return-void
+.end method
+
+.method public final setStreamingMute(Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;)V
+    .locals 0
+
+    .line 70
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    return-void
+.end method
+
+.method public final setStreamingVideoQuality(Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;)V
+    .locals 0
+
+    .line 71
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    return-void
+.end method
+
+.method public final setSuperResolutionZoom(Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;)V
+    .locals 0
+
+    .line 43
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    return-void
+.end method
+
+.method public final setTemperature(Ljp/co/sony/mc/camera/idd/value/IddTemperature;)V
+    .locals 0
+
+    .line 60
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    return-void
+.end method
+
+.method public final setTouchToAdjust(Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;)V
+    .locals 0
+
+    .line 34
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    return-void
+.end method
+
+.method public final setTouchTracking(Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;)V
+    .locals 0
+
+    .line 79
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    return-void
+.end method
+
+.method public final setVideoFps(Ljp/co/sony/mc/camera/idd/value/IddVideoFps;)V
+    .locals 0
+
+    .line 45
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    return-void
+.end method
+
+.method public final setVideoSize(Ljp/co/sony/mc/camera/idd/value/IddVideoSize;)V
+    .locals 0
+
+    .line 44
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    return-void
+.end method
+
+.method public final setVideoStabilizer(Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;)V
+    .locals 0
+
+    .line 51
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    return-void
+.end method
+
+.method public final setVolumeKey(Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;)V
+    .locals 0
+
+    .line 35
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    return-void
+.end method
+
+.method public final setWhiteBalance(Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;)V
+    .locals 0
+
+    .line 36
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    return-void
+.end method
+
+.method public final setWhiteBalanceAB(Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;)V
+    .locals 0
+
+    .line 41
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    return-void
+.end method
+
+.method public final setWhiteBalanceGm(Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;)V
+    .locals 0
+
+    .line 42
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    return-void
+.end method
+
+.method public final setWindFilter(Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;)V
+    .locals 0
+
+    .line 81
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    return-void
+.end method
+
+.method public final setZoom(Ljp/co/sony/mc/camera/idd/value/IddZoom;)V
+    .locals 0
+
+    .line 82
+    iput-object p1, p0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 74
+
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->accessaryFlip:Ljp/co/sony/mc/camera/idd/value/IddAccessaryFlip;
+
+    iget-object v2, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ael:Ljp/co/sony/mc/camera/idd/value/IddAel;
+
+    iget-object v3, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->aspectRatio:Ljp/co/sony/mc/camera/idd/value/IddAspectRatio;
+
+    iget-object v4, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->audioSignals:Ljp/co/sony/mc/camera/idd/value/IddAudioSignals;
+
+    iget-object v5, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->destinationToSave:Ljp/co/sony/mc/camera/idd/value/IddDestinationToSave;
+
+    iget-object v6, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->disp:Ljp/co/sony/mc/camera/idd/value/IddDisp;
+
+    iget-object v7, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->driveMode:Ljp/co/sony/mc/camera/idd/value/IddDriveMode;
+
+    iget-object v8, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ev:Ljp/co/sony/mc/camera/idd/value/IddEv;
+
+    iget-object v9, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->faceDetectionEyeAf:Ljp/co/sony/mc/camera/idd/value/IddFaceDetectionEyeAf;
+
+    iget-object v10, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->flash:Ljp/co/sony/mc/camera/idd/value/IddFlash;
+
+    iget-object v11, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusArea:Ljp/co/sony/mc/camera/idd/value/IddFocusArea;
+
+    iget-object v12, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusMode:Ljp/co/sony/mc/camera/idd/value/IddFocusMode;
+
+    iget-object v13, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->geoTag:Ljp/co/sony/mc/camera/idd/value/IddGeoTag;
+
+    iget-object v14, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->burstFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->gridLine:Ljp/co/sony/mc/camera/idd/value/IddGridLine;
+
+    move-object/from16 v16, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrDro:Ljp/co/sony/mc/camera/idd/value/IddHdrDro;
+
+    move-object/from16 v17, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lens:Ljp/co/sony/mc/camera/idd/value/IddLens;
+
+    move-object/from16 v18, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lensCorrection:Ljp/co/sony/mc/camera/idd/value/IddLensCorrection;
+
+    move-object/from16 v19, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->lock:Ljp/co/sony/mc/camera/idd/value/IddLock;
+
+    move-object/from16 v20, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->iso:Ljp/co/sony/mc/camera/idd/value/IddIso;
+
+    move-object/from16 v21, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->metering:Ljp/co/sony/mc/camera/idd/value/IddMetering;
+
+    move-object/from16 v22, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->shutterSpeed:Ljp/co/sony/mc/camera/idd/value/IddShutterSpeed;
+
+    move-object/from16 v23, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->handShutter:Ljp/co/sony/mc/camera/idd/value/IddHandShutter;
+
+    move-object/from16 v24, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->softSkin:Ljp/co/sony/mc/camera/idd/value/IddSoftSkin;
+
+    move-object/from16 v25, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchToAdjust:Ljp/co/sony/mc/camera/idd/value/IddTouchToAdjust;
+
+    move-object/from16 v26, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->volumeKey:Ljp/co/sony/mc/camera/idd/value/IddVolumeKey;
+
+    move-object/from16 v27, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalance:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalance;
+
+    move-object/from16 v28, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusFrameColor:Ljp/co/sony/mc/camera/idd/value/IddFocusFrameColor;
+
+    move-object/from16 v29, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fileFormat:Ljp/co/sony/mc/camera/idd/value/IddFileFormat;
+
+    move-object/from16 v30, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->resolution:Ljp/co/sony/mc/camera/idd/value/IddResolution;
+
+    move-object/from16 v31, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->layoutMode:Ljp/co/sony/mc/camera/idd/value/IddMode;
+
+    move-object/from16 v32, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceAB:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceAB;
+
+    move-object/from16 v33, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->whiteBalanceGm:Ljp/co/sony/mc/camera/idd/value/IddWhiteBalanceGm;
+
+    move-object/from16 v34, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->superResolutionZoom:Ljp/co/sony/mc/camera/idd/value/IddSuperResolutionZoom;
+
+    move-object/from16 v35, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoSize:Ljp/co/sony/mc/camera/idd/value/IddVideoSize;
+
+    move-object/from16 v36, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoFps:Ljp/co/sony/mc/camera/idd/value/IddVideoFps;
+
+    move-object/from16 v37, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->extendFps:Ljp/co/sony/mc/camera/idd/value/IddExtendFps;
+
+    move-object/from16 v38, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->brightness:Ljp/co/sony/mc/camera/idd/value/IddBrightness;
+
+    move-object/from16 v39, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->amberBlue:Ljp/co/sony/mc/camera/idd/value/IddAmberBlue;
+
+    move-object/from16 v40, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->fastCapture:Ljp/co/sony/mc/camera/idd/value/IddFastCapture;
+
+    move-object/from16 v41, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->photoLight:Ljp/co/sony/mc/camera/idd/value/IddPhotoLight;
+
+    move-object/from16 v42, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->videoStabilizer:Ljp/co/sony/mc/camera/idd/value/IddVideoStabilizer;
+
+    move-object/from16 v43, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->qrCodeDetection:Ljp/co/sony/mc/camera/idd/value/IddQrCodeDetection;
+
+    move-object/from16 v44, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->bokehStrength:Ljp/co/sony/mc/camera/idd/value/IddBokehStrength;
+
+    move-object/from16 v45, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->displayFlash:Ljp/co/sony/mc/camera/idd/value/IddDisplayFlash;
+
+    move-object/from16 v46, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->btRemote:Ljp/co/sony/mc/camera/idd/value/IddBtRemote;
+
+    move-object/from16 v47, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hapticFeedback:Ljp/co/sony/mc/camera/idd/value/IddHapticFeedback;
+
+    move-object/from16 v48, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->enduranceMode:Ljp/co/sony/mc/camera/idd/value/IddEnduranceMode;
+
+    move-object/from16 v49, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrFormat:Ljp/co/sony/mc/camera/idd/value/IddHdrFormat;
+
+    move-object/from16 v50, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrQuality:Ljp/co/sony/mc/camera/idd/value/IddHdrQuality;
+
+    move-object/from16 v51, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->temperature:Ljp/co/sony/mc/camera/idd/value/IddTemperature;
+
+    move-object/from16 v52, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->productShowcase:Ljp/co/sony/mc/camera/idd/value/IddProductShowcase;
+
+    move-object/from16 v53, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->night:Ljp/co/sony/mc/camera/idd/value/IddNight;
+
+    move-object/from16 v54, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peaking:Ljp/co/sony/mc/camera/idd/value/IddPeaking;
+
+    move-object/from16 v55, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->peakingColor:Ljp/co/sony/mc/camera/idd/value/IddPeakingColor;
+
+    move-object/from16 v56, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->colorToneProfile:Ljp/co/sony/mc/camera/idd/value/IddColorToneProfile;
+
+    move-object/from16 v57, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->autoFrameRate:Ljp/co/sony/mc/camera/idd/value/IddAutoFrameRate;
+
+    move-object/from16 v58, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->computationalPhoto:Ljp/co/sony/mc/camera/idd/value/IddComputationalMode;
+
+    move-object/from16 v59, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->selfTimer:Ljp/co/sony/mc/camera/idd/value/IddSelfTimer;
+
+    move-object/from16 v60, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->connectTo:Ljp/co/sony/mc/camera/idd/value/IddConnectMode;
+
+    move-object/from16 v61, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingMute:Ljp/co/sony/mc/camera/idd/value/IddStreamingMute;
+
+    move-object/from16 v62, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->streamingVideoQuality:Ljp/co/sony/mc/camera/idd/value/IddStreamingVideoQuality;
+
+    move-object/from16 v63, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->closeUpShooting:Ljp/co/sony/mc/camera/idd/value/IddMacroMode;
+
+    move-object/from16 v64, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->networkUsage:Ljp/co/sony/mc/camera/idd/value/IddNetworkUsage;
+
+    move-object/from16 v65, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->hdrSdr:Ljp/co/sony/mc/camera/idd/value/IddVideoHdr;
+
+    move-object/from16 v66, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->mic:Ljp/co/sony/mc/camera/idd/value/IddMic;
+
+    move-object/from16 v67, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeFocusDisplay;
+
+    move-object/from16 v68, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->ssUi:Ljp/co/sony/mc/camera/idd/value/IddBasicModeShutterSpeedDisplay;
+
+    move-object/from16 v69, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->continuousFeedback:Ljp/co/sony/mc/camera/idd/value/IddBurstFeedback;
+
+    move-object/from16 v70, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->touchTracking:Ljp/co/sony/mc/camera/idd/value/IddTouchTracking;
+
+    move-object/from16 v71, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->focusDistance:Ljp/co/sony/mc/camera/idd/value/IddFocusDistance;
+
+    move-object/from16 v72, v15
+
+    iget-object v15, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->windFilter:Ljp/co/sony/mc/camera/idd/value/IddWindNoiseReduction;
+
+    iget-object v0, v0, Ljp/co/sony/mc/camera/idd/value/IddSetting;->zoom:Ljp/co/sony/mc/camera/idd/value/IddZoom;
+
+    move-object/from16 p0, v0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    move-object/from16 v73, v15
+
+    const-string v15, "IddSetting(accessaryFlip="
+
+    invoke-direct {v0, v15}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", ael="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", aspectRatio="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", audioSignals="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", destinationToSave="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", disp="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", driveMode="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", ev="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", faceDetectionEyeAf="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", flash="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", focusArea="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", focusMode="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", geoTag="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", burstFeedback="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", gridLine="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v16
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", hdrDro="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v17
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", lens="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v18
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", lensCorrection="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", lock="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v20
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", iso="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v21
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", metering="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v22
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", shutterSpeed="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v23
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", handShutter="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v24
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", softSkin="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v25
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", touchToAdjust="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v26
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", volumeKey="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v27
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", whiteBalance="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v28
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", focusFrameColor="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v29
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", fileFormat="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v30
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", resolution="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v31
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", layoutMode="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v32
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", whiteBalanceAB="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v33
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", whiteBalanceGm="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v34
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", superResolutionZoom="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v35
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", videoSize="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v36
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", videoFps="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v37
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", extendFps="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v38
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", brightness="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v39
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", amberBlue="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v40
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", fastCapture="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v41
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", photoLight="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v42
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", videoStabilizer="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v43
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", qrCodeDetection="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v44
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", bokehStrength="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v45
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", displayFlash="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v46
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", btRemote="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v47
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", hapticFeedback="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v48
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", enduranceMode="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v49
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", hdrFormat="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v50
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", hdrQuality="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v51
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", temperature="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v52
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", productShowcase="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v53
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", night="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v54
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", peaking="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v55
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", peakingColor="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v56
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", colorToneProfile="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v57
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", autoFrameRate="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v58
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", computationalPhoto="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v59
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", selfTimer="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v60
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", connectTo="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v61
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", streamingMute="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v62
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", streamingVideoQuality="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v63
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", closeUpShooting="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v64
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", networkUsage="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v65
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", hdrSdr="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v66
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", mic="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v67
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", focusUi="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v68
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", ssUi="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v69
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", continuousFeedback="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v70
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", touchTracking="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v71
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", focusDistance="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v72
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", windFilter="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, v73
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", zoom="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    move-object/from16 v1, p0
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

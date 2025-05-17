@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/audio_level_view" android:layout_width="fill_parent" android:layout_height="@dimen/audio_level_height" android:layoutDirection="ltr" style="@style/Widget.Camera.Footer.AudioLevel"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layoutDirection="ltr">
+        <TextView android:id="@id/audio_level_text_1st" android:layout_width="@dimen/audio_level_text_width" android:layout_height="@dimen/audio_level_text_height" android:text="@string/camera_strings_audio_channel_1_txt" android:importantForAccessibility="no" android:layout_marginStart="@dimen/audio_level_text_margin_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/audio_level_1_container" app:layout_constraintStart_toStartOf="parent" style="@style/TextAppearanceAudioLevelMeterTitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/audio_level_1_container" android:layout_width="@dimen/audio_level_gauge_width" android:layout_height="@dimen/audio_level_gauge_height" android:layout_marginBottom="@dimen/audio_level_gauge_margin" android:layoutDirection="ltr" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/audio_level_text_1st">
+            <include android:id="@id/audio_level_gauge1" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge2" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge3" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge4" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge5" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge6" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge7" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge8" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge9" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge10" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge11" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge12" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge13" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge14" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge15" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_gauge16" layout="@layout/view_audio_level_gauge" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layoutDirection="ltr">
+        <TextView android:id="@id/audio_level_text_2nd" android:layout_width="@dimen/audio_level_text_width" android:layout_height="@dimen/audio_level_text_height" android:layout_marginBottom="@dimen/audio_level_text_2nd_margin_bottom" android:text="@string/camera_strings_audio_channel_2_txt" android:importantForAccessibility="no" android:layout_marginStart="@dimen/audio_level_text_margin_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/audio_level_2_container" app:layout_constraintStart_toStartOf="parent" style="@style/TextAppearanceAudioLevelMeterTitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/audio_level_2_container" android:layout_width="@dimen/audio_level_gauge_width" android:layout_height="@dimen/audio_level_gauge_height" android:layout_marginTop="@dimen/audio_level_gauge_margin" android:layoutDirection="ltr" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/audio_level_text_2nd" app:layout_constraintTop_toTopOf="parent">
+            <include android:id="@id/audio_level_2_gauge1" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge2" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge3" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge4" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge5" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge6" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge7" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge8" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge9" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge10" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge11" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge12" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge13" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge14" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge15" layout="@layout/view_audio_level_gauge" />
+            <include android:id="@id/audio_level_2_gauge16" layout="@layout/view_audio_level_gauge" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

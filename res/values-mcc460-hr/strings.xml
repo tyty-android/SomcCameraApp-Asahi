@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Nema WLAN signala</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN signal je na 1 traci</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN signal je na 2 trake</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN signal je na 3 trake</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN signal je pun</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Mreža
+Povezivanje s WLAN mrežom"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN je isključen, a Zrakoplovni način uključen.
+Promijenite te postavke tako da dodirnete POSTAVKE."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN je isključen.
+Uključite WLAN u odjeljku POSTAVKE."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Povezivanje s WLAN mrežom nije moguće</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Samo WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Povezivanje s ovom WLAN mrežom nije moguće</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Dotak. za povez. s WLAN mrežom \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Ova aplikacija upotrebljava WLAN i mobilne podatke za slanje korisničkih podataka (tj. snimljene slike/videozapise, glasovne podatke, informacije o računima korištenih usluga itd.) na internet.
+Može vam se naplatiti potrošnja podataka, ovisno o ugovorima s mrežnim operaterom i davateljem usluge interneta."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Nema WLAN veze</string>
+    <string name="mv_wireless_network_txt">koristiti WLAN i mob. pod.</string>
+</resources>

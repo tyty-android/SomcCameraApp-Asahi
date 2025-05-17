@@ -1,0 +1,173 @@
+.class public final Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+.super Lcom/google/api/client/json/GenericJson;
+.source "ActivityContentDetailsPlaylistItem.java"
+
+
+# instance fields
+.field private playlistId:Ljava/lang/String;
+    .annotation runtime Lcom/google/api/client/util/Key;
+    .end annotation
+.end field
+
+.field private playlistItemId:Ljava/lang/String;
+    .annotation runtime Lcom/google/api/client/util/Key;
+    .end annotation
+.end field
+
+.field private resourceId:Lcom/google/api/services/youtube/model/ResourceId;
+    .annotation runtime Lcom/google/api/client/util/Key;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 30
+    invoke-direct {p0}, Lcom/google/api/client/json/GenericJson;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic clone()Lcom/google/api/client/json/GenericJson;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0}, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->clone()Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic clone()Lcom/google/api/client/util/GenericData;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0}, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->clone()Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public clone()Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+    .locals 0
+
+    .line 111
+    invoke-super {p0}, Lcom/google/api/client/json/GenericJson;->clone()Lcom/google/api/client/json/GenericJson;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/CloneNotSupportedException;
+        }
+    .end annotation
+
+    .line 29
+    invoke-virtual {p0}, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->clone()Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getPlaylistId()Ljava/lang/String;
+    .locals 0
+
+    .line 58
+    iget-object p0, p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->playlistId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public getPlaylistItemId()Ljava/lang/String;
+    .locals 0
+
+    .line 75
+    iget-object p0, p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->playlistItemId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public getResourceId()Lcom/google/api/services/youtube/model/ResourceId;
+    .locals 0
+
+    .line 92
+    iget-object p0, p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->resourceId:Lcom/google/api/services/youtube/model/ResourceId;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/json/GenericJson;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0, p1, p2}, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/util/GenericData;
+    .locals 0
+
+    .line 29
+    invoke-virtual {p0, p1, p2}, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+    .locals 0
+
+    .line 106
+    invoke-super {p0, p1, p2}, Lcom/google/api/client/json/GenericJson;->set(Ljava/lang/String;Ljava/lang/Object;)Lcom/google/api/client/json/GenericJson;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+
+    return-object p0
+.end method
+
+.method public setPlaylistId(Ljava/lang/String;)Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+    .locals 0
+
+    .line 66
+    iput-object p1, p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->playlistId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public setPlaylistItemId(Ljava/lang/String;)Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+    .locals 0
+
+    .line 83
+    iput-object p1, p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->playlistItemId:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public setResourceId(Lcom/google/api/services/youtube/model/ResourceId;)Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;
+    .locals 0
+
+    .line 100
+    iput-object p1, p0, Lcom/google/api/services/youtube/model/ActivityContentDetailsPlaylistItem;->resourceId:Lcom/google/api/services/youtube/model/ResourceId;
+
+    return-object p0
+.end method

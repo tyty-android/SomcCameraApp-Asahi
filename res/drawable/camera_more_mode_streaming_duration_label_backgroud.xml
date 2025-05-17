@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/camera_top_pane_video_format_background_radius" />
+    <solid android:color="@color/camera_streaming_mode_duration_label_backgroud_color" />
+</shape>

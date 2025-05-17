@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">WLAN-signaal puudub</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">WLAN signaal on 1 riba</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">WLAN signaal on 2 riba</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">WLAN signaal on 3 riba</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">WLAN signaal on täis</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Võrk
+WLAN ühenduse loomiseks"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN on välja lülitatud ja lennurežiim on sisse lülitatud.
+Nende seadete muutmiseks puudutage nuppu SEADED."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN on välja lülitatud.
+Lülitage WLAN sisse kuval SEADED."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">WLAN ühendust ei saa luua</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">Ainult WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Selle WLAN-võrguga ei saa ühendust luua</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Koput. ühend. WLAN võrguga „%1$s“</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"See rakendus kasutab WLAN-i ja mobiilandmeid, et saata kasutajaandmeid (st salvestatud pilte/videoid, kõneandmeid, kasutatavate teenuste kontoteavet jne) Internetti.
+Arvestage, et sõltuvalt teie võrguoperaatorist või Interneti-teenuse pakkuja lepingutest võidakse teilt andmete eest tasu võtta."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">WLAN-ühendust pole</string>
+    <string name="mv_wireless_network_txt">WLAN, mob.-sidea. kas.</string>
+</resources>

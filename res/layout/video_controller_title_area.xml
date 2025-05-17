@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/video_controller_title_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end|bottom|center" android:orientation="vertical" android:id="@id/timing_view_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/player_controller_timing_min_height" android:layout_alignParentEnd="true">
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/video_controller_expand_button_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/player_expand_icon_selector" android:background="@drawable/expand_controller_button_selector" android:padding="@dimen/player_controller_expand_icon_selector_padding" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/player_controller_expand_icon_selector_start_margin" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/player_expand_icon" android:focusable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mvp_controller_less_icn" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/player_timing_text_size" android:textStyle="normal" android:textColor="@android:color/white" android:gravity="end" android:id="@id/video_timing_info" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/total_time_default" android:singleLine="true" android:textAlignment="viewEnd" android:paddingStart="@dimen/player_controller_timing_view_group_padding_start" android:paddingEnd="@dimen/player_controller_timing_view_group_padding_end" />
+    </LinearLayout>
+    <LinearLayout android:gravity="start|bottom|center" android:orientation="horizontal" android:id="@id/title_view_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/timing_view_group" android:layout_toStartOf="@id/timing_view_group">
+        <TextView android:textSize="@dimen/player_video_title_textSize" android:textColor="@android:color/white" android:ellipsize="middle" android:id="@id/video_title" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="viewStart" android:paddingStart="@dimen/player_controller_video_name_padding_start" android:paddingEnd="@dimen/player_controller_video_name_padding_end" />
+    </LinearLayout>
+</RelativeLayout>

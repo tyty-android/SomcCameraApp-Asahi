@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_strings_accessibility_wifi_signal_disconnected_txt">Aucun signal WLAN</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_1_txt">Le signal WLAN est à 1 barre</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_2_txt">Le signal WLAN est à 2 barres</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_3_txt">Le signal WLAN est à 3 barres</string>
+    <string name="camera_strings_accessibility_wifi_signal_level_full_txt">Le signal WLAN est au maximum</string>
+    <string name="camera_strings_dialog_body_applicationnotification_network_txt">"Réseau
+Pour se connecter au WLAN"</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_airplane_on_txt">"WLAN désactivé, mode avion activé.
+Veuillez modifier ce paramétrage en touchant RÉGLAGES."</string>
+    <string name="camera_strings_dialog_body_qrcode_wifi_ready_wifi_off_txt">"WLAN désactivé.
+Veuillez l'activer depuis RÉGLAGES."</string>
+    <string name="camera_strings_dialog_title_qrcode_wifi_ready_error_txt">Impossible de se connecter au réseau WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_short_txt">WLAN</string>
+    <string name="camera_strings_network_usage_wifi_only_txt">WLAN uniquement</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_notsupported_txt">Impossible de se connecter à ce réseau WLAN</string>
+    <string name="camera_strings_qrcode_detect_text_wifi_txt">Touchez pr vs connecter au WLAN \"%1$s\"</string>
+    <string name="camera_strings_runtime_permission_rationale_network_cta_txt">"Cette appli utilise le réseau WLAN et les données mobiles pour envoyer les données de l'utilisateur (images / vidéos enregistrées par exemple, données vocales, information du compte sur les services en cours d'utilisation, etc.) sur Internet.
+Veuillez noter qu'il se peut que votre opérateur réseau ou votre fournisseur d'accès Internet vous facture des données en fonction des contrats signés avec eux."</string>
+    <string name="camera_strings_streaming_error_wifi_disconnected_txt">Aucune connexion WLAN</string>
+    <string name="mv_wireless_network_txt">WLAN/données mobiles</string>
+</resources>

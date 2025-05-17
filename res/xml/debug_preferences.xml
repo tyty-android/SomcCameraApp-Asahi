@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/debug_preference_title_debug_mode">
+        <SwitchPreference android:title="@string/debug_preference_entry_title_auto_power_off" android:key="@string/key_debug_disable_auto_power_off" />
+        <SwitchPreference android:title="@string/debug_preference_entry_title_low_power_mode" android:key="@string/key_debug_disable_low_power_mode" />
+        <Preference android:title="@string/debug_preference_entry_title_force_migrate_settings" android:key="@string/key_debug_force_migrate_settings" />
+        <SwitchPreference android:title="@string/debug_preference_entry_title_device_state_transition_restricted" android:key="@string/key_debug_device_state_transition_restricted" />
+        <Preference android:title="@string/debug_preference_entry_title_camera_settings" android:key="@string/key_debug_camera_settings">
+            <intent android:targetPackage="jp.co.sony.mc.cameraapp" android:targetClass="jp.co.sony.mc.camera.debug.DebugCameraSettingsActivity" />
+        </Preference>
+        <SwitchPreference android:title="@string/debug_preference_entry_title_zoom_max_ratio_x3_limitation" android:key="@string/key_debug_zoom_max_ratio_x3_limitation" />
+        <ListPreference android:entries="@array/debug_menu_simulate_sd_card_error_list" android:title="@string/debug_preference_entry_title_simulate_sd_card_error" android:key="@string/key_debug_simulate_sd_card_error" android:defaultValue="OFF" android:entryValues="@array/debug_menu_simulate_sd_card_error_list" />
+        <Preference android:title="@string/debug_preference_entry_title_launch_with_one_shot_photo_mode" android:key="@string/key_debug_launch_with_one_shot_photo_mode" />
+        <Preference android:title="@string/debug_preference_entry_title_launch_with_one_shot_video_mode" android:key="@string/key_debug_launch_with_one_shot_video_mode" />
+        <SwitchPreference android:title="@string/debug_preference_entry_title_enable_virtual_remain_size" android:key="@string/key_debug_enable_virtual_remain_size" />
+        <SeekBarPreference android:max="1000" android:title="@string/debug_preference_entry_title_set_virtual_remain_size" android:key="@string/key_debug_set_virtual_remain_size" android:defaultValue="300" android:min="0" app:showSeekBarValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/debug_preference_title_handling_warning">
+        <SwitchPreference android:title="@string/debug_preference_entry_title_force_activate_cool_mode" android:key="@string/key_debug_force_activate_cool_mode" />
+        <SwitchPreference android:title="@string/debug_preference_entry_title_simulate_cta_app" android:key="@string/key_debug_simulate_cta_app" />
+    </PreferenceCategory>
+</PreferenceScreen>
