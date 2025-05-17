@@ -4573,7 +4573,7 @@
 
     long-to-int v3, v3
 
-    filled-new-array {v1, v2, v6, p2, v3}, [I
+    filled-new-array {v1, v2, v6, p2}, [I
 
     move-result-object p2
 
