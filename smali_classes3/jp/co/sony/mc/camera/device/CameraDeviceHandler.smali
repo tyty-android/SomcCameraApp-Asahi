@@ -2070,28 +2070,8 @@
 .end method
 
 .method private applyFallbackMode(Ljp/co/sony/mc/camera/device/CameraParameters;)V
-    .locals 1
+    .locals 0
 
-    .line 7680
-    invoke-virtual {p1}, Ljp/co/sony/mc/camera/device/CameraParameters;->getFallbackMode()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 7679
-    invoke-static {p1}, Ljp/co/sony/mc/camera/device/CameraParameterConverter$FallbackMode;->getApi2Value(Ljava/lang/String;)Ljava/lang/Integer;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 7682
-    iget-object p0, p0, Ljp/co/sony/mc/camera/device/CameraDeviceHandler;->mCaptureRequestHolder:Ljp/co/sony/mc/camera/device/CaptureRequestHolder;
-
-    sget-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LOGICAL_MULTI_CAMERA_FALLBACK_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
-
-    invoke-virtual {p0, v0, p1}, Ljp/co/sony/mc/camera/device/CaptureRequestHolder;->set(Landroid/hardware/camera2/CaptureRequest$Key;Ljava/lang/Object;)V
-
-    :cond_0
     return-void
 .end method
 

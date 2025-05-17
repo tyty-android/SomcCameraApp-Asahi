@@ -1794,18 +1794,6 @@
 
     sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LOGICAL_MULTI_CAMERA_BOKEH_STRENGTH:Landroid/hardware/camera2/CaptureRequest$Key;
 
-    .line 2368
-    const-string v0, "com.sonymobile.logicalMultiCamera.fallbackMode"
-
-    sget-object v2, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    .line 2369
-    invoke-static {v0, v2}, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->keyConstructor(Ljava/lang/String;Ljava/lang/Class;)Landroid/hardware/camera2/CaptureRequest$Key;
-
-    move-result-object v0
-
-    sput-object v0, Lcom/sonymobile/camera/device/SomcCaptureRequestKeys;->SONYMOBILE_LOGICAL_MULTI_CAMERA_FALLBACK_MODE:Landroid/hardware/camera2/CaptureRequest$Key;
-
     .line 2383
     const-string v0, "com.sonymobile.colorCorrection.wbRatio"
 

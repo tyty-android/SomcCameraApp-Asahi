@@ -86,7 +86,7 @@
     .line 293
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;
 
-    const-string v1, "photopro_click.ogg"
+    const-string v1, ""
 
     const v2, 0x7f100005
 
@@ -101,7 +101,7 @@
     .line 301
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;
 
-    const-string v1, "camera_video_record_start.ogg"
+    const-string v1, ""
 
     const/high16 v2, 0x7f100000
 
@@ -116,7 +116,7 @@
     .line 308
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;
 
-    const-string v1, "camera_video_record_stop.ogg"
+    const-string v1, ""
 
     const v2, 0x7f100001
 
@@ -131,7 +131,7 @@
     .line 315
     new-instance v0, Ljp/co/sony/mc/camera/device/CameraActionSound$Type;
 
-    const-string v1, "photopro_focus_lock.ogg"
+    const-string v1, ""
 
     const v2, 0x7f100006
 
